@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Sign Up | S-CoreBox</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: Arial, sans-serif;
+		}
+
+		body {
+			box-sizing: border-box;
+			min-height: 100vh;
+			margin: 0;
+			padding: 24px;
+			background: #f5f5f5;
+			color: #222;
+		}
+
+		.sign-up-page {
+			display: flex;
+			min-height: calc(100vh - 48px);
+			align-items: center;
+			justify-content: center;
+		}
+
+		.sign-up-panel {
+			width: min(100%, 420px);
+			box-sizing: border-box;
+			padding: 36px;
+			border: 1px solid #d7d7d7;
+			border-radius: 8px;
+			background: #ffffff;
+			box-shadow: 0 12px 30px rgb(0 0 0 / 8%);
+		}
+
+		.brand {
+			margin: 0 0 8px;
+			font-size: 1.25rem;
+			font-weight: bold;
+		}
+
+		h1 {
+			margin: 0 0 8px;
+			font-size: 2rem;
+		}
+
+		.subtitle {
+			margin: 0 0 28px;
+			color: #666;
+		}
+
+		.form-field {
+			display: block;
+			margin-bottom: 18px;
+			font-weight: bold;
+		}
+
+		input {
+			display: block;
+			width: 100%;
+			box-sizing: border-box;
+			margin-top: 8px;
+			padding: 12px 14px;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+			font: inherit;
+		}
+
+		input:focus-visible {
+			outline: 2px solid #222;
+			outline-offset: 2px;
+		}
+
+		.submit-button {
+			width: 100%;
+			margin-top: 6px;
+			padding: 12px 20px;
+			border: 1px solid #222;
+			border-radius: 6px;
+			background: #222;
+			color: #ffffff;
+			font: inherit;
+			font-weight: bold;
+			cursor: pointer;
+		}
+
+		.submit-button:hover,
+		.submit-button:focus-visible {
+			background: #444;
+		}
+
+		.back-link {
+			display: block;
+			margin-top: 24px;
+			color: #222;
+			text-align: center;
+		}
+
+		@media (max-width: 480px) {
+			body {
+				padding: 16px;
+			}
+
+			.sign-up-page {
+				min-height: calc(100vh - 32px);
+			}
+
+			.sign-up-panel {
+				padding: 28px 22px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="sign-up-page">
+		<section class="sign-up-panel" aria-labelledby="sign-up-heading">
+			<p class="brand"></p>
+			<h1 id="sign-up-heading">S-CoreBox</h1>
+			<p class="subtitle">Start understanding... <em>or not</em>.</p>
+
+			<form action="#" method="post">
+				<label class="form-field" for="name">
+					Name
+					<input id="name" name="name" type="text" autocomplete="name" required>
+				</label>
+
+				<label class="form-field" for="email">
+					Email
+					<input id="email" name="email" type="email" autocomplete="email" required>
+				</label>
+
+				<label class="form-field" for="password">
+					Password
+					<input id="password" name="password" type="password" autocomplete="new-password" required>
+				</label>
+
+				<button class="submit-button" type="submit">Sign Up</button>
+			</form>
+			<a class="back-link" href="proto1.html">Back to S-CoreBox</a>
+		</section>
+	</main>
+</body>
+</html>
