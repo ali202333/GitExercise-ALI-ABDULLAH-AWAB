@@ -143,6 +143,7 @@
 		}
 
 		.movie-button {
+			display: block;
 			flex: 1;
 			padding: 16px 20px;
 			border: 0;
@@ -151,7 +152,7 @@
 			font: inherit;
 			font-weight: bold;
 			text-align: left;
-			cursor: pointer;
+			text-decoration: none;
 			transition: background-color 160ms ease;
 		}
 
@@ -197,6 +198,96 @@
 
 		.movie-row:last-child {
 			border-bottom: 0;
+		}
+
+		.pagination-controls {
+			display: flex;
+			gap: 12px;
+			margin-top: 12px;
+		}
+
+		.pagination-button {
+			flex: 1;
+			padding: 12px 20px;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+			background: #ffffff;
+			color: #222;
+			font: inherit;
+			cursor: pointer;
+			transition: background-color 160ms ease, border-color 160ms ease;
+		}
+
+		.pagination-button:hover:not(:disabled),
+		.pagination-button:focus-visible:not(:disabled) {
+			border-color: #222;
+			background: #dedede;
+		}
+
+		.pagination-button:disabled {
+			cursor: not-allowed;
+			opacity: 0.5;
+		}
+
+		.pagination-controls[hidden] {
+			display: none;
+		}
+
+		.movie-details-backdrop {
+			position: fixed;
+			inset: 0;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 24px;
+			background: rgb(0 0 0 / 40%);
+		}
+
+		.movie-details-backdrop[hidden] {
+			display: none;
+		}
+
+		.movie-details-template {
+			width: min(100%, 520px);
+			box-sizing: border-box;
+			padding: 28px;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+			background: #ffffff;
+			box-shadow: 0 12px 30px rgb(0 0 0 / 18%);
+		}
+
+		.movie-details-template h2 {
+			margin: 0 0 20px;
+		}
+
+		.movie-details-template p {
+			margin: 0 0 16px;
+		}
+
+		.movie-details-template a {
+			color: #222;
+			word-break: break-all;
+		}
+
+		.movie-details-genres {
+			color: #555;
+		}
+
+		.close-details-button {
+			width: 100%;
+			padding: 12px 20px;
+			border: 1px solid #222;
+			border-radius: 6px;
+			background: #222;
+			color: #ffffff;
+			font: inherit;
+			cursor: pointer;
+		}
+
+		.close-details-button:hover,
+		.close-details-button:focus-visible {
+			background: #444;
 		}
 	</style>
 </head>
@@ -247,20 +338,38 @@
 				</select>
 			</div>
 			<button type="button" aria-pressed="false" data-sort-direction="sort">Sort</button>
-			<button type="button" aria-pressed="false" data-bookmarks-filter>Bookmarks</button>
+			<button type="button" aria-pressed="false" data-bookmarks-filter>Watch Later</button>
 			<div class="search-wrapper">
 				<input class="search-bar" type="search" aria-label="Search movies" aria-controls="mock-data-box" placeholder="Search movies...">
 			</div>
 		</div>
 
 		<div id="mock-data-box" class="mock-data-box" aria-label="Movie data"></div>
+		<div id="pagination-controls" class="pagination-controls" aria-label="Movie list pagination">
+			<button id="previous-page-button" class="pagination-button" type="button" aria-controls="mock-data-box">Back</button>
+			<button id="next-page-button" class="pagination-button" type="button" aria-controls="mock-data-box">Next</button>
+		</div>
 	</main>
+
+	<div id="movie-details-backdrop" class="movie-details-backdrop" role="presentation" hidden>
+		<section class="movie-details-template" role="dialog" aria-modal="true" aria-labelledby="movie-details-title">
+			<h2 id="movie-details-title"></h2>
+			<p><strong>IMDb:</strong> <a id="movie-details-link" target="_blank" rel="noopener noreferrer"></a></p>
+			<p><strong>Genres:</strong> <span id="movie-details-genres" class="movie-details-genres"></span></p>
+			<button id="close-details-button" class="close-details-button" type="button">Close</button>
+		</section>
+	</div>
 
 	<script>
 		const mockDataBox = document.getElementById('mock-data-box');
 		const searchBar = document.querySelector('.search-bar');
 		const genreFilter = document.querySelector('.filter-control select');
 		const bookmarksFilterButton = document.querySelector('[data-bookmarks-filter]');
+		const paginationControls = document.getElementById('pagination-controls');
+		const previousPageButton = document.getElementById('previous-page-button');
+		const nextPageButton = document.getElementById('next-page-button');
+		const pageSize = 50;
+		let currentPage = 0;
 
 		const renderMovies = (movies) => {
 			movies.forEach((movie) => {
@@ -275,7 +384,9 @@
 			movieButton.textContent = `${movie.id}. ${movie.title}`;
 			movieButton.dataset.movieId = movie.id;
 			movieButton.dataset.movieUrl = movie.movie_url;
-			movieButton.addEventListener('click', () => window.open(movie.movie_url, '_blank', 'noopener'));
+			movieButton.addEventListener('click', () => {
+				window.location.href = `movie.html?id=${encodeURIComponent(movie.id)}`;
+			});
 
 			const rating = document.createElement('span');
 			rating.className = 'movie-rating';
@@ -286,11 +397,11 @@
 			bookmarkButton.type = 'button';
 			bookmarkButton.className = 'bookmark-button';
 			bookmarkButton.setAttribute('aria-pressed', 'false');
-			bookmarkButton.textContent = 'Bookmark';
+			bookmarkButton.textContent = 'Watch Later';
 			bookmarkButton.addEventListener('click', () => {
 				const isBookmarked = bookmarkButton.getAttribute('aria-pressed') === 'true';
 				bookmarkButton.setAttribute('aria-pressed', String(!isBookmarked));
-				bookmarkButton.textContent = isBookmarked ? 'Bookmark' : 'Bookmarked';
+				bookmarkButton.textContent = isBookmarked ? 'Watch Later' : 'Saved';
 				filterMovies(searchBar.value);
 			});
 
@@ -322,6 +433,7 @@
 			.then((movies) => {
 				renderMovies(movies);
 				movieRows = [...mockDataBox.querySelectorAll('.movie-row')];
+				filterMovies(searchBar.value);
 			})
 			.catch((error) => {
 				mockDataBox.textContent = error.message;
@@ -329,19 +441,42 @@
 		const filterMovies = (searchTerm, selectedGenre = genreFilter.value) => {
 			const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 			const bookmarksOnly = bookmarksFilterButton.getAttribute('aria-pressed') === 'true';
+			const isPaginated	= !normalizedSearchTerm && selectedGenre === 'all' && !bookmarksOnly;
+			const pageStart = currentPage * pageSize;
+			const pageEnd = pageStart + pageSize;
 
-			movieRows.forEach((movieRow) => {
+			movieRows.forEach((movieRow, index) => {
 				const movieTitle = movieRow.querySelector('.movie-button').textContent.trim().toLowerCase();
 				const matchesSearch = movieTitle.includes(normalizedSearchTerm);
 				const matchesGenre = selectedGenre === 'all' || JSON.parse(movieRow.dataset.genres).includes(selectedGenre);
 				const isBookmarked = movieRow.querySelector('.bookmark-button').getAttribute('aria-pressed') === 'true';
-				movieRow.hidden = !matchesSearch || !matchesGenre || (bookmarksOnly && !isBookmarked);
+				const isOutsidePage = isPaginatedView && (index < pageStart || index >= pageEnd);
+				movieRow.hidden = !matchesSearch || !matchesGenre || (bookmarksOnly && !isBookmarked) || isOutsidePage;
 			});
+
+			paginationControls.hidden = !isPaginatedView;
+			previousPageButton.disabled = currentPage === 0;
+			nextPageButton.disabled = !isPaginatedView || pageEnd >= movieRows.length;
 		};
 
 		searchBar.addEventListener('input', () => filterMovies(searchBar.value));
 		genreFilter.addEventListener('change', () => filterMovies(searchBar.value));
+		previousPageButton.addEventListener('click', () => {
+			if (currentPage === 0) {
+				return;
+			}
 
+			currentPage -= 1;
+			filterMovies(searchBar.value);
+		});
+		nextPageButton.addEventListener('click', () => {
+			if ((currentPage + 1) * pageSize >= movieRows.length) {
+				return;
+			}
+
+			currentPage += 1;
+			filterMovies(searchBar.value);
+		});
 		document.querySelectorAll('.main-actions button').forEach((button) => {
 			button.addEventListener('click', () => {
 				if (button.dataset.sortDirection) {
