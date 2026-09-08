@@ -1,0 +1,7005 @@
+[
+    {
+        "id": 1,
+        "title": "All About Eve",
+        "rating": "8.2",
+        "genres": [
+            "Showbiz Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0042192/"
+    },
+    {
+        "id": 2,
+        "title": "12 Angry Men",
+        "rating": "9.0",
+        "genres": [
+            "Legal Drama",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050083/"
+    },
+    {
+        "id": 3,
+        "title": "Jurassic Park",
+        "rating": "8.2",
+        "genres": [
+            "Jurassic Park",
+            "Dinosaur Adventure",
+            "Jungle Adventure",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0107290/"
+    },
+    {
+        "id": 4,
+        "title": "3 Idiots",
+        "rating": "8.4",
+        "genres": [
+            "Hindi",
+            "Buddy Comedy",
+            "Coming-of-Age",
+            "Parody",
+            "Quirky Comedy",
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1187043/"
+    },
+    {
+        "id": 5,
+        "title": "The Diamond Arm",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Parody",
+            "Slapstick",
+            "Adventure",
+            "Comedy",
+            "Crime"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0062759/"
+    },
+    {
+        "id": 6,
+        "title": "Catch Me If You Can",
+        "rating": "8.1",
+        "genres": [
+            "Caper",
+            "Docudrama",
+            "Globetrotting Adventure",
+            "Period Drama",
+            "True Crime",
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0264464/"
+    },
+    {
+        "id": 7,
+        "title": "Room",
+        "rating": "8.1",
+        "genres": [
+            "Psychological Drama",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3170832/"
+    },
+    {
+        "id": 8,
+        "title": "The Legend of Maula Jatt",
+        "rating": "8.4",
+        "genres": [
+            "Punjabi",
+            "Action",
+            "Drama",
+            "Fantasy",
+            "History",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4139928/"
+    },
+    {
+        "id": 9,
+        "title": "High and Low",
+        "rating": "8.4",
+        "genres": [
+            "Japanese",
+            "Police Procedural",
+            "Psychological Thriller",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0057565/"
+    },
+    {
+        "id": 10,
+        "title": "The Voice of Hind Rajab",
+        "rating": "8.2",
+        "genres": [
+            "Arabic",
+            "Docudrama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt36943034/"
+    },
+    {
+        "id": 11,
+        "title": "Shahid",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2181831/"
+    },
+    {
+        "id": 12,
+        "title": "The Remarkable Life of Ibelin",
+        "rating": "8.1",
+        "genres": [
+            "Animation",
+            "Biography",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt19811010/"
+    },
+    {
+        "id": 13,
+        "title": "Padayappa",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Action",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0213969/"
+    },
+    {
+        "id": 14,
+        "title": "Koyaanisqatsi",
+        "rating": "8.2",
+        "genres": [
+            "Faith & Spirituality Documentary",
+            "Nature Documentary",
+            "Documentary",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0085809/"
+    },
+    {
+        "id": 15,
+        "title": "Barry Lyndon",
+        "rating": "8.1",
+        "genres": [
+            "Adventure Epic",
+            "Costume Drama",
+            "Dark Comedy",
+            "Epic",
+            "Globetrotting Adventure",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0072684/"
+    },
+    {
+        "id": 16,
+        "title": "A Beautiful Mind",
+        "rating": "8.2",
+        "genres": [
+            "Docudrama",
+            "Period Drama",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0268978/"
+    },
+    {
+        "id": 17,
+        "title": "Tourist Family",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt34915705/"
+    },
+    {
+        "id": 18,
+        "title": "The Sixth Sense",
+        "rating": "8.2",
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0167404/"
+    },
+    {
+        "id": 19,
+        "title": "Hoop Dreams",
+        "rating": "8.3",
+        "genres": [
+            "Basketball",
+            "Documentary",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0110057/"
+    },
+    {
+        "id": 20,
+        "title": "Lucia",
+        "rating": "8.3",
+        "genres": [
+            "Kannada",
+            "Psychological Thriller",
+            "Drama",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2358592/"
+    },
+    {
+        "id": 21,
+        "title": "Paper Moon",
+        "rating": "8.1",
+        "genres": [
+            "Caper",
+            "Road Trip",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0070510/"
+    },
+    {
+        "id": 22,
+        "title": "Blackfish",
+        "rating": "8.1",
+        "genres": [
+            "Crime Documentary",
+            "Nature Documentary",
+            "Documentary",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2545118/"
+    },
+    {
+        "id": 23,
+        "title": "Ordet",
+        "rating": "8.2",
+        "genres": [
+            "Danish",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0048452/"
+    },
+    {
+        "id": 24,
+        "title": "O.J.: Made in America",
+        "rating": "8.9",
+        "genres": [
+            "Sports Documentary",
+            "Biography",
+            "Crime",
+            "Documentary",
+            "History",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5275892/"
+    },
+    {
+        "id": 25,
+        "title": "Mahavatar Narsimha",
+        "rating": "8.5",
+        "genres": [
+            "Kannada",
+            "Action Epic",
+            "Computer Animation",
+            "Epic",
+            "Fantasy Epic",
+            "Action",
+            "Animation",
+            "Drama",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt34365591/"
+    },
+    {
+        "id": 26,
+        "title": "The Chaos Class",
+        "rating": "9.1",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252487/"
+    },
+    {
+        "id": 27,
+        "title": "Bommarillu",
+        "rating": "8.2",
+        "genres": [
+            "Telugu",
+            "Romantic Comedy",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0843326/"
+    },
+    {
+        "id": 28,
+        "title": "The Gold Rush",
+        "rating": "8.1",
+        "genres": [
+            "Farce",
+            "Feel-Good Romance",
+            "Romantic Comedy",
+            "Satire",
+            "Slapstick",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Romance",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0015864/"
+    },
+    {
+        "id": 29,
+        "title": "A Clockwork Orange",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "Dystopian Sci-Fi",
+            "Crime",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0066921/"
+    },
+    {
+        "id": 30,
+        "title": "Double Indemnity",
+        "rating": "8.3",
+        "genres": [
+            "Film Noir",
+            "Hard-boiled Detective",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0036775/"
+    },
+    {
+        "id": 31,
+        "title": "Parasite",
+        "rating": "8.5",
+        "genres": [
+            "Korean",
+            "Dark Comedy",
+            "Korean Drama",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6751668/"
+    },
+    {
+        "id": 32,
+        "title": "White Heat",
+        "rating": "8.1",
+        "genres": [
+            "Caper",
+            "Film Noir",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0042041/"
+    },
+    {
+        "id": 33,
+        "title": "The Best of Youth",
+        "rating": "8.4",
+        "genres": [
+            "Italian",
+            "Epic",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0346336/"
+    },
+    {
+        "id": 34,
+        "title": "Cinema Paradiso",
+        "rating": "8.5",
+        "genres": [
+            "Italian",
+            "Coming-of-Age",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0095765/"
+    },
+    {
+        "id": 35,
+        "title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "rating": "8.3",
+        "genres": [
+            "Dark Comedy",
+            "Farce",
+            "Parody",
+            "Political Drama",
+            "Psychological Drama",
+            "Quirky Comedy",
+            "Satire",
+            "Tragedy",
+            "Comedy",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0057012/"
+    },
+    {
+        "id": 36,
+        "title": "Tosun Pasha",
+        "rating": "8.9",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253828/"
+    },
+    {
+        "id": 37,
+        "title": "Chupke Chupke",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0072783/"
+    },
+    {
+        "id": 38,
+        "title": "How to Train Your Dragon",
+        "rating": "8.1",
+        "genres": [
+            "Animal Adventure",
+            "Coming-of-Age",
+            "Computer Animation",
+            "Epic",
+            "Fantasy Epic",
+            "Sword & Sorcery",
+            "Teen Adventure",
+            "Teen Fantasy",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0892769/"
+    },
+    {
+        "id": 39,
+        "title": "Scarface",
+        "rating": "8.3",
+        "genres": [
+            "Gangster"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0086250/"
+    },
+    {
+        "id": 40,
+        "title": "The Treasure of the Sierra Madre",
+        "rating": "8.2",
+        "genres": [
+            "Tragedy",
+            "Adventure",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0040897/"
+    },
+    {
+        "id": 41,
+        "title": "Black Friday",
+        "rating": "8.4",
+        "genres": [
+            "Hindi",
+            "Disaster",
+            "Docudrama",
+            "Police Procedural",
+            "True Crime",
+            "Action",
+            "Crime",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0400234/"
+    },
+    {
+        "id": 42,
+        "title": "The Young and the Damned",
+        "rating": "8.2",
+        "genres": [
+            "Spanish",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0042804/"
+    },
+    {
+        "id": 43,
+        "title": "Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Dark Fantasy",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Superhero",
+            "Supernatural Fantasy",
+            "Sword & Sorcery",
+            "Action"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt11032374/"
+    },
+    {
+        "id": 44,
+        "title": "The Lizard",
+        "rating": "8.4",
+        "genres": [
+            "Persian",
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0416960/"
+    },
+    {
+        "id": 45,
+        "title": "Snatch",
+        "rating": "8.2",
+        "genres": [
+            "Caper",
+            "Dark Comedy",
+            "Farce",
+            "Gangster",
+            "Comedy",
+            "Crime"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0208092/"
+    },
+    {
+        "id": 46,
+        "title": "My Dear Brother",
+        "rating": "8.6",
+        "genres": [
+            "Turkish",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0267351/"
+    },
+    {
+        "id": 47,
+        "title": "The Pianist",
+        "rating": "8.5",
+        "genres": [
+            "Docudrama",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "War Epic",
+            "Biography",
+            "Drama",
+            "Music",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253474/"
+    },
+    {
+        "id": 48,
+        "title": "Thalapathi",
+        "rating": "8.5",
+        "genres": [
+            "Tamil",
+            "Epic",
+            "Gangster",
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0101649/"
+    },
+    {
+        "id": 49,
+        "title": "Aliens",
+        "rating": "8.4",
+        "genres": [
+            "Alien",
+            "Alien Invasion",
+            "Cyberpunk",
+            "Monster Horror",
+            "Space Sci-Fi",
+            "Survival",
+            "Action",
+            "Adventure",
+            "Horror",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0090605/"
+    },
+    {
+        "id": 50,
+        "title": "12th Fail",
+        "rating": "8.7",
+        "genres": [
+            "Hindi",
+            "Docudrama",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt23849204/"
+    },
+    {
+        "id": 51,
+        "title": "Office Romance",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0076727/"
+    },
+    {
+        "id": 52,
+        "title": "The Big Lebowski",
+        "rating": "8.1",
+        "genres": [
+            "Buddy Comedy",
+            "Drug Crime",
+            "Satire",
+            "Stoner Comedy",
+            "Comedy",
+            "Crime"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0118715/"
+    },
+    {
+        "id": 53,
+        "title": "Kill Bill: The Whole Bloody Affair",
+        "rating": "8.7",
+        "genres": [
+            "Action Epic",
+            "Kung Fu",
+            "Martial Arts",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6019206/"
+    },
+    {
+        "id": 54,
+        "title": "The Phantom of the Opera at the Royal Albert Hall",
+        "rating": "8.8",
+        "genres": [
+            "Classic Musical",
+            "Psychological Drama",
+            "Drama",
+            "Musical",
+            "Romance",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2077886/"
+    },
+    {
+        "id": 55,
+        "title": "Ratatouille",
+        "rating": "8.1",
+        "genres": [
+            "Animal Adventure",
+            "Buddy Comedy",
+            "Computer Animation",
+            "High-Concept Comedy",
+            "Quirky Comedy",
+            "Satire",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0382932/"
+    },
+    {
+        "id": 56,
+        "title": "Z\u00fcb\u00fck",
+        "rating": "8.5",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253991/"
+    },
+    {
+        "id": 57,
+        "title": "2001: A Space Odyssey",
+        "rating": "8.3",
+        "genres": [
+            "Adventure Epic",
+            "Artificial Intelligence",
+            "Epic",
+            "Psychological Drama",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0062622/"
+    },
+    {
+        "id": 58,
+        "title": "Rangasthalam",
+        "rating": "8.2",
+        "genres": [
+            "Telugu",
+            "Period Drama",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7392212/"
+    },
+    {
+        "id": 59,
+        "title": "They Shall Not Grow Old",
+        "rating": "8.2",
+        "genres": [
+            "History Documentary",
+            "Military Documentary",
+            "Documentary",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7905466/"
+    },
+    {
+        "id": 60,
+        "title": "There Will Be Blood",
+        "rating": "8.2",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0469494/"
+    },
+    {
+        "id": 61,
+        "title": "The Kid",
+        "rating": "8.2",
+        "genres": [
+            "Buddy Comedy",
+            "Coming-of-Age",
+            "Farce",
+            "Slapstick",
+            "Comedy",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0012349/"
+    },
+    {
+        "id": 62,
+        "title": "The Bridge on the River Kwai",
+        "rating": "8.1",
+        "genres": [
+            "Jungle Adventure",
+            "War Epic",
+            "Adventure",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050212/"
+    },
+    {
+        "id": 63,
+        "title": "The Third Man",
+        "rating": "8.1",
+        "genres": [
+            "Film Noir",
+            "Hard-boiled Detective",
+            "Psychological Thriller",
+            "Spy",
+            "Whodunnit",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0041959/"
+    },
+    {
+        "id": 64,
+        "title": "The Cove",
+        "rating": "8.4",
+        "genres": [
+            "Crime Documentary",
+            "Nature Documentary",
+            "Biography",
+            "Crime",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1313104/"
+    },
+    {
+        "id": 65,
+        "title": "The Godfather",
+        "rating": "9.2",
+        "genres": [
+            "Epic",
+            "Gangster",
+            "Psychological Drama",
+            "Tragedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0068646/"
+    },
+    {
+        "id": 66,
+        "title": "Swades",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Drama",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0367110/"
+    },
+    {
+        "id": 67,
+        "title": "Inception",
+        "rating": "8.8",
+        "genres": [
+            "Action Epic",
+            "Adventure Epic",
+            "Epic",
+            "Psychological Thriller",
+            "Sci-Fi Epic",
+            "Adventure",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1375666/"
+    },
+    {
+        "id": 68,
+        "title": "The Father",
+        "rating": "8.2",
+        "genres": [
+            "Psychological Drama",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10272386/"
+    },
+    {
+        "id": 69,
+        "title": "The Wizard of Oz",
+        "rating": "8.1",
+        "genres": [
+            "Adventure Epic",
+            "Classic Musical",
+            "Fairy Tale",
+            "Fantasy Epic",
+            "Quest",
+            "Adventure",
+            "Family",
+            "Fantasy",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0032138/"
+    },
+    {
+        "id": 70,
+        "title": "The Help",
+        "rating": "8.1",
+        "genres": [
+            "Period Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1454029/"
+    },
+    {
+        "id": 71,
+        "title": "Inglourious Basterds",
+        "rating": "8.4",
+        "genres": [
+            "Dark Comedy",
+            "Epic",
+            "Period Drama",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0361748/"
+    },
+    {
+        "id": 72,
+        "title": "Capernaum",
+        "rating": "8.4",
+        "genres": [
+            "Arabic",
+            "Coming-of-Age",
+            "Legal Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8267604/"
+    },
+    {
+        "id": 73,
+        "title": "Kill Bill: Vol. 1",
+        "rating": "8.2",
+        "genres": [
+            "Kung Fu",
+            "Martial Arts",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0266697/"
+    },
+    {
+        "id": 74,
+        "title": "Drishyam",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Suspense Mystery",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4430212/"
+    },
+    {
+        "id": 75,
+        "title": "Shershaah",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Action Epic",
+            "Docudrama",
+            "Tragedy",
+            "War Epic",
+            "Action",
+            "Biography",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10295212/"
+    },
+    {
+        "id": 76,
+        "title": "Kaithi",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Cop Drama",
+            "Drug Crime",
+            "Gangster",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9900782/"
+    },
+    {
+        "id": 77,
+        "title": "Dial M for Murder",
+        "rating": "8.1",
+        "genres": [
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0046912/"
+    },
+    {
+        "id": 78,
+        "title": "Back to the Future",
+        "rating": "8.5",
+        "genres": [
+            "High-Concept Comedy",
+            "Teen Adventure",
+            "Teen Comedy",
+            "Time Travel",
+            "Urban Adventure",
+            "Adventure",
+            "Comedy",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0088763/"
+    },
+    {
+        "id": 79,
+        "title": "Toy Story 3",
+        "rating": "8.3",
+        "genres": [
+            "Toy Story",
+            "Computer Animation",
+            "Urban Adventure",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0435761/"
+    },
+    {
+        "id": 80,
+        "title": "12 Years a Slave",
+        "rating": "8.1",
+        "genres": [
+            "Costume Drama",
+            "Docudrama",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2024544/"
+    },
+    {
+        "id": 81,
+        "title": "Kadaisi Vivasayi",
+        "rating": "8.7",
+        "genres": [
+            "Tamil",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10300570/"
+    },
+    {
+        "id": 82,
+        "title": "From the Village to the City",
+        "rating": "8.3",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252619/"
+    },
+    {
+        "id": 83,
+        "title": "Pocket Hercules: Naim S\u00fcleymanoglu",
+        "rating": "8.2",
+        "genres": [
+            "Turkish",
+            "Biography",
+            "Drama",
+            "History",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9500372/"
+    },
+    {
+        "id": 84,
+        "title": "The Intouchables",
+        "rating": "8.5",
+        "genres": [
+            "French",
+            "Buddy Comedy",
+            "Docudrama",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1675434/"
+    },
+    {
+        "id": 85,
+        "title": "The Last Waltz",
+        "rating": "8.1",
+        "genres": [
+            "Concert",
+            "Music Documentary",
+            "Biography",
+            "Documentary",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0077838/"
+    },
+    {
+        "id": 86,
+        "title": "Miracle in Cell No. 7",
+        "rating": "8.2",
+        "genres": [
+            "Turkish",
+            "Prison Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10431500/"
+    },
+    {
+        "id": 87,
+        "title": "Pretty Village, Pretty Flame",
+        "rating": "8.6",
+        "genres": [
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0116860/"
+    },
+    {
+        "id": 88,
+        "title": "Bangalore Days",
+        "rating": "8.3",
+        "genres": [
+            "Malayalam",
+            "Coming-of-Age",
+            "Feel-Good Romance",
+            "Romantic Comedy",
+            "Comedy",
+            "Drama",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3668162/"
+    },
+    {
+        "id": 89,
+        "title": "Toy Story",
+        "rating": "8.3",
+        "genres": [
+            "Toy Story",
+            "Buddy Comedy",
+            "Computer Animation",
+            "Quest",
+            "Urban Adventure",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0114709/"
+    },
+    {
+        "id": 90,
+        "title": "Children of Paradise",
+        "rating": "8.3",
+        "genres": [
+            "French",
+            "Epic",
+            "Period Drama",
+            "Romantic Epic",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0037674/"
+    },
+    {
+        "id": 91,
+        "title": "The Truman Show",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "High-Concept Comedy",
+            "Psychological Drama",
+            "Satire",
+            "Showbiz Drama",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120382/"
+    },
+    {
+        "id": 92,
+        "title": "Sardar Udham",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "True Crime",
+            "Crime",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10280296/"
+    },
+    {
+        "id": 93,
+        "title": "Violet Evergarden: The Movie",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Hand-Drawn Animation",
+            "Psychological Drama",
+            "Animation",
+            "Drama",
+            "Fantasy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8652818/"
+    },
+    {
+        "id": 94,
+        "title": "Ran",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Epic",
+            "Period Drama",
+            "Samurai",
+            "Tragedy",
+            "War Epic",
+            "Action",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0089881/"
+    },
+    {
+        "id": 95,
+        "title": "Spider-Man: Into the Spider-Verse",
+        "rating": "8.4",
+        "genres": [
+            "Marvel",
+            "Action Epic",
+            "Adventure Epic",
+            "Coming-of-Age",
+            "Computer Animation",
+            "Epic",
+            "Sci-Fi Epic",
+            "Superhero",
+            "Teen Adventure",
+            "Teen Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4633694/"
+    },
+    {
+        "id": 96,
+        "title": "Pariyerum Perumal",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8176054/"
+    },
+    {
+        "id": 97,
+        "title": "The Good, the Bad and the Ugly",
+        "rating": "8.8",
+        "genres": [
+            "Action Epic",
+            "Adventure Epic",
+            "Dark Comedy",
+            "Desert Adventure",
+            "Epic",
+            "Period Drama",
+            "Quest",
+            "Spaghetti Western",
+            "Western Epic",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0060196/"
+    },
+    {
+        "id": 98,
+        "title": "Judgment at Nuremberg",
+        "rating": "8.3",
+        "genres": [
+            "Epic",
+            "Historical Epic",
+            "Legal Drama",
+            "Psychological Drama",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0055031/"
+    },
+    {
+        "id": 99,
+        "title": "Anbe Sivam",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Adventure",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0367495/"
+    },
+    {
+        "id": 100,
+        "title": "Close-Up",
+        "rating": "8.2",
+        "genres": [
+            "Persian",
+            "Docudrama",
+            "Legal Drama",
+            "Psychological Drama",
+            "True Crime",
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0100234/"
+    },
+    {
+        "id": 101,
+        "title": "M",
+        "rating": "8.3",
+        "genres": [
+            "German",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Suspense Mystery",
+            "Crime",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0022100/"
+    },
+    {
+        "id": 102,
+        "title": "The Silence of the Lambs",
+        "rating": "8.6",
+        "genres": [
+            "Police Procedural",
+            "Psychological Drama",
+            "Psychological Horror",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Crime",
+            "Drama",
+            "Horror",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0102926/"
+    },
+    {
+        "id": 103,
+        "title": "Stand by Me",
+        "rating": "8.1",
+        "genres": [
+            "Coming-of-Age",
+            "Dark Comedy",
+            "Psychological Drama",
+            "Quest",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0092005/"
+    },
+    {
+        "id": 104,
+        "title": "Z",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Conspiracy Thriller",
+            "Legal Thriller",
+            "Political Drama",
+            "Political Thriller",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0065234/"
+    },
+    {
+        "id": 105,
+        "title": "BLEACH: Thousand-Year Blood War - The Calamity",
+        "rating": "9.0",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Animation",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt43383343/"
+    },
+    {
+        "id": 106,
+        "title": "Feyzo, the Polite One",
+        "rating": "8.6",
+        "genres": [
+            "Turkish",
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252597/"
+    },
+    {
+        "id": 107,
+        "title": "Ramayana: The Legend of Prince Rama",
+        "rating": "9.1",
+        "genres": [
+            "Hindi",
+            "Action Epic",
+            "Adult Animation",
+            "Adventure Epic",
+            "Anime",
+            "Epic",
+            "Fantasy Epic",
+            "Hand-Drawn Animation",
+            "Quest",
+            "Sword & Sorcery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0259534/"
+    },
+    {
+        "id": 108,
+        "title": "Baahubali 2: The Conclusion",
+        "rating": "8.2",
+        "genres": [
+            "Telugu",
+            "Action Epic",
+            "Epic",
+            "One-Person Army Action",
+            "Period Drama",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4849438/"
+    },
+    {
+        "id": 109,
+        "title": "Kumbalangi Nights",
+        "rating": "8.5",
+        "genres": [
+            "Malayalam",
+            "Feel-Good Romance",
+            "Romantic Comedy",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8413338/"
+    },
+    {
+        "id": 110,
+        "title": "The Wages of Fear",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Psychological Drama",
+            "Survival",
+            "Adventure",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0046268/"
+    },
+    {
+        "id": 111,
+        "title": "Pan's Labyrinth",
+        "rating": "8.2",
+        "genres": [
+            "Spanish",
+            "Coming-of-Age",
+            "Dark Fantasy",
+            "Fairy Tale",
+            "Period Drama",
+            "Supernatural Fantasy",
+            "Teen Fantasy",
+            "Tragedy",
+            "Drama",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0457430/"
+    },
+    {
+        "id": 112,
+        "title": "Eternal Sunshine of the Spotless Mind",
+        "rating": "8.3",
+        "genres": [
+            "Dark Romance",
+            "Epic",
+            "Psychological Drama",
+            "Romantic Epic",
+            "Sci-Fi Epic",
+            "Drama",
+            "Romance",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0338013/"
+    },
+    {
+        "id": 113,
+        "title": "Operation 'Y' & Other Shurik's Adventures",
+        "rating": "8.4",
+        "genres": [
+            "Russian",
+            "Slapstick",
+            "Comedy",
+            "Crime",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0059550/"
+    },
+    {
+        "id": 114,
+        "title": "Full Metal Jacket",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "Period Drama",
+            "Psychological Drama",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0093058/"
+    },
+    {
+        "id": 115,
+        "title": "Gran Torino",
+        "rating": "8.1",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1205489/"
+    },
+    {
+        "id": 116,
+        "title": "Demon Slayer: Kimetsu No Yaiba Infinity Castle",
+        "rating": "8.4",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Dark Fantasy",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Supernatural Fantasy",
+            "Sword & Sorcery",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt32820897/"
+    },
+    {
+        "id": 117,
+        "title": "Theeran Adhigaram Ondru",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Cop Drama",
+            "True Crime",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7060460/"
+    },
+    {
+        "id": 118,
+        "title": "The Sound of Music",
+        "rating": "8.1",
+        "genres": [
+            "Classic Musical",
+            "Epic",
+            "Period Drama",
+            "Biography",
+            "Drama",
+            "Family",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0059742/"
+    },
+    {
+        "id": 119,
+        "title": "Who's Singin' Over There?",
+        "rating": "8.7",
+        "genres": [
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0076276/"
+    },
+    {
+        "id": 120,
+        "title": "Il sorpasso",
+        "rating": "8.2",
+        "genres": [
+            "Italian",
+            "Buddy Comedy",
+            "Coming-of-Age",
+            "Road Trip",
+            "Satire",
+            "Tragedy",
+            "Adventure",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056512/"
+    },
+    {
+        "id": 121,
+        "title": "Rashomon",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Period Drama",
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0042876/"
+    },
+    {
+        "id": 122,
+        "title": "C/o Kancharapalem",
+        "rating": "8.8",
+        "genres": [
+            "Telugu",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7391996/"
+    },
+    {
+        "id": 123,
+        "title": "Army of Shadows",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Period Drama",
+            "Psychological Drama",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0064040/"
+    },
+    {
+        "id": 124,
+        "title": "To Live",
+        "rating": "8.3",
+        "genres": [
+            "Mandarin",
+            "Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0110081/"
+    },
+    {
+        "id": 125,
+        "title": "Barfi!",
+        "rating": "8.1",
+        "genres": [
+            "Hindi",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2082197/"
+    },
+    {
+        "id": 126,
+        "title": "The Pinchcliffe Grand Prix",
+        "rating": "8.4",
+        "genres": [
+            "Norwegian",
+            "Car Action",
+            "Motorsport",
+            "Stop Motion Animation",
+            "Animation",
+            "Comedy",
+            "Family",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0073000/"
+    },
+    {
+        "id": 127,
+        "title": "Gentlemen of Fortune",
+        "rating": "8.3",
+        "genres": [
+            "Russian",
+            "Holiday Comedy",
+            "Comedy",
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0068519/"
+    },
+    {
+        "id": 128,
+        "title": "The Great Dictator",
+        "rating": "8.4",
+        "genres": [
+            "Dark Comedy",
+            "Parody",
+            "Political Drama",
+            "Satire",
+            "Slapstick",
+            "Comedy",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0032553/"
+    },
+    {
+        "id": 129,
+        "title": "The Look of Silence",
+        "rating": "8.2",
+        "genres": [
+            "Crime Documentary",
+            "History Documentary",
+            "Biography",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3521134/"
+    },
+    {
+        "id": 130,
+        "title": "Django Unchained",
+        "rating": "8.5",
+        "genres": [
+            "Dark Comedy",
+            "Epic",
+            "One-Person Army Action",
+            "Period Drama",
+            "Western Epic",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1853728/"
+    },
+    {
+        "id": 131,
+        "title": "Citizen Kane",
+        "rating": "8.2",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0033467/"
+    },
+    {
+        "id": 132,
+        "title": "Once Upon a Time in America",
+        "rating": "8.3",
+        "genres": [
+            "Dark Comedy",
+            "Epic",
+            "Gangster",
+            "Heist",
+            "Period Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0087843/"
+    },
+    {
+        "id": 133,
+        "title": "Daman",
+        "rating": "8.5",
+        "genres": [
+            "Docudrama",
+            "Medical Drama",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt17592606/"
+    },
+    {
+        "id": 134,
+        "title": "Bhaag Milkha Bhaag",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Docudrama",
+            "Period Drama",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2356180/"
+    },
+    {
+        "id": 135,
+        "title": "Harakiri",
+        "rating": "8.6",
+        "genres": [
+            "Japanese",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056058/"
+    },
+    {
+        "id": 136,
+        "title": "Andhadhun",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Conspiracy Thriller",
+            "Dark Comedy",
+            "Psychological Thriller",
+            "Comedy",
+            "Crime",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8108198/"
+    },
+    {
+        "id": 137,
+        "title": "The Handmaiden",
+        "rating": "8.1",
+        "genres": [
+            "Korean",
+            "Dark Romance",
+            "Erotic Thriller",
+            "Psychological Thriller",
+            "Romantic Epic",
+            "Steamy Romance",
+            "Drama",
+            "Romance",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4016934/"
+    },
+    {
+        "id": 138,
+        "title": "Ghilli",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "One-Person Army Action",
+            "Action",
+            "Drama",
+            "Romance",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0422320/"
+    },
+    {
+        "id": 139,
+        "title": "The General",
+        "rating": "8.1",
+        "genres": [
+            "Farce",
+            "Slapstick",
+            "Action",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0017925/"
+    },
+    {
+        "id": 140,
+        "title": "To Kill a Mockingbird",
+        "rating": "8.2",
+        "genres": [
+            "Legal Drama",
+            "Period Drama",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056592/"
+    },
+    {
+        "id": 141,
+        "title": "Philanthropy",
+        "rating": "8.4",
+        "genres": [
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0314067/"
+    },
+    {
+        "id": 142,
+        "title": "Downfall",
+        "rating": "8.2",
+        "genres": [
+            "German",
+            "Docudrama",
+            "Period Drama",
+            "Political Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0363163/"
+    },
+    {
+        "id": 143,
+        "title": "For a Few Dollars More",
+        "rating": "8.2",
+        "genres": [
+            "Period Drama",
+            "Quest",
+            "Spaghetti Western",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0059578/"
+    },
+    {
+        "id": 144,
+        "title": "Memories of Murder",
+        "rating": "8.1",
+        "genres": [
+            "Korean",
+            "Dark Comedy",
+            "Police Procedural",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Serial Killer",
+            "True Crime",
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0353969/"
+    },
+    {
+        "id": 145,
+        "title": "The Odyssey",
+        "rating": "8.4",
+        "genres": [
+            "Action Epic",
+            "Adventure Epic",
+            "Costume Drama",
+            "Dark Fantasy",
+            "Fantasy Epic",
+            "Quest",
+            "Sea Adventure",
+            "Sword & Sandal",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt33764258/"
+    },
+    {
+        "id": 146,
+        "title": "No Other Land",
+        "rating": "8.2",
+        "genres": [
+            "Arabic",
+            "Political Documentary",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt30953759/"
+    },
+    {
+        "id": 147,
+        "title": "A Separation",
+        "rating": "8.3",
+        "genres": [
+            "Persian",
+            "Legal Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1832382/"
+    },
+    {
+        "id": 148,
+        "title": "Hope",
+        "rating": "8.2",
+        "genres": [
+            "Korean",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3153634/"
+    },
+    {
+        "id": 149,
+        "title": "Vikram Vedha",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Cop Drama",
+            "Gangster",
+            "Hard-boiled Detective",
+            "Psychological Thriller",
+            "Action",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6148156/"
+    },
+    {
+        "id": 150,
+        "title": "Come and See",
+        "rating": "8.3",
+        "genres": [
+            "Russian",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Survival",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0091251/"
+    },
+    {
+        "id": 151,
+        "title": "Schindler's List",
+        "rating": "9.0",
+        "genres": [
+            "Docudrama",
+            "Epic",
+            "Historical Epic",
+            "Period Drama",
+            "Prison Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0108052/"
+    },
+    {
+        "id": 152,
+        "title": "Home",
+        "rating": "8.5",
+        "genres": [
+            "French",
+            "Documentary",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1014762/"
+    },
+    {
+        "id": 153,
+        "title": "We Are Not Angels",
+        "rating": "8.3",
+        "genres": [
+            "Coming-of-Age",
+            "Quirky Comedy",
+            "Comedy",
+            "Fantasy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0104860/"
+    },
+    {
+        "id": 154,
+        "title": "Ohh My Dog",
+        "rating": "8.1",
+        "genres": [
+            "Hindi",
+            "Drama",
+            "Family",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt36626888/"
+    },
+    {
+        "id": 155,
+        "title": "Paan Singh Tomar",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Tragedy",
+            "True Crime",
+            "Action",
+            "Biography",
+            "Crime",
+            "Sport",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1620933/"
+    },
+    {
+        "id": 156,
+        "title": "777 Charlie",
+        "rating": "8.7",
+        "genres": [
+            "Kannada",
+            "Adventure",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7466810/"
+    },
+    {
+        "id": 157,
+        "title": "Hacksaw Ridge",
+        "rating": "8.1",
+        "genres": [
+            "Docudrama",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "War Epic",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2119532/"
+    },
+    {
+        "id": 158,
+        "title": "Punjab '95",
+        "rating": "8.8",
+        "genres": [
+            "Punjabi",
+            "Biography",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt28089784/"
+    },
+    {
+        "id": 159,
+        "title": "A Special Day",
+        "rating": "8.1",
+        "genres": [
+            "Italian",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0076085/"
+    },
+    {
+        "id": 160,
+        "title": "Pulp Fiction",
+        "rating": "8.8",
+        "genres": [
+            "Dark Comedy",
+            "Drug Crime",
+            "Gangster",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0110912/"
+    },
+    {
+        "id": 161,
+        "title": "Kantara",
+        "rating": "8.1",
+        "genres": [
+            "Kannada",
+            "Action Epic",
+            "Epic",
+            "One-Person Army Action",
+            "Action",
+            "Adventure",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15327088/"
+    },
+    {
+        "id": 162,
+        "title": "Baasha",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Drama",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0139876/"
+    },
+    {
+        "id": 163,
+        "title": "Jersey",
+        "rating": "8.5",
+        "genres": [
+            "Telugu",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8948790/"
+    },
+    {
+        "id": 164,
+        "title": "Paradise Lost: The Child Murders at Robin Hood Hills",
+        "rating": "8.2",
+        "genres": [
+            "Crime Documentary",
+            "Crime",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0117293/"
+    },
+    {
+        "id": 165,
+        "title": "The Iron Giant",
+        "rating": "8.1",
+        "genres": [
+            "Hand-Drawn Animation",
+            "Period Drama",
+            "Action",
+            "Adventure",
+            "Animation",
+            "Family",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0129167/"
+    },
+    {
+        "id": 166,
+        "title": "A Dog's Will",
+        "rating": "8.6",
+        "genres": [
+            "Portuguese",
+            "Buddy Comedy",
+            "Epic",
+            "Fantasy Epic",
+            "Farce",
+            "Satire",
+            "Slapstick",
+            "Supernatural Fantasy",
+            "Western Epic",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0271383/"
+    },
+    {
+        "id": 167,
+        "title": "Solo Leveling: ReAwakening",
+        "rating": "8.7",
+        "genres": [
+            "Japanese",
+            "Action Epic",
+            "Adult Animation",
+            "Anime",
+            "Dark Fantasy",
+            "Hand-Drawn Animation",
+            "One-Person Army Action",
+            "Supernatural Fantasy",
+            "Survival",
+            "Action"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt33428606/"
+    },
+    {
+        "id": 168,
+        "title": "Jaws",
+        "rating": "8.1",
+        "genres": [
+            "Monster Horror",
+            "Sea Adventure",
+            "Survival",
+            "Adventure",
+            "Drama",
+            "Horror",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0073195/"
+    },
+    {
+        "id": 169,
+        "title": "When I Grow Up, I'll Be a Kangaroo",
+        "rating": "8.4",
+        "genres": [
+            "Buddy Comedy",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0383846/"
+    },
+    {
+        "id": 170,
+        "title": "Requiem for a Dream",
+        "rating": "8.3",
+        "genres": [
+            "Epic",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0180093/"
+    },
+    {
+        "id": 171,
+        "title": "The Message",
+        "rating": "8.9",
+        "genres": [
+            "Arabic",
+            "Historical Epic",
+            "Adventure",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0075143/"
+    },
+    {
+        "id": 172,
+        "title": "Lion of the Desert",
+        "rating": "8.2",
+        "genres": [
+            "Historical Epic",
+            "Political Drama",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0081059/"
+    },
+    {
+        "id": 173,
+        "title": "Star Wars: Episode IV - A New Hope",
+        "rating": "8.6",
+        "genres": [
+            "Star Wars",
+            "Adventure Epic",
+            "Fantasy Epic",
+            "Quest",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Sword & Sorcery",
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0076759/"
+    },
+    {
+        "id": 174,
+        "title": "Balkan Spy",
+        "rating": "8.7",
+        "genres": [
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0086935/"
+    },
+    {
+        "id": 175,
+        "title": "Ulidavaru Kandanthe",
+        "rating": "8.3",
+        "genres": [
+            "Kannada",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3394420/"
+    },
+    {
+        "id": 176,
+        "title": "Taxi Driver",
+        "rating": "8.2",
+        "genres": [
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0075314/"
+    },
+    {
+        "id": 177,
+        "title": "Hachi: A Dog's Tale",
+        "rating": "8.1",
+        "genres": [
+            "Animal Adventure",
+            "Biography",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1028532/"
+    },
+    {
+        "id": 178,
+        "title": "Ugetsu",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Drama",
+            "Fantasy",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0046478/"
+    },
+    {
+        "id": 179,
+        "title": "Logan",
+        "rating": "8.1",
+        "genres": [
+            "Marvel",
+            "Contemporary Western",
+            "Dystopian Sci-Fi",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Quest",
+            "Road Trip",
+            "Superhero",
+            "Tragedy",
+            "Action"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3315342/"
+    },
+    {
+        "id": 180,
+        "title": "Soorarai Pottru",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10189514/"
+    },
+    {
+        "id": 181,
+        "title": "20 Days in Mariupol",
+        "rating": "8.6",
+        "genres": [
+            "Military Documentary",
+            "Documentary",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt24082438/"
+    },
+    {
+        "id": 182,
+        "title": "Ivan Vasilyevich Changes His Profession",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Costume Drama",
+            "Period Drama",
+            "Time Travel",
+            "Adventure",
+            "Comedy",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0070233/"
+    },
+    {
+        "id": 183,
+        "title": "The Best Years of Our Lives",
+        "rating": "8.1",
+        "genres": [
+            "Epic",
+            "Feel-Good Romance",
+            "Romantic Epic",
+            "War Epic",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0036868/"
+    },
+    {
+        "id": 184,
+        "title": "Fanny and Alexander",
+        "rating": "8.1",
+        "genres": [
+            "Swedish",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama",
+            "Holiday"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0083922/"
+    },
+    {
+        "id": 185,
+        "title": "Inherit the Wind",
+        "rating": "8.1",
+        "genres": [
+            "Legal Drama",
+            "Period Drama",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0053946/"
+    },
+    {
+        "id": 186,
+        "title": "The Lord of the Rings: The Fellowship of the Ring",
+        "rating": "8.9",
+        "genres": [
+            "The Lord of the Rings",
+            "Action Epic",
+            "Adventure Epic",
+            "Dark Fantasy",
+            "Epic",
+            "Fantasy Epic",
+            "Quest",
+            "Sword & Sorcery",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120737/"
+    },
+    {
+        "id": 187,
+        "title": "Unforgiven",
+        "rating": "8.2",
+        "genres": [
+            "Classical Western",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Western Epic",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0105695/"
+    },
+    {
+        "id": 188,
+        "title": "Shoah",
+        "rating": "8.7",
+        "genres": [
+            "German",
+            "History Documentary",
+            "Documentary",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0090015/"
+    },
+    {
+        "id": 189,
+        "title": "K.G.F: Chapter 2",
+        "rating": "8.2",
+        "genres": [
+            "Kannada",
+            "Action Epic",
+            "Epic",
+            "Gangster",
+            "One-Person Army Action",
+            "Period Drama",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10698680/"
+    },
+    {
+        "id": 190,
+        "title": "Joker",
+        "rating": "8.3",
+        "genres": [
+            "DC",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7286456/"
+    },
+    {
+        "id": 191,
+        "title": "The Girl with the Red Scarf",
+        "rating": "8.4",
+        "genres": [
+            "Turkish",
+            "Tragic Romance",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0263975/"
+    },
+    {
+        "id": 192,
+        "title": "The Lord of the Rings: The Two Towers",
+        "rating": "8.8",
+        "genres": [
+            "The Lord of the Rings",
+            "Action Epic",
+            "Adventure Epic",
+            "Dark Fantasy",
+            "Epic",
+            "Fantasy Epic",
+            "Quest",
+            "Sword & Sorcery",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0167261/"
+    },
+    {
+        "id": 193,
+        "title": "Scenes from a Marriage",
+        "rating": "8.3",
+        "genres": [
+            "Swedish",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6725014/"
+    },
+    {
+        "id": 194,
+        "title": "Uttar Da Puttar",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt43215564/"
+    },
+    {
+        "id": 195,
+        "title": "Monty Python and the Holy Grail",
+        "rating": "8.1",
+        "genres": [
+            "Farce",
+            "Parody",
+            "Quest",
+            "Satire",
+            "Sketch Comedy",
+            "Slapstick",
+            "Sword & Sorcery",
+            "Adventure",
+            "Comedy",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0071853/"
+    },
+    {
+        "id": 196,
+        "title": "My Octopus Teacher",
+        "rating": "8.1",
+        "genres": [
+            "Nature Documentary",
+            "Documentary",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt12888462/"
+    },
+    {
+        "id": 197,
+        "title": "Harry Potter and the Deathly Hallows: Part 2",
+        "rating": "8.1",
+        "genres": [
+            "Harry Potter",
+            "Adventure Epic",
+            "Coming-of-Age",
+            "Dark Fantasy",
+            "Fantasy Epic",
+            "Sword & Sorcery",
+            "Teen Adventure",
+            "Teen Fantasy",
+            "Adventure",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1201607/"
+    },
+    {
+        "id": 198,
+        "title": "Jigarthanda",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Comedy",
+            "Crime",
+            "Drama",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3569782/"
+    },
+    {
+        "id": 199,
+        "title": "Spotlight",
+        "rating": "8.1",
+        "genres": [
+            "Docudrama",
+            "Legal Drama",
+            "Period Drama",
+            "Psychological Drama",
+            "True Crime",
+            "Workplace Drama",
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1895587/"
+    },
+    {
+        "id": 200,
+        "title": "Uri: The Surgical Strike",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Action Epic",
+            "Epic",
+            "Historical Epic",
+            "War Epic",
+            "Action",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8291224/"
+    },
+    {
+        "id": 201,
+        "title": "Wild Tales",
+        "rating": "8.1",
+        "genres": [
+            "Spanish",
+            "Dark Comedy",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Satire",
+            "Comedy",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3011894/"
+    },
+    {
+        "id": 202,
+        "title": "Free Solo",
+        "rating": "8.1",
+        "genres": [
+            "Extreme Sport",
+            "Mountain Adventure",
+            "Sports Documentary",
+            "Adventure",
+            "Documentary",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7775622/"
+    },
+    {
+        "id": 203,
+        "title": "Modern Times",
+        "rating": "8.5",
+        "genres": [
+            "Romantic Comedy",
+            "Satire",
+            "Slapstick",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0027977/"
+    },
+    {
+        "id": 204,
+        "title": "King of the Doormen",
+        "rating": "8.3",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252591/"
+    },
+    {
+        "id": 205,
+        "title": "Zindagi Na Milegi Dobara",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Buddy Comedy",
+            "Coming-of-Age",
+            "Road Trip",
+            "Romantic Comedy",
+            "Urban Adventure",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1562872/"
+    },
+    {
+        "id": 206,
+        "title": "Apocalypse Now",
+        "rating": "8.4",
+        "genres": [
+            "Adventure Epic",
+            "Epic",
+            "Hard-boiled Detective",
+            "Psychological Drama",
+            "Quest",
+            "Suspense Mystery",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0078788/"
+    },
+    {
+        "id": 207,
+        "title": "Klaus",
+        "rating": "8.2",
+        "genres": [
+            "Hand-Drawn Animation",
+            "Holiday Animation",
+            "Holiday Comedy",
+            "Holiday Family",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family",
+            "Fantasy",
+            "Holiday"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4729430/"
+    },
+    {
+        "id": 208,
+        "title": "Saving Private Ryan",
+        "rating": "8.6",
+        "genres": [
+            "Action Epic",
+            "Epic",
+            "Period Drama",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120815/"
+    },
+    {
+        "id": 209,
+        "title": "Star Wars: Episode V - The Empire Strikes Back",
+        "rating": "8.7",
+        "genres": [
+            "Star Wars",
+            "Action Epic",
+            "Adventure Epic",
+            "Epic",
+            "Fantasy Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Sword & Sorcery",
+            "Adventure",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0080684/"
+    },
+    {
+        "id": 210,
+        "title": "Gladiator",
+        "rating": "8.5",
+        "genres": [
+            "Action Epic",
+            "Costume Drama",
+            "Epic",
+            "Period Drama",
+            "Sword & Sandal",
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0172495/"
+    },
+    {
+        "id": 211,
+        "title": "Maheshinte Prathikaaram",
+        "rating": "8.3",
+        "genres": [
+            "Malayalam",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4851630/"
+    },
+    {
+        "id": 212,
+        "title": "Gone with the Wind",
+        "rating": "8.2",
+        "genres": [
+            "Costume Drama",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Romantic Epic",
+            "Tragic Romance",
+            "War Epic",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0031381/"
+    },
+    {
+        "id": 213,
+        "title": "L.A. Confidential",
+        "rating": "8.2",
+        "genres": [
+            "Conspiracy Thriller",
+            "Cop Drama",
+            "Epic",
+            "Hard-boiled Detective",
+            "Period Drama",
+            "Police Procedural",
+            "Suspense Mystery",
+            "Whodunnit",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0119488/"
+    },
+    {
+        "id": 214,
+        "title": "The Hunt",
+        "rating": "8.3",
+        "genres": [
+            "Danish",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2106476/"
+    },
+    {
+        "id": 215,
+        "title": "Prisoners",
+        "rating": "8.2",
+        "genres": [
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1392214/"
+    },
+    {
+        "id": 216,
+        "title": "Once Upon a Time in the West",
+        "rating": "8.5",
+        "genres": [
+            "Adventure Epic",
+            "Desert Adventure",
+            "Epic",
+            "Period Drama",
+            "Quest",
+            "Spaghetti Western",
+            "Western Epic",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0064116/"
+    },
+    {
+        "id": 217,
+        "title": "Paths of Glory",
+        "rating": "8.4",
+        "genres": [
+            "Epic",
+            "Legal Drama",
+            "Period Drama",
+            "Political Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050825/"
+    },
+    {
+        "id": 218,
+        "title": "Kannathil Muthamittal",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Action",
+            "Drama",
+            "Musical",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0312859/"
+    },
+    {
+        "id": 219,
+        "title": "Samurai Rebellion",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Period Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0061847/"
+    },
+    {
+        "id": 220,
+        "title": "Wild Strawberries",
+        "rating": "8.1",
+        "genres": [
+            "Swedish",
+            "Psychological Drama",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050986/"
+    },
+    {
+        "id": 221,
+        "title": "Mirror Game",
+        "rating": "8.8",
+        "genres": [
+            "Bengali",
+            "Crime",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5354160/"
+    },
+    {
+        "id": 222,
+        "title": "Woman in the Dunes",
+        "rating": "8.4",
+        "genres": [
+            "Japanese",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Tragedy",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0058625/"
+    },
+    {
+        "id": 223,
+        "title": "Meiyazhagan",
+        "rating": "8.5",
+        "genres": [
+            "Tamil",
+            "Coming-of-Age",
+            "Period Drama",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt26758372/"
+    },
+    {
+        "id": 224,
+        "title": "A Brighter Summer Day",
+        "rating": "8.2",
+        "genres": [
+            "Mandarin",
+            "Coming-of-Age",
+            "Tragedy",
+            "Crime",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0101985/"
+    },
+    {
+        "id": 225,
+        "title": "Mary and Max",
+        "rating": "8.1",
+        "genres": [
+            "Adult Animation",
+            "Coming-of-Age",
+            "Dark Comedy",
+            "Period Drama",
+            "Psychological Drama",
+            "Stop Motion Animation",
+            "Animation",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0978762/"
+    },
+    {
+        "id": 226,
+        "title": "Maharaja",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt26548265/"
+    },
+    {
+        "id": 227,
+        "title": "Mahanati",
+        "rating": "8.4",
+        "genres": [
+            "Telugu",
+            "Period Drama",
+            "Showbiz Drama",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7465992/"
+    },
+    {
+        "id": 228,
+        "title": "One Flew Over the Cuckoo's Nest",
+        "rating": "8.6",
+        "genres": [
+            "Dark Comedy",
+            "Medical Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0073486/"
+    },
+    {
+        "id": 229,
+        "title": "Ustad Hotel",
+        "rating": "8.2",
+        "genres": [
+            "Malayalam",
+            "Comedy",
+            "Drama",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2218988/"
+    },
+    {
+        "id": 230,
+        "title": "I'm Still Here",
+        "rating": "8.1",
+        "genres": [
+            "Portuguese",
+            "Docudrama",
+            "Epic",
+            "Historical Epic",
+            "Period Drama",
+            "Political Drama",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt14961016/"
+    },
+    {
+        "id": 231,
+        "title": "I Am Cuba",
+        "rating": "8.2",
+        "genres": [
+            "Spanish",
+            "Epic",
+            "Period Drama",
+            "Political Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0058604/"
+    },
+    {
+        "id": 232,
+        "title": "Asuran",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "One-Person Army Action",
+            "Period Drama",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9477520/"
+    },
+    {
+        "id": 233,
+        "title": "Bicycle Thieves",
+        "rating": "8.2",
+        "genres": [
+            "Italian",
+            "Financial Drama",
+            "Psychological Drama",
+            "Quest",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0040522/"
+    },
+    {
+        "id": 234,
+        "title": "Drishyam 2",
+        "rating": "8.4",
+        "genres": [
+            "Malayalam",
+            "Psychological Thriller",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt12361178/"
+    },
+    {
+        "id": 235,
+        "title": "Frozen Stiff",
+        "rating": "8.3",
+        "genres": [
+            "Dark Comedy",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0301634/"
+    },
+    {
+        "id": 236,
+        "title": "The Grapes of Wrath",
+        "rating": "8.1",
+        "genres": [
+            "Period Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0032551/"
+    },
+    {
+        "id": 237,
+        "title": "Nights of Cabiria",
+        "rating": "8.1",
+        "genres": [
+            "Italian",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050783/"
+    },
+    {
+        "id": 238,
+        "title": "Soodhu Kavvum",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Caper",
+            "Comedy",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2877108/"
+    },
+    {
+        "id": 239,
+        "title": "The Shining",
+        "rating": "8.4",
+        "genres": [
+            "Psychological Drama",
+            "Psychological Horror",
+            "Supernatural Horror",
+            "Drama",
+            "Horror"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0081505/"
+    },
+    {
+        "id": 240,
+        "title": "Sita Ramam",
+        "rating": "8.5",
+        "genres": [
+            "Telugu",
+            "Period Drama",
+            "Political Drama",
+            "Romantic Epic",
+            "Suspense Mystery",
+            "Action",
+            "Drama",
+            "Musical",
+            "Mystery",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt20850406/"
+    },
+    {
+        "id": 241,
+        "title": "Good Will Hunting",
+        "rating": "8.4",
+        "genres": [
+            "Coming-of-Age",
+            "Psychological Drama",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0119217/"
+    },
+    {
+        "id": 242,
+        "title": "Lost Ladies",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Quirky Comedy",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt21626284/"
+    },
+    {
+        "id": 243,
+        "title": "Where Is the Friend's House?",
+        "rating": "8.1",
+        "genres": [
+            "Persian",
+            "Coming-of-Age",
+            "Quest",
+            "Urban Adventure",
+            "Adventure",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0093342/"
+    },
+    {
+        "id": 244,
+        "title": "Yi Yi",
+        "rating": "8.1",
+        "genres": [
+            "Mandarin",
+            "Coming-of-Age",
+            "Epic",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0244316/"
+    },
+    {
+        "id": 245,
+        "title": "Dersu Uzala",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Docudrama",
+            "Period Drama",
+            "Adventure",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0071411/"
+    },
+    {
+        "id": 246,
+        "title": "The Grand Budapest Hotel",
+        "rating": "8.1",
+        "genres": [
+            "Period Drama",
+            "Quirky Comedy",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2278388/"
+    },
+    {
+        "id": 247,
+        "title": "Raging Bull",
+        "rating": "8.1",
+        "genres": [
+            "Boxing",
+            "Docudrama",
+            "Period Drama",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0081398/"
+    },
+    {
+        "id": 248,
+        "title": "Gol Maal",
+        "rating": "8.5",
+        "genres": [
+            "Hindi",
+            "High-Concept Comedy",
+            "Comedy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0079221/"
+    },
+    {
+        "id": 249,
+        "title": "Mission Muh Dikhayi",
+        "rating": "8.5",
+        "genres": [
+            "Hindi",
+            "Comedy",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt38063392/"
+    },
+    {
+        "id": 250,
+        "title": "Before Sunrise",
+        "rating": "8.1",
+        "genres": [
+            "Romantic Comedy",
+            "Tragic Romance",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0112471/"
+    },
+    {
+        "id": 251,
+        "title": "Finding Nemo",
+        "rating": "8.2",
+        "genres": [
+            "Animal Adventure",
+            "Buddy Comedy",
+            "Computer Animation",
+            "Quest",
+            "Sea Adventure",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0266543/"
+    },
+    {
+        "id": 252,
+        "title": "Psycho",
+        "rating": "8.5",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Horror",
+            "Psychological Thriller",
+            "Slasher Horror",
+            "Suspense Mystery",
+            "Drama",
+            "Horror",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0054215/"
+    },
+    {
+        "id": 253,
+        "title": "Resurrection",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7738784/"
+    },
+    {
+        "id": 254,
+        "title": "Baraka",
+        "rating": "8.5",
+        "genres": [
+            "Faith & Spirituality Documentary",
+            "Travel Documentary",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0103767/"
+    },
+    {
+        "id": 255,
+        "title": "Rififi",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Heist",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0048021/"
+    },
+    {
+        "id": 256,
+        "title": "Sairat",
+        "rating": "8.3",
+        "genres": [
+            "Marathi",
+            "Feel-Good Romance",
+            "Teen Romance",
+            "Tragedy",
+            "Tragic Romance",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5312232/"
+    },
+    {
+        "id": 257,
+        "title": "Paris Is Burning",
+        "rating": "8.2",
+        "genres": [
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0100332/"
+    },
+    {
+        "id": 258,
+        "title": "Saptha Sagaradaache Ello - Side A",
+        "rating": "8.2",
+        "genres": [
+            "Kannada",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt11992424/"
+    },
+    {
+        "id": 259,
+        "title": "Ben-Hur",
+        "rating": "8.1",
+        "genres": [
+            "Adventure Epic",
+            "Costume Drama",
+            "Epic",
+            "Period Drama",
+            "Sword & Sandal",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0052618/"
+    },
+    {
+        "id": 260,
+        "title": "Senna",
+        "rating": "8.4",
+        "genres": [
+            "Motorsport",
+            "Sports Documentary",
+            "Biography",
+            "Documentary",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1424432/"
+    },
+    {
+        "id": 261,
+        "title": "The Lives of Others",
+        "rating": "8.4",
+        "genres": [
+            "German",
+            "Political Thriller",
+            "Psychological Drama",
+            "Spy",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0405094/"
+    },
+    {
+        "id": 262,
+        "title": "All Quiet on the Western Front",
+        "rating": "8.1",
+        "genres": [
+            "Epic",
+            "Psychological Drama",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0020629/"
+    },
+    {
+        "id": 263,
+        "title": "#Home",
+        "rating": "8.7",
+        "genres": [
+            "Malayalam",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10534500/"
+    },
+    {
+        "id": 264,
+        "title": "The Wild Robot",
+        "rating": "8.1",
+        "genres": [
+            "Animal Adventure",
+            "Artificial Intelligence",
+            "Computer Animation",
+            "Psychological Drama",
+            "Survival",
+            "Adventure",
+            "Animation",
+            "Family",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt29623480/"
+    },
+    {
+        "id": 265,
+        "title": "Dhurandhar: The Revenge",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Action Epic",
+            "Gangster",
+            "Political Thriller",
+            "Spy",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt39139925/"
+    },
+    {
+        "id": 266,
+        "title": "Warrior",
+        "rating": "8.1",
+        "genres": [
+            "Boxing",
+            "Action",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1291584/"
+    },
+    {
+        "id": 267,
+        "title": "The Prestige",
+        "rating": "8.5",
+        "genres": [
+            "Period Drama",
+            "Steampunk",
+            "Tragedy",
+            "Drama",
+            "Mystery",
+            "Sci-Fi",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0482571/"
+    },
+    {
+        "id": 268,
+        "title": "Singin' in the Rain",
+        "rating": "8.3",
+        "genres": [
+            "Classic Musical",
+            "Feel-Good Romance",
+            "Jukebox Musical",
+            "Romantic Comedy",
+            "Satire",
+            "Slapstick",
+            "Comedy",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0045152/"
+    },
+    {
+        "id": 269,
+        "title": "The Foster Brothers",
+        "rating": "8.8",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253779/"
+    },
+    {
+        "id": 270,
+        "title": "Dhurandhar",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Action Epic",
+            "Gangster",
+            "Political Thriller",
+            "Spy",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt33014583/"
+    },
+    {
+        "id": 271,
+        "title": "Pink Floyd: Live at Pompeii",
+        "rating": "8.6",
+        "genres": [
+            "Concert",
+            "Documentary",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0069090/"
+    },
+    {
+        "id": 272,
+        "title": "The Chaos Class Failed the Class",
+        "rating": "8.4",
+        "genres": [
+            "Turkish",
+            "Satire",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252488/"
+    },
+    {
+        "id": 273,
+        "title": "The Ascent",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Psychological Drama",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0075404/"
+    },
+    {
+        "id": 274,
+        "title": "Satya",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Gangster",
+            "Tragedy",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0195231/"
+    },
+    {
+        "id": 275,
+        "title": "Casablanca",
+        "rating": "8.5",
+        "genres": [
+            "Psychological Drama",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0034583/"
+    },
+    {
+        "id": 276,
+        "title": "Chinatown",
+        "rating": "8.1",
+        "genres": [
+            "Conspiracy Thriller",
+            "Hard-boiled Detective",
+            "Period Drama",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Tragedy",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0071315/"
+    },
+    {
+        "id": 277,
+        "title": "Agent Sai Srinivasa Athreya",
+        "rating": "8.3",
+        "genres": [
+            "Telugu",
+            "Bumbling Detective",
+            "Conspiracy Thriller",
+            "Dark Comedy",
+            "Whodunnit",
+            "Comedy",
+            "Crime",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10214826/"
+    },
+    {
+        "id": 278,
+        "title": "The Silence of Swastika",
+        "rating": "8.8",
+        "genres": [
+            "Hindi",
+            "History Documentary",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt16747572/"
+    },
+    {
+        "id": 279,
+        "title": "Stop Making Sense",
+        "rating": "8.7",
+        "genres": [
+            "Concert",
+            "Music Documentary",
+            "Documentary",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0088178/"
+    },
+    {
+        "id": 280,
+        "title": "Lock, Stock and Two Smoking Barrels",
+        "rating": "8.1",
+        "genres": [
+            "Caper",
+            "Dark Comedy",
+            "Farce",
+            "Gangster",
+            "Heist",
+            "Comedy",
+            "Crime"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120735/"
+    },
+    {
+        "id": 281,
+        "title": "Raiders of the Lost Ark",
+        "rating": "8.4",
+        "genres": [
+            "Indiana Jones",
+            "Action Epic",
+            "Adventure Epic",
+            "Desert Adventure",
+            "Globetrotting Adventure",
+            "Quest",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0082971/"
+    },
+    {
+        "id": 282,
+        "title": "Manjummel Boys",
+        "rating": "8.2",
+        "genres": [
+            "Malayalam",
+            "Survival",
+            "Adventure",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt26458038/"
+    },
+    {
+        "id": 283,
+        "title": "La haine",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Gangster",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0113247/"
+    },
+    {
+        "id": 284,
+        "title": "I Want to Eat Your Pancreas",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Coming-of-Age",
+            "Hand-Drawn Animation",
+            "Psychological Drama",
+            "Slice of Life",
+            "Animation",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7236034/"
+    },
+    {
+        "id": 285,
+        "title": "Die Hard",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "Disaster",
+            "One-Person Army Action",
+            "Action",
+            "Holiday",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0095016/"
+    },
+    {
+        "id": 286,
+        "title": "Late Spring",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0041154/"
+    },
+    {
+        "id": 287,
+        "title": "Das Boot",
+        "rating": "8.3",
+        "genres": [
+            "German",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Survival",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0082096/"
+    },
+    {
+        "id": 288,
+        "title": "The Secret in Their Eyes",
+        "rating": "8.2",
+        "genres": [
+            "Spanish",
+            "Dark Romance",
+            "Legal Thriller",
+            "Period Drama",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Tragedy",
+            "Whodunnit",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1305806/"
+    },
+    {
+        "id": 289,
+        "title": "Yojimbo",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Dark Comedy",
+            "One-Person Army Action",
+            "Period Drama",
+            "Psychological Thriller",
+            "Samurai",
+            "Action",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0055630/"
+    },
+    {
+        "id": 290,
+        "title": "Seven Samurai",
+        "rating": "8.6",
+        "genres": [
+            "Japanese",
+            "Action Epic",
+            "Epic",
+            "Period Drama",
+            "Samurai",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0047478/"
+    },
+    {
+        "id": 291,
+        "title": "Lawrence of Arabia",
+        "rating": "8.3",
+        "genres": [
+            "Adventure Epic",
+            "Desert Adventure",
+            "Epic",
+            "Tragedy",
+            "War Epic",
+            "Adventure",
+            "Biography",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056172/"
+    },
+    {
+        "id": 292,
+        "title": "Princess Mononoke",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Action Epic",
+            "Adult Animation",
+            "Adventure Epic",
+            "Anime",
+            "Dark Fantasy",
+            "Epic",
+            "Fantasy Epic",
+            "Hand-Drawn Animation",
+            "Quest"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0119698/"
+    },
+    {
+        "id": 293,
+        "title": "Athadu",
+        "rating": "8.2",
+        "genres": [
+            "Telugu",
+            "Action",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0471571/"
+    },
+    {
+        "id": 294,
+        "title": "Rascal Does Not Dream of a Dreaming Girl",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Hand-Drawn Animation",
+            "Psychological Drama",
+            "Supernatural Fantasy",
+            "Animation",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9881586/"
+    },
+    {
+        "id": 295,
+        "title": "Hamilton",
+        "rating": "8.3",
+        "genres": [
+            "Epic",
+            "Historical Epic",
+            "Biography",
+            "Drama",
+            "History",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8503618/"
+    },
+    {
+        "id": 296,
+        "title": "2018",
+        "rating": "8.3",
+        "genres": [
+            "Malayalam",
+            "Disaster",
+            "Epic",
+            "Action",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9006564/"
+    },
+    {
+        "id": 297,
+        "title": "The Great Escape",
+        "rating": "8.2",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Prison Drama",
+            "War Epic",
+            "Adventure",
+            "Drama",
+            "Thriller",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0057115/"
+    },
+    {
+        "id": 298,
+        "title": "Sunset Boulevard",
+        "rating": "8.4",
+        "genres": [
+            "Dark Comedy",
+            "Film Noir",
+            "Psychological Drama",
+            "Showbiz Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0043014/"
+    },
+    {
+        "id": 299,
+        "title": "Rear Window",
+        "rating": "8.4",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0047396/"
+    },
+    {
+        "id": 300,
+        "title": "PK",
+        "rating": "8.1",
+        "genres": [
+            "Hindi",
+            "Quest",
+            "Quirky Comedy",
+            "Satire",
+            "Comedy",
+            "Drama",
+            "Musical",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2338151/"
+    },
+    {
+        "id": 301,
+        "title": "Masaan",
+        "rating": "8.1",
+        "genres": [
+            "Hindi",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4635372/"
+    },
+    {
+        "id": 302,
+        "title": "In the Name of the Father",
+        "rating": "8.1",
+        "genres": [
+            "Docudrama",
+            "Legal Drama",
+            "Period Drama",
+            "Political Drama",
+            "Prison Drama",
+            "Tragedy",
+            "True Crime",
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0107207/"
+    },
+    {
+        "id": 303,
+        "title": "The Red Shoes",
+        "rating": "8.1",
+        "genres": [
+            "Drama",
+            "Music",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0040725/"
+    },
+    {
+        "id": 304,
+        "title": "Manichitrathazhu",
+        "rating": "8.7",
+        "genres": [
+            "Malayalam",
+            "Epic",
+            "Psychological Horror",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Comedy",
+            "Horror",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0214915/"
+    },
+    {
+        "id": 305,
+        "title": "Drishyam",
+        "rating": "8.4",
+        "genres": [
+            "Malayalam",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3417422/"
+    },
+    {
+        "id": 306,
+        "title": "The Salt of the Earth",
+        "rating": "8.4",
+        "genres": [
+            "French",
+            "Biography",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt3674140/"
+    },
+    {
+        "id": 307,
+        "title": "Raise the Red Lantern",
+        "rating": "8.1",
+        "genres": [
+            "Mandarin",
+            "Dark Romance",
+            "Period Drama",
+            "Tragedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0101640/"
+    },
+    {
+        "id": 308,
+        "title": "Saban, Son of Saban",
+        "rating": "8.7",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253614/"
+    },
+    {
+        "id": 309,
+        "title": "Pelli Choopulu",
+        "rating": "8.2",
+        "genres": [
+            "Telugu",
+            "Romantic Comedy",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5824826/"
+    },
+    {
+        "id": 310,
+        "title": "The Departed",
+        "rating": "8.5",
+        "genres": [
+            "Cop Drama",
+            "Epic",
+            "Gangster",
+            "Psychological Thriller",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0407887/"
+    },
+    {
+        "id": 311,
+        "title": "Blade Runner",
+        "rating": "8.1",
+        "genres": [
+            "Blade Runner",
+            "Artificial Intelligence",
+            "Cyber Thriller",
+            "Cyberpunk",
+            "Dystopian Sci-Fi",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Tragedy",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0083658/"
+    },
+    {
+        "id": 312,
+        "title": "Ikiru",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0044741/"
+    },
+    {
+        "id": 313,
+        "title": "Farewell My Concubine",
+        "rating": "8.1",
+        "genres": [
+            "Mandarin",
+            "Epic",
+            "Period Drama",
+            "Political Drama",
+            "Romantic Epic",
+            "Tragic Romance",
+            "Workplace Drama",
+            "Drama",
+            "Music",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0106332/"
+    },
+    {
+        "id": 314,
+        "title": "Gangs of Wasseypur",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Dark Comedy",
+            "Gangster",
+            "Satire",
+            "True Crime",
+            "Action",
+            "Comedy",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1954470/"
+    },
+    {
+        "id": 315,
+        "title": "Won't You Be My Neighbor?",
+        "rating": "8.3",
+        "genres": [
+            "Biography",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7681902/"
+    },
+    {
+        "id": 316,
+        "title": "Mr. Smith Goes to Washington",
+        "rating": "8.1",
+        "genres": [
+            "Political Drama",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0031679/"
+    },
+    {
+        "id": 317,
+        "title": "Thani Oruvan",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Cop Drama",
+            "Psychological Thriller",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4987556/"
+    },
+    {
+        "id": 318,
+        "title": "The Wolf of Wall Street",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "Docudrama",
+            "Epic",
+            "Financial Drama",
+            "Raunchy Comedy",
+            "Satire",
+            "True Crime",
+            "Workplace Drama",
+            "Biography",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0993846/"
+    },
+    {
+        "id": 319,
+        "title": "The Broken Landlord",
+        "rating": "8.6",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0201368/"
+    },
+    {
+        "id": 320,
+        "title": "The Marathon Family",
+        "rating": "8.8",
+        "genres": [
+            "Dark Comedy",
+            "Satire",
+            "Slapstick",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0084302/"
+    },
+    {
+        "id": 321,
+        "title": "Sherlock Jr.",
+        "rating": "8.1",
+        "genres": [
+            "Bumbling Detective",
+            "Farce",
+            "Feel-Good Romance",
+            "Satire",
+            "Slapstick",
+            "Action",
+            "Comedy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0015324/"
+    },
+    {
+        "id": 322,
+        "title": "Mandela",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10687070/"
+    },
+    {
+        "id": 323,
+        "title": "Heat",
+        "rating": "8.3",
+        "genres": [
+            "Action Epic",
+            "Cop Drama",
+            "Epic",
+            "Gangster",
+            "Heist",
+            "Police Procedural",
+            "Psychological Drama",
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0113277/"
+    },
+    {
+        "id": 324,
+        "title": "Batman Begins",
+        "rating": "8.2",
+        "genres": [
+            "DC",
+            "Action Epic",
+            "Epic",
+            "Psychological Drama",
+            "Superhero",
+            "Crime"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0372784/"
+    },
+    {
+        "id": 325,
+        "title": "Premam",
+        "rating": "8.3",
+        "genres": [
+            "Malayalam",
+            "Coming-of-Age",
+            "Feel-Good Romance",
+            "Romantic Comedy",
+            "Comedy",
+            "Drama",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4679210/"
+    },
+    {
+        "id": 326,
+        "title": "The Heiress",
+        "rating": "8.1",
+        "genres": [
+            "Coming-of-Age",
+            "Dark Romance",
+            "Psychological Drama",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0041452/"
+    },
+    {
+        "id": 327,
+        "title": "96",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7019842/"
+    },
+    {
+        "id": 328,
+        "title": "The Legend of Bhagat Singh",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0319736/"
+    },
+    {
+        "id": 329,
+        "title": "Samsara",
+        "rating": "8.4",
+        "genres": [
+            "Travel Documentary",
+            "Documentary",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0770802/"
+    },
+    {
+        "id": 330,
+        "title": "Fargo",
+        "rating": "8.1",
+        "genres": [
+            "Cop Drama",
+            "Dark Comedy",
+            "Police Procedural",
+            "Psychological Thriller",
+            "Tragedy",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0116282/"
+    },
+    {
+        "id": 331,
+        "title": "Cat City",
+        "rating": "8.3",
+        "genres": [
+            "Adult Animation",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Crime",
+            "Family",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0179955/"
+    },
+    {
+        "id": 332,
+        "title": "Rocky",
+        "rating": "8.1",
+        "genres": [
+            "Boxing",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0075148/"
+    },
+    {
+        "id": 333,
+        "title": "My Father and My Son",
+        "rating": "8.2",
+        "genres": [
+            "Turkish",
+            "Coming-of-Age",
+            "Political Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0476735/"
+    },
+    {
+        "id": 334,
+        "title": "Hera Pheri",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Buddy Comedy",
+            "Farce",
+            "High-Concept Comedy",
+            "Slapstick",
+            "Action",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0242519/"
+    },
+    {
+        "id": 335,
+        "title": "Dil Bechara",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Tragedy",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8110330/"
+    },
+    {
+        "id": 336,
+        "title": "Inside Out",
+        "rating": "8.1",
+        "genres": [
+            "Coming-of-Age",
+            "Computer Animation",
+            "High-Concept Comedy",
+            "Psychological Drama",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Drama",
+            "Family",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2096673/"
+    },
+    {
+        "id": 337,
+        "title": "GoodFellas",
+        "rating": "8.7",
+        "genres": [
+            "Docudrama",
+            "Gangster",
+            "True Crime",
+            "Biography",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0099685/"
+    },
+    {
+        "id": 338,
+        "title": "Children of Heaven",
+        "rating": "8.2",
+        "genres": [
+            "Persian",
+            "Drama",
+            "Family",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0118849/"
+    },
+    {
+        "id": 339,
+        "title": "The Usual Suspects",
+        "rating": "8.5",
+        "genres": [
+            "Caper",
+            "Gangster",
+            "Heist",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Whodunnit",
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0114814/"
+    },
+    {
+        "id": 340,
+        "title": "The Dark Knight Rises",
+        "rating": "8.4",
+        "genres": [
+            "DC",
+            "Action Epic",
+            "Epic",
+            "Psychological Drama",
+            "Superhero",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1345836/"
+    },
+    {
+        "id": 341,
+        "title": "The Elephant Man",
+        "rating": "8.2",
+        "genres": [
+            "Docudrama",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0080678/"
+    },
+    {
+        "id": 342,
+        "title": "Rocketry: The Nambi Effect",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9263550/"
+    },
+    {
+        "id": 343,
+        "title": "Grave of the Fireflies",
+        "rating": "8.5",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Hand-Drawn Animation",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Animation",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0095327/"
+    },
+    {
+        "id": 344,
+        "title": "Visaaranai",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Police Procedural",
+            "True Crime",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4991384/"
+    },
+    {
+        "id": 345,
+        "title": "Oldboy",
+        "rating": "8.3",
+        "genres": [
+            "Korean",
+            "One-Person Army Action",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Action",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0364569/"
+    },
+    {
+        "id": 346,
+        "title": "Satantango",
+        "rating": "8.2",
+        "genres": [
+            "Period Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0111341/"
+    },
+    {
+        "id": 347,
+        "title": "Monpura",
+        "rating": "8.7",
+        "genres": [
+            "Bengali",
+            "Crime",
+            "Drama",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1621830/"
+    },
+    {
+        "id": 348,
+        "title": "Le Trou",
+        "rating": "8.5",
+        "genres": [
+            "French",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0054407/"
+    },
+    {
+        "id": 349,
+        "title": "Interstellar",
+        "rating": "8.7",
+        "genres": [
+            "Adventure Epic",
+            "Epic",
+            "Psychological Drama",
+            "Quest",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Time Travel",
+            "Adventure",
+            "Drama",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0816692/"
+    },
+    {
+        "id": 350,
+        "title": "Dune: Part Two",
+        "rating": "8.4",
+        "genres": [
+            "Dune",
+            "Action Epic",
+            "Adventure Epic",
+            "Desert Adventure",
+            "Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15239678/"
+    },
+    {
+        "id": 351,
+        "title": "The Godfather Part II",
+        "rating": "9.0",
+        "genres": [
+            "Epic",
+            "Gangster",
+            "Tragedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0071562/"
+    },
+    {
+        "id": 352,
+        "title": "Ratsasan",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Police Procedural",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Suspense Mystery",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7060344/"
+    },
+    {
+        "id": 353,
+        "title": "American Beauty",
+        "rating": "8.3",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0169547/"
+    },
+    {
+        "id": 354,
+        "title": "Like Stars on Earth",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Coming-of-Age",
+            "Psychological Drama",
+            "Drama",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0986264/"
+    },
+    {
+        "id": 355,
+        "title": "Vada Chennai",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5959980/"
+    },
+    {
+        "id": 356,
+        "title": "Aruvi",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5867800/"
+    },
+    {
+        "id": 357,
+        "title": "Alien",
+        "rating": "8.4",
+        "genres": [
+            "Alien",
+            "Alien Invasion",
+            "Cyberpunk",
+            "Monster Horror",
+            "Space Sci-Fi",
+            "Horror",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0078748/"
+    },
+    {
+        "id": 358,
+        "title": "The Passion of Joan of Arc",
+        "rating": "8.1",
+        "genres": [
+            "Costume Drama",
+            "Legal Drama",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0019254/"
+    },
+    {
+        "id": 359,
+        "title": "Life Is Beautiful",
+        "rating": "8.6",
+        "genres": [
+            "Italian",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Tragic Romance",
+            "Comedy",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0118799/"
+    },
+    {
+        "id": 360,
+        "title": "The Act of Killing",
+        "rating": "8.2",
+        "genres": [
+            "Crime Documentary",
+            "Biography",
+            "Crime",
+            "Documentary",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2375605/"
+    },
+    {
+        "id": 361,
+        "title": "To Be or Not to Be",
+        "rating": "8.1",
+        "genres": [
+            "Screwball Comedy",
+            "Comedy",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0035446/"
+    },
+    {
+        "id": 362,
+        "title": "Mad Max: Fury Road",
+        "rating": "8.1",
+        "genres": [
+            "Action Epic",
+            "Adventure Epic",
+            "Car Action",
+            "Desert Adventure",
+            "Dystopian Sci-Fi",
+            "Epic",
+            "Quest",
+            "Road Trip",
+            "Sci-Fi Epic",
+            "Action"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1392190/"
+    },
+    {
+        "id": 363,
+        "title": "13th",
+        "rating": "8.2",
+        "genres": [
+            "History Documentary",
+            "Political Documentary",
+            "Crime",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5895028/"
+    },
+    {
+        "id": 364,
+        "title": "V for Vendetta",
+        "rating": "8.1",
+        "genres": [
+            "Action Epic",
+            "Dystopian Sci-Fi",
+            "Epic",
+            "Political Drama",
+            "Political Thriller",
+            "Psychological Thriller",
+            "Sci-Fi Epic",
+            "Superhero",
+            "Action",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0434409/"
+    },
+    {
+        "id": 365,
+        "title": "Coco",
+        "rating": "8.4",
+        "genres": [
+            "Adventure Epic",
+            "Computer Animation",
+            "Dark Comedy",
+            "Epic",
+            "Fantasy Epic",
+            "Psychological Drama",
+            "Supernatural Fantasy",
+            "Adventure",
+            "Animation",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2380307/"
+    },
+    {
+        "id": 366,
+        "title": "City of God",
+        "rating": "8.6",
+        "genres": [
+            "Portuguese",
+            "Caper",
+            "Coming-of-Age",
+            "Epic",
+            "Gangster",
+            "Political Drama",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0317248/"
+    },
+    {
+        "id": 367,
+        "title": "The Deer Hunter",
+        "rating": "8.1",
+        "genres": [
+            "Epic",
+            "Psychological Drama",
+            "Tragedy",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0077416/"
+    },
+    {
+        "id": 368,
+        "title": "Star Wars: Episode VI - Return of the Jedi",
+        "rating": "8.3",
+        "genres": [
+            "Star Wars",
+            "Action Epic",
+            "Adventure Epic",
+            "Fantasy Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Sword & Sorcery",
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0086190/"
+    },
+    {
+        "id": 369,
+        "title": "Your Name.",
+        "rating": "8.4",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Hand-Drawn Animation",
+            "Psychological Drama",
+            "Sh\u014djo",
+            "Animation",
+            "Drama",
+            "Fantasy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5311514/"
+    },
+    {
+        "id": 370,
+        "title": "Attack on Titan: Chronicle",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Action Epic",
+            "Adult Animation",
+            "Adventure Epic",
+            "Anime",
+            "Body Horror",
+            "Epic",
+            "Fantasy Epic",
+            "Hand-Drawn Animation",
+            "Monster Horror"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt12415546/"
+    },
+    {
+        "id": 371,
+        "title": "Kidnapping, Caucasian Style",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Farce",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Musical",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0060584/"
+    },
+    {
+        "id": 372,
+        "title": "Oppenheimer",
+        "rating": "8.2",
+        "genres": [
+            "Docudrama",
+            "Epic",
+            "Historical Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15398776/"
+    },
+    {
+        "id": 373,
+        "title": "Spirited Away",
+        "rating": "8.6",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Coming-of-Age",
+            "Fairy Tale",
+            "Hand-Drawn Animation",
+            "Isekai",
+            "Supernatural Fantasy",
+            "Adventure",
+            "Animation",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0245429/"
+    },
+    {
+        "id": 374,
+        "title": "Nayakan",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Epic",
+            "Gangster",
+            "Tragedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0093603/"
+    },
+    {
+        "id": 375,
+        "title": "A Silent Voice: The Movie",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Coming-of-Age",
+            "Hand-Drawn Animation",
+            "Psychological Drama",
+            "Sh\u014dnen",
+            "Slice of Life",
+            "Animation",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5323662/"
+    },
+    {
+        "id": 376,
+        "title": "Rush",
+        "rating": "8.1",
+        "genres": [
+            "Docudrama",
+            "Motorsport",
+            "Period Drama",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1979320/"
+    },
+    {
+        "id": 377,
+        "title": "1917",
+        "rating": "8.2",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Survival",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8579674/"
+    },
+    {
+        "id": 378,
+        "title": "L\u00e9on: The Professional",
+        "rating": "8.5",
+        "genres": [
+            "Gangster",
+            "One-Person Army Action",
+            "Tragedy",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0110413/"
+    },
+    {
+        "id": 379,
+        "title": "The Cranes Are Flying",
+        "rating": "8.3",
+        "genres": [
+            "Russian",
+            "Political Drama",
+            "Tragic Romance",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050634/"
+    },
+    {
+        "id": 380,
+        "title": "Incendies",
+        "rating": "8.3",
+        "genres": [
+            "French",
+            "Psychological Drama",
+            "Suspense Mystery",
+            "Drama",
+            "Mystery",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1255953/"
+    },
+    {
+        "id": 381,
+        "title": "The Apartment",
+        "rating": "8.3",
+        "genres": [
+            "Dark Comedy",
+            "Farce",
+            "Feel-Good Romance",
+            "Holiday Comedy",
+            "Holiday Romance",
+            "Psychological Drama",
+            "Quirky Comedy",
+            "Romantic Comedy",
+            "Satire",
+            "Workplace Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0053604/"
+    },
+    {
+        "id": 382,
+        "title": "Avengers: Endgame",
+        "rating": "8.4",
+        "genres": [
+            "Marvel",
+            "Action Epic",
+            "Adventure Epic",
+            "Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Superhero",
+            "Time Travel",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4154796/"
+    },
+    {
+        "id": 383,
+        "title": "Witness for the Prosecution",
+        "rating": "8.4",
+        "genres": [
+            "Legal Drama",
+            "Legal Thriller",
+            "Whodunnit",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0051201/"
+    },
+    {
+        "id": 384,
+        "title": "Toma",
+        "rating": "8.6",
+        "genres": [
+            "Biography",
+            "Drama",
+            "Music",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8737152/"
+    },
+    {
+        "id": 385,
+        "title": "Earthlings",
+        "rating": "8.6",
+        "genres": [
+            "Crime Documentary",
+            "Nature Documentary",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0358456/"
+    },
+    {
+        "id": 386,
+        "title": "The Lion King",
+        "rating": "8.5",
+        "genres": [
+            "Adventure Epic",
+            "Animal Adventure",
+            "Coming-of-Age",
+            "Hand-Drawn Animation",
+            "Jungle Adventure",
+            "Adventure",
+            "Animation",
+            "Drama",
+            "Family",
+            "Musical"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0110357/"
+    },
+    {
+        "id": 387,
+        "title": "Spider-Man: Across the Spider-Verse",
+        "rating": "8.5",
+        "genres": [
+            "Marvel",
+            "Action Epic",
+            "Adventure Epic",
+            "Coming-of-Age",
+            "Computer Animation",
+            "Epic",
+            "Sci-Fi Epic",
+            "Superhero",
+            "Teen Adventure",
+            "Teen Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9362722/"
+    },
+    {
+        "id": 388,
+        "title": "Jana Gana Mana",
+        "rating": "8.3",
+        "genres": [
+            "Malayalam",
+            "Psychological Thriller",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt13391710/"
+    },
+    {
+        "id": 389,
+        "title": "Dangal",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Coming-of-Age",
+            "Martial Arts",
+            "Action",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5074352/"
+    },
+    {
+        "id": 390,
+        "title": "I Swear",
+        "rating": "8.4",
+        "genres": [
+            "Dark Comedy",
+            "Docudrama",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt31514146/"
+    },
+    {
+        "id": 391,
+        "title": "The Terminator",
+        "rating": "8.1",
+        "genres": [
+            "Terminator",
+            "Artificial Intelligence",
+            "Cyberpunk",
+            "Dystopian Sci-Fi",
+            "One-Person Army Action",
+            "Time Travel",
+            "Urban Adventure",
+            "Action",
+            "Adventure",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0088247/"
+    },
+    {
+        "id": 392,
+        "title": "K.G.F: Chapter 1",
+        "rating": "8.1",
+        "genres": [
+            "Kannada",
+            "Action Epic",
+            "Epic",
+            "Gangster",
+            "One-Person Army Action",
+            "Period Drama",
+            "Action",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7838252/"
+    },
+    {
+        "id": 393,
+        "title": "Whiplash",
+        "rating": "8.5",
+        "genres": [
+            "Psychological Drama",
+            "Drama",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2582802/"
+    },
+    {
+        "id": 394,
+        "title": "The Shawshank Redemption",
+        "rating": "9.3",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Prison Drama",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0111161/"
+    },
+    {
+        "id": 395,
+        "title": "Happy Days",
+        "rating": "8.7",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0765833/"
+    },
+    {
+        "id": 396,
+        "title": "Indiana Jones and the Last Crusade",
+        "rating": "8.2",
+        "genres": [
+            "Indiana Jones",
+            "Action Epic",
+            "Adventure Epic",
+            "Desert Adventure",
+            "Globetrotting Adventure",
+            "Quest",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0097576/"
+    },
+    {
+        "id": 397,
+        "title": "Kantara: A Legend - Chapter 1",
+        "rating": "8.1",
+        "genres": [
+            "Kannada",
+            "Action Epic",
+            "Epic",
+            "Fantasy Epic",
+            "Jungle Adventure",
+            "Period Drama",
+            "Supernatural Fantasy",
+            "Action",
+            "Adventure",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt26439764/"
+    },
+    {
+        "id": 398,
+        "title": "Amadeus",
+        "rating": "8.4",
+        "genres": [
+            "Costume Drama",
+            "Epic",
+            "Period Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Biography",
+            "Drama",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0086879/"
+    },
+    {
+        "id": 399,
+        "title": "Demon Slayer: Kimetsu no Yaiba - Tsuzumi Mansion Arc",
+        "rating": "8.4",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Dark Fantasy",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Supernatural Fantasy",
+            "Action",
+            "Animation",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt16492678/"
+    },
+    {
+        "id": 400,
+        "title": "Pather Panchali",
+        "rating": "8.2",
+        "genres": [
+            "Bengali",
+            "Coming-of-Age",
+            "Financial Drama",
+            "Period Drama",
+            "Tragedy",
+            "Drama",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0048473/"
+    },
+    {
+        "id": 401,
+        "title": "Reservoir Dogs",
+        "rating": "8.2",
+        "genres": [
+            "Dark Comedy",
+            "Gangster",
+            "Heist",
+            "Psychological Thriller",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0105236/"
+    },
+    {
+        "id": 402,
+        "title": "Memento",
+        "rating": "8.4",
+        "genres": [
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0209144/"
+    },
+    {
+        "id": 403,
+        "title": "The Human Condition I: No Greater Love",
+        "rating": "8.5",
+        "genres": [
+            "Japanese",
+            "Epic",
+            "Historical Epic",
+            "Psychological Drama",
+            "War Epic",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0053114/"
+    },
+    {
+        "id": 404,
+        "title": "Autumn Sonata",
+        "rating": "8.1",
+        "genres": [
+            "Swedish",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0077711/"
+    },
+    {
+        "id": 405,
+        "title": "Searching for Sugar Man",
+        "rating": "8.2",
+        "genres": [
+            "Biography",
+            "Documentary",
+            "Music",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2125608/"
+    },
+    {
+        "id": 406,
+        "title": "Mr. Muhsin",
+        "rating": "8.4",
+        "genres": [
+            "Turkish",
+            "Comedy",
+            "Drama",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0184756/"
+    },
+    {
+        "id": 407,
+        "title": "The Thing",
+        "rating": "8.2",
+        "genres": [
+            "Alien Invasion",
+            "Body Horror",
+            "Monster Horror",
+            "Psychological Horror",
+            "Splatter Horror",
+            "Supernatural Horror",
+            "Suspense Mystery",
+            "Tragedy",
+            "Horror",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0084787/"
+    },
+    {
+        "id": 408,
+        "title": "American History X",
+        "rating": "8.5",
+        "genres": [
+            "Gangster",
+            "Political Drama",
+            "Prison Drama",
+            "Psychological Drama",
+            "Tragedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120586/"
+    },
+    {
+        "id": 409,
+        "title": "Three Billboards Outside Ebbing, Missouri",
+        "rating": "8.1",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Drama",
+            "Satire",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt5027774/"
+    },
+    {
+        "id": 410,
+        "title": "Ford v Ferrari",
+        "rating": "8.1",
+        "genres": [
+            "Car Action",
+            "Docudrama",
+            "Motorsport",
+            "Period Drama",
+            "Action",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1950186/"
+    },
+    {
+        "id": 411,
+        "title": "My Neighbor Totoro",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Anime",
+            "Fairy Tale",
+            "Hand-Drawn Animation",
+            "Iyashikei",
+            "Supernatural Fantasy",
+            "Adventure",
+            "Animation",
+            "Comedy",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0096283/"
+    },
+    {
+        "id": 412,
+        "title": "Chainsaw Man - The Movie: Reze Arc",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Dark Comedy",
+            "Dark Fantasy",
+            "Dark Romance",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Supernatural Fantasy",
+            "Teen Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt30472557/"
+    },
+    {
+        "id": 413,
+        "title": "It Happened One Night",
+        "rating": "8.1",
+        "genres": [
+            "Road Trip",
+            "Romantic Comedy",
+            "Screwball Comedy",
+            "Comedy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0025316/"
+    },
+    {
+        "id": 414,
+        "title": "Inside Job",
+        "rating": "8.2",
+        "genres": [
+            "Crime Documentary",
+            "Crime",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1645089/"
+    },
+    {
+        "id": 415,
+        "title": "Hotel Rwanda",
+        "rating": "8.1",
+        "genres": [
+            "Docudrama",
+            "Epic",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0395169/"
+    },
+    {
+        "id": 416,
+        "title": "Chhichhore",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9052870/"
+    },
+    {
+        "id": 417,
+        "title": "Tumbbad",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Body Horror",
+            "Dark Fantasy",
+            "Folk Horror",
+            "Monster Horror",
+            "Supernatural Fantasy",
+            "Drama",
+            "Fantasy",
+            "Horror",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt8239946/"
+    },
+    {
+        "id": 418,
+        "title": "The Shop on Main Street",
+        "rating": "8.2",
+        "genres": [
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0059527/"
+    },
+    {
+        "id": 419,
+        "title": "The Battle of Algiers",
+        "rating": "8.1",
+        "genres": [
+            "Arabic",
+            "Docudrama",
+            "Political Drama",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0058946/"
+    },
+    {
+        "id": 420,
+        "title": "Munna Bhai M.B.B.S.",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Buddy Comedy",
+            "High-Concept Comedy",
+            "Medical Drama",
+            "Psychological Drama",
+            "Satire",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0374887/"
+    },
+    {
+        "id": 421,
+        "title": "Braveheart",
+        "rating": "8.3",
+        "genres": [
+            "Action Epic",
+            "Costume Drama",
+            "Epic",
+            "Period Drama",
+            "War Epic",
+            "Drama",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0112573/"
+    },
+    {
+        "id": 422,
+        "title": "Khosla Ka Ghosla!",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "High-Concept Comedy",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0466460/"
+    },
+    {
+        "id": 423,
+        "title": "WALL\u00b7E",
+        "rating": "8.4",
+        "genres": [
+            "Adventure Epic",
+            "Artificial Intelligence",
+            "Computer Animation",
+            "Dystopian Sci-Fi",
+            "Epic",
+            "Psychological Drama",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Adventure",
+            "Animation"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0910970/"
+    },
+    {
+        "id": 424,
+        "title": "Red Beard",
+        "rating": "8.3",
+        "genres": [
+            "Japanese",
+            "Medical Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0058888/"
+    },
+    {
+        "id": 425,
+        "title": "The Matrix",
+        "rating": "8.7",
+        "genres": [
+            "The Matrix",
+            "Action Epic",
+            "Artificial Intelligence",
+            "Cyberpunk",
+            "Dystopian Sci-Fi",
+            "Gun Fu",
+            "Martial Arts",
+            "Sci-Fi Epic",
+            "Action",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0133093/"
+    },
+    {
+        "id": 426,
+        "title": "Diabolique",
+        "rating": "8.1",
+        "genres": [
+            "French",
+            "Psychological Thriller",
+            "Crime",
+            "Drama",
+            "Horror",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0046911/"
+    },
+    {
+        "id": 427,
+        "title": "Monsters, Inc.",
+        "rating": "8.1",
+        "genres": [
+            "Buddy Comedy",
+            "Computer Animation",
+            "Dark Comedy",
+            "Farce",
+            "High-Concept Comedy",
+            "Satire",
+            "Slapstick",
+            "Supernatural Fantasy",
+            "Urban Adventure",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0198781/"
+    },
+    {
+        "id": 428,
+        "title": "Project Hail Mary",
+        "rating": "8.2",
+        "genres": [
+            "Adventure Epic",
+            "Buddy Comedy",
+            "Dark Comedy",
+            "Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Adventure",
+            "Comedy",
+            "Drama",
+            "Sci-Fi"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt12042730/"
+    },
+    {
+        "id": 429,
+        "title": "The Dark Knight",
+        "rating": "9.1",
+        "genres": [
+            "DC",
+            "Action Epic",
+            "Epic",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Superhero",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0468569/"
+    },
+    {
+        "id": 430,
+        "title": "Dead Poets Society",
+        "rating": "8.1",
+        "genres": [
+            "Coming-of-Age",
+            "Psychological Drama",
+            "Teen Drama",
+            "Comedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0097165/"
+    },
+    {
+        "id": 431,
+        "title": "Hi Nanna",
+        "rating": "8.3",
+        "genres": [
+            "Telugu",
+            "Drama",
+            "Family",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt25433734/"
+    },
+    {
+        "id": 432,
+        "title": "For Sama",
+        "rating": "8.5",
+        "genres": [
+            "Arabic",
+            "Military Documentary",
+            "Biography",
+            "Documentary",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9617456/"
+    },
+    {
+        "id": 433,
+        "title": "Gone Girl",
+        "rating": "8.1",
+        "genres": [
+            "Erotic Thriller",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Tragedy",
+            "Whodunnit",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt2267998/"
+    },
+    {
+        "id": 434,
+        "title": "Tokyo Story",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Psychological Drama",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0046438/"
+    },
+    {
+        "id": 435,
+        "title": "On the Waterfront",
+        "rating": "8.1",
+        "genres": [
+            "Legal Drama",
+            "Legal Thriller",
+            "Tragedy",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0047296/"
+    },
+    {
+        "id": 436,
+        "title": "The Kashmir Files",
+        "rating": "8.5",
+        "genres": [
+            "Hindi",
+            "Political Drama",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10811166/"
+    },
+    {
+        "id": 437,
+        "title": "Anniyan",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Martial Arts",
+            "One-Person Army Action",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Tragedy",
+            "Action",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0376127/"
+    },
+    {
+        "id": 438,
+        "title": "Paris, Texas",
+        "rating": "8.1",
+        "genres": [
+            "Psychological Drama",
+            "Road Trip",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0087884/"
+    },
+    {
+        "id": 439,
+        "title": "Terminator 2: Judgment Day",
+        "rating": "8.6",
+        "genres": [
+            "Terminator",
+            "Action Epic",
+            "Artificial Intelligence",
+            "Dark Comedy",
+            "Dystopian Sci-Fi",
+            "One-Person Army Action",
+            "Sci-Fi Epic",
+            "Time Travel",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0103064/"
+    },
+    {
+        "id": 440,
+        "title": "I Am a Fugitive from a Chain Gang",
+        "rating": "8.2",
+        "genres": [
+            "Film Noir",
+            "Prison Drama",
+            "Tragedy",
+            "True Crime",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0023042/"
+    },
+    {
+        "id": 441,
+        "title": "Avengers: Infinity War",
+        "rating": "8.4",
+        "genres": [
+            "Marvel",
+            "Action Epic",
+            "Adventure Epic",
+            "Alien Invasion",
+            "Epic",
+            "Sci-Fi Epic",
+            "Space Sci-Fi",
+            "Superhero",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4154756/"
+    },
+    {
+        "id": 442,
+        "title": "Up",
+        "rating": "8.3",
+        "genres": [
+            "Adventure Epic",
+            "Buddy Comedy",
+            "Coming-of-Age",
+            "Computer Animation",
+            "Epic",
+            "Globetrotting Adventure",
+            "High-Concept Comedy",
+            "Psychological Drama",
+            "Quest",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1049413/"
+    },
+    {
+        "id": 443,
+        "title": "Trainspotting",
+        "rating": "8.1",
+        "genres": [
+            "Caper",
+            "Dark Comedy",
+            "Drug Crime",
+            "Psychological Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0117951/"
+    },
+    {
+        "id": 444,
+        "title": "Sarpatta Parambarai",
+        "rating": "8.4",
+        "genres": [
+            "Tamil",
+            "Boxing",
+            "Action",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt11580854/"
+    },
+    {
+        "id": 445,
+        "title": "Man with a Movie Camera",
+        "rating": "8.3",
+        "genres": [
+            "History Documentary",
+            "Travel Documentary",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0019760/"
+    },
+    {
+        "id": 446,
+        "title": "Jaane Bhi Do Yaaro",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Dark Comedy",
+            "Farce",
+            "Satire",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0085743/"
+    },
+    {
+        "id": 447,
+        "title": "Seven",
+        "rating": "8.6",
+        "genres": [
+            "Cop Drama",
+            "Hard-boiled Detective",
+            "Police Procedural",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Tragedy",
+            "Crime",
+            "Drama",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0114369/"
+    },
+    {
+        "id": 448,
+        "title": "Ayla: The Daughter of War",
+        "rating": "8.2",
+        "genres": [
+            "Turkish",
+            "Psychological Drama",
+            "Biography",
+            "Drama",
+            "History",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6316138/"
+    },
+    {
+        "id": 449,
+        "title": "The Man Who Shot Liberty Valance",
+        "rating": "8.1",
+        "genres": [
+            "Classical Western",
+            "Period Drama",
+            "Drama",
+            "Western"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056217/"
+    },
+    {
+        "id": 450,
+        "title": "Kaun Pravin Tambe?",
+        "rating": "8.3",
+        "genres": [
+            "Hindi",
+            "Biography",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt18568902/"
+    },
+    {
+        "id": 451,
+        "title": "Forrest Gump",
+        "rating": "8.8",
+        "genres": [
+            "Epic",
+            "Period Drama",
+            "Romantic Epic",
+            "Tragic Romance",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0109830/"
+    },
+    {
+        "id": 452,
+        "title": "Demon Slayer: Kimetsu no Yaiba - Mt. Natagumo Arc",
+        "rating": "8.7",
+        "genres": [
+            "Japanese",
+            "Adult Animation",
+            "Anime",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Action",
+            "Animation",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt14888874/"
+    },
+    {
+        "id": 453,
+        "title": "Spider-Man: No Way Home",
+        "rating": "8.1",
+        "genres": [
+            "Marvel",
+            "Action Epic",
+            "Adventure Epic",
+            "Fantasy Epic",
+            "Sci-Fi Epic",
+            "Superhero",
+            "Urban Adventure",
+            "Action",
+            "Adventure",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt10872600/"
+    },
+    {
+        "id": 454,
+        "title": "The Lord of the Rings: The Return of the King",
+        "rating": "9.0",
+        "genres": [
+            "The Lord of the Rings",
+            "Action Epic",
+            "Adventure Epic",
+            "Epic",
+            "Fantasy Epic",
+            "Mountain Adventure",
+            "Quest",
+            "Sword & Sorcery",
+            "Tragedy",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0167260/"
+    },
+    {
+        "id": 455,
+        "title": "Green Book",
+        "rating": "8.2",
+        "genres": [
+            "Docudrama",
+            "Period Drama",
+            "Road Trip",
+            "Biography",
+            "Comedy",
+            "Drama",
+            "Holiday",
+            "Music"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt6966692/"
+    },
+    {
+        "id": 456,
+        "title": "Vikram",
+        "rating": "8.3",
+        "genres": [
+            "Tamil",
+            "Action Epic",
+            "Gun Fu",
+            "One-Person Army Action",
+            "Action",
+            "Crime",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt9179430/"
+    },
+    {
+        "id": 457,
+        "title": "Aparajito",
+        "rating": "8.2",
+        "genres": [
+            "Bengali",
+            "Coming-of-Age",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0048956/"
+    },
+    {
+        "id": 458,
+        "title": "The King of the Street Cleaners",
+        "rating": "8.5",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0253997/"
+    },
+    {
+        "id": 459,
+        "title": "Vertigo",
+        "rating": "8.2",
+        "genres": [
+            "Conspiracy Thriller",
+            "Dark Romance",
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Tragedy",
+            "Tragic Romance",
+            "Mystery",
+            "Romance",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0052357/"
+    },
+    {
+        "id": 460,
+        "title": "The Miracle Worker",
+        "rating": "8.1",
+        "genres": [
+            "Period Drama",
+            "Biography",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0056241/"
+    },
+    {
+        "id": 461,
+        "title": "Guide",
+        "rating": "8.4",
+        "genres": [
+            "Hindi",
+            "Tragic Romance",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0059246/"
+    },
+    {
+        "id": 462,
+        "title": "Attack on Titan: The Last Attack",
+        "rating": "8.9",
+        "genres": [
+            "Japanese",
+            "Action Epic",
+            "Adult Animation",
+            "Adventure Epic",
+            "Anime",
+            "Body Horror",
+            "Hand-Drawn Animation",
+            "Sh\u014dnen",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt33175825/"
+    },
+    {
+        "id": 463,
+        "title": "City Lights",
+        "rating": "8.5",
+        "genres": [
+            "Feel-Good Romance",
+            "Romantic Comedy",
+            "Satire",
+            "Slapstick",
+            "Comedy",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0021749/"
+    },
+    {
+        "id": 464,
+        "title": "Neon Genesis Evangelion: The End of Evangelion",
+        "rating": "8.1",
+        "genres": [
+            "Japanese",
+            "Evangelion",
+            "Action Epic",
+            "Adult Animation",
+            "Anime",
+            "Epic",
+            "Hand-Drawn Animation",
+            "Kaiju",
+            "Mecha",
+            "Psychological Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0169858/"
+    },
+    {
+        "id": 465,
+        "title": "The Chaos Class Is Waking Up",
+        "rating": "8.7",
+        "genres": [
+            "Turkish",
+            "Comedy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0252490/"
+    },
+    {
+        "id": 466,
+        "title": "Dear Zachary: A Letter to a Son About His Father",
+        "rating": "8.5",
+        "genres": [
+            "Crime Documentary",
+            "Psychological Drama",
+            "True Crime",
+            "Biography",
+            "Crime",
+            "Documentary",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1152758/"
+    },
+    {
+        "id": 467,
+        "title": "The World of Apu",
+        "rating": "8.4",
+        "genres": [
+            "Bengali",
+            "Tragedy",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0052572/"
+    },
+    {
+        "id": 468,
+        "title": "Pirates of the Caribbean: The Curse of the Black Pearl",
+        "rating": "8.1",
+        "genres": [
+            "Action Epic",
+            "Adventure Epic",
+            "Dark Fantasy",
+            "Epic",
+            "Fantasy Epic",
+            "Sea Adventure",
+            "Supernatural Fantasy",
+            "Swashbuckler",
+            "Action",
+            "Adventure"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0325980/"
+    },
+    {
+        "id": 469,
+        "title": "Before Sunset",
+        "rating": "8.1",
+        "genres": [
+            "Feel-Good Romance",
+            "Drama",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0381681/"
+    },
+    {
+        "id": 470,
+        "title": "Jai Bhim",
+        "rating": "8.6",
+        "genres": [
+            "Tamil",
+            "Legal Drama",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15097216/"
+    },
+    {
+        "id": 471,
+        "title": "Unpaarvayil",
+        "rating": "9.1",
+        "genres": [
+            "Tamil",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15176374/"
+    },
+    {
+        "id": 472,
+        "title": "Am\u00e9lie",
+        "rating": "8.2",
+        "genres": [
+            "French",
+            "Feel-Good Romance",
+            "Quirky Comedy",
+            "Romantic Comedy",
+            "Comedy",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0211915/"
+    },
+    {
+        "id": 473,
+        "title": "Super Deluxe",
+        "rating": "8.2",
+        "genres": [
+            "Tamil",
+            "Comedy",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt7019942/"
+    },
+    {
+        "id": 474,
+        "title": "The Seventh Seal",
+        "rating": "8.1",
+        "genres": [
+            "Swedish",
+            "Dark Comedy",
+            "Period Drama",
+            "Psychological Drama",
+            "Drama",
+            "Fantasy"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0050976/"
+    },
+    {
+        "id": 475,
+        "title": "The Green Mile",
+        "rating": "8.6",
+        "genres": [
+            "Period Drama",
+            "Prison Drama",
+            "Psychological Drama",
+            "Supernatural Fantasy",
+            "Tragedy",
+            "Crime",
+            "Drama",
+            "Fantasy",
+            "Mystery"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0120689/"
+    },
+    {
+        "id": 476,
+        "title": "Fight Club",
+        "rating": "8.8",
+        "genres": [
+            "Dark Comedy",
+            "Psychological Drama",
+            "Psychological Thriller",
+            "Workplace Drama",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0137523/"
+    },
+    {
+        "id": 477,
+        "title": "Some Like It Hot",
+        "rating": "8.2",
+        "genres": [
+            "Buddy Comedy",
+            "Farce",
+            "Romantic Comedy",
+            "Satire",
+            "Screwball Comedy",
+            "Comedy",
+            "Music",
+            "Romance"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0053291/"
+    },
+    {
+        "id": 478,
+        "title": "David Attenborough: A Life on Our Planet",
+        "rating": "8.9",
+        "genres": [
+            "Nature Documentary",
+            "Biography",
+            "Documentary"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt11989890/"
+    },
+    {
+        "id": 479,
+        "title": "Howl's Moving Castle",
+        "rating": "8.2",
+        "genres": [
+            "Japanese",
+            "Adventure Epic",
+            "Anime",
+            "Epic",
+            "Fantasy Epic",
+            "Hand-Drawn Animation",
+            "Supernatural Fantasy",
+            "Adventure",
+            "Animation",
+            "Family"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0347149/"
+    },
+    {
+        "id": 480,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt3863552/"
+    },
+    {
+        "id": 481,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0112641/"
+    },
+    {
+        "id": 482,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0047445/"
+    },
+    {
+        "id": 483,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0053125/"
+    },
+    {
+        "id": 484,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0252489/"
+    },
+    {
+        "id": 485,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt6380520/"
+    },
+    {
+        "id": 486,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt9098872/"
+    },
+    {
+        "id": 487,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0017136/"
+    },
+    {
+        "id": 488,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0070047/"
+    },
+    {
+        "id": 489,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0038650/"
+    },
+    {
+        "id": 490,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt0054248/"
+    },
+    {
+        "id": 491,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt1180583/"
+    },
+    {
+        "id": 492,
+        "title": null,
+        "rating": null,
+        "genres": [],
+        "movie_url": "https://www.imdb.com/title/tt2140203/"
+    },
+    {
+        "id": 494,
+        "title": "Winter on Fire: Ukraine's Fight for Freedom",
+        "rating": "8.3",
+        "genres": [
+            "Political Documentary",
+            "Documentary",
+            "History"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt4908644/"
+    },
+    {
+        "id": 495,
+        "title": "No Country for Old Men",
+        "rating": "8.2",
+        "genres": [
+            "Contemporary Western",
+            "Psychological Thriller",
+            "Serial Killer",
+            "Crime",
+            "Drama",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0477348/"
+    },
+    {
+        "id": 496,
+        "title": "Million Dollar Baby",
+        "rating": "8.1",
+        "genres": [
+            "Boxing",
+            "Psychological Drama",
+            "Tragedy",
+            "Drama",
+            "Sport"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0405159/"
+    },
+    {
+        "id": 497,
+        "title": "Drishyam 2",
+        "rating": "8.2",
+        "genres": [
+            "Hindi",
+            "Suspense Mystery",
+            "Crime",
+            "Drama",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt15501640/"
+    },
+    {
+        "id": 498,
+        "title": "Shutter Island",
+        "rating": "8.2",
+        "genres": [
+            "Psychological Thriller",
+            "Suspense Mystery",
+            "Mystery",
+            "Thriller"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt1130884/"
+    },
+    {
+        "id": 499,
+        "title": "Ballad of a Soldier",
+        "rating": "8.2",
+        "genres": [
+            "Russian",
+            "Drama",
+            "Romance",
+            "War"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0052600/"
+    },
+    {
+        "id": 500,
+        "title": "The Sting",
+        "rating": "8.2",
+        "genres": [
+            "Caper",
+            "Gangster",
+            "Period Drama",
+            "Comedy",
+            "Crime",
+            "Drama"
+        ],
+        "movie_url": "https://www.imdb.com/title/tt0070735/"
+    }
+]
