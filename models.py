@@ -32,6 +32,10 @@ class Title(db.Model):
     release_year = db.Column(db.Integer, nullable=True)
     poster_url = db.Column(db.String(255), nullable=True)
     synopsis = db.Column(db.Text, nullable=True)
+
+    genres = db.Column(db.Text, nullable=True)
+    imdb_rating = db.Column(db.Float, nullable=True)
+    imdb_url = db.Column(db.String(500), nullable=True)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     bookmarks = db.relationship('Bookmark', backref='title', cascade='all, delete-orphan', lazy=True)

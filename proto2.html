@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>S-CoreBox</title>
+	<style>
+		body {
+			margin: 0;
+			background: #ffffff;
+			color: #222;
+			font-family: Arial, sans-serif;
+		}
+
+		.brand {
+			position: absolute;
+			top: 20px;
+			right: 24px;
+			font-size: 1.25rem;
+			font-weight: bold;
+		}
+
+		.account-actions {
+			position: absolute;
+			top: 58px;
+			right: 24px;
+			display: flex;
+			gap: 8px;
+		}
+
+		.sign-in-button,
+		.sign-up-button {
+			padding: 10px 18px;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+			background: #ffffff;
+			color: #222;
+			font: inherit;
+			cursor: pointer;
+			transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+		}
+
+		.sign-in-button:hover,
+		.sign-in-button:focus-visible,
+		.sign-up-button:hover,
+		.sign-up-button:focus-visible {
+			border-color: #222;
+			background: #dedede;
+		}
+
+		header {
+			padding: 80px 24px 24px;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		main {
+			width: 75%;
+			min-height: calc(100vh - 151px);
+			padding: 32px 24px;
+			box-sizing: border-box;
+		}
+
+		.main-actions {
+			display: grid;
+			grid-template-columns: repeat(3, minmax(0, 1fr));
+			gap: 12px;
+			margin-bottom: 32px;
+		}
+
+		.filter-control {
+			display: block;
+			min-width: 0;
+		}
+
+		.main-actions select,
+		.main-actions > button,
+		.search-bar {
+			flex: 1 1 0;
+			min-width: 0;
+			padding: 12px 20px;
+			box-sizing: border-box;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+			background: #ffffff;
+			color: #222;
+			font: inherit;
+			cursor: pointer;
+			transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+		}
+
+		.main-actions select {
+			width: 100%;
+			flex: 0 0 auto;
+			text-align: center;
+		}
+
+		.search-bar {
+			grid-column: 1 / -1;
+			width: 100%;
+			flex: 0 0 auto;
+			cursor: text;
+		}
+
+		.search-wrapper {
+			position: relative;
+			grid-column: 1 / -1;
+		}
+
+		.main-actions select option {
+			text-align: center;
+		}
+
+		.main-actions select:hover,
+		.main-actions select:focus-visible,
+		.main-actions > button:hover,
+		.main-actions > button:focus-visible,
+		.search-bar:hover,
+		.search-bar:focus-visible {
+			border-color: #222;
+		}
+
+		.main-actions select:hover {
+			background: #dedede;
+		}
+
+		.main-actions button[aria-pressed="true"] {
+			border-color: #222;
+			background: #222;
+			color: #ffffff;
+		}
+
+		.mock-data-box {
+			max-height: 360px;
+			overflow-y: auto;
+			border: 1px solid #cfcfcf;
+			border-radius: 6px;
+		}
+
+		.movie-row {
+			display: flex;
+			align-items: stretch;
+			border-bottom: 1px solid #e5e5e5;
+		}
+
+		.movie-button {
+			flex: 1;
+			padding: 16px 20px;
+			border: 0;
+			background: #ffffff;
+			color: #222;
+			font: inherit;
+			font-weight: bold;
+			text-align: left;
+			cursor: pointer;
+			transition: background-color 160ms ease;
+		}
+
+		.bookmark-button {
+			width: 110px;
+			padding: 12px;
+			border: 0;
+			border-left: 1px solid #e5e5e5;
+			background: #ffffff;
+			color: #222;
+			font: inherit;
+			cursor: pointer;
+		}
+
+		.bookmark-button:hover,
+		.bookmark-button:focus-visible,
+		.bookmark-button[aria-pressed="true"] {
+			background: #dedede;
+		}
+
+		.movie-button:hover,
+		.movie-button:focus-visible {
+			background: #dedede;
+		}
+
+		.movie-rating {
+			display: flex;
+			align-items: center;
+			padding: 12px 16px;
+			border-left: 1px solid #e5e5e5;
+			color: #555;
+			font-weight: bold;
+			white-space: nowrap;
+		}
+
+		.movie-button[hidden] {
+			display: none;
+		}
+
+		.movie-row[hidden] {
+			display: none !important;
+		}
+
+		.movie-row:last-child {
+			border-bottom: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="brand"></div>
+	<nav class="account-actions" aria-label="Account actions">
+		<a class="sign-in-button" href="signin.html">Sign In</a>
+		<a class="sign-up-button" href="signup.html">Sign Up</a>
+	</nav>
+
+	<header>
+		<h1>S-CoreBox</h1>
+	</header>
+
+	<main>
+		<div class="main-actions" role="group" aria-label="Content controls">
+			<div class="filter-control">
+				<select aria-label="Filter by genre">
+					<option value="all">All genres</option>
+					<option value="Action">Action</option>
+					<option value="Adult">Adult</option>
+					<option value="Adventure">Adventure</option>
+					<option value="Animation">Animation</option>
+					<option value="Biography">Biography</option>
+					<option value="Comedy">Comedy</option>
+					<option value="Crime">Crime</option>
+					<option value="Documentary">Documentary</option>
+					<option value="Drama">Drama</option>
+					<option value="Family">Family</option>
+					<option value="Fantasy">Fantasy</option>
+					<option value="Film-Noir">Film-Noir</option>
+					<option value="Game-Show">Game-Show</option>
+					<option value="History">History</option>
+					<option value="Horror">Horror</option>
+					<option value="Music">Music</option>
+					<option value="Musical">Musical</option>
+					<option value="Mystery">Mystery</option>
+					<option value="News">News</option>
+					<option value="Reality-TV">Reality-TV</option>
+					<option value="Romance">Romance</option>
+					<option value="Sci-Fi">Sci-Fi</option>
+					<option value="Short">Short</option>
+					<option value="Sport">Sport</option>
+					<option value="Talk-Show">Talk-Show</option>
+					<option value="Thriller">Thriller</option>
+					<option value="War">War</option>
+					<option value="Western">Western</option>
+				</select>
+			</div>
+			<button type="button" aria-pressed="false" data-sort-direction="sort">Sort</button>
+			<button type="button" aria-pressed="false" data-bookmarks-filter>Bookmarks</button>
+			<div class="search-wrapper">
+				<input class="search-bar" type="search" aria-label="Search movies" aria-controls="mock-data-box" placeholder="Search movies...">
+			</div>
+		</div>
+
+		<div id="mock-data-box" class="mock-data-box" aria-label="Movie data"></div>
+	</main>
+
+	<script>
+		const mockDataBox = document.getElementById('mock-data-box');
+		const searchBar = document.querySelector('.search-bar');
+		const genreFilter = document.querySelector('.filter-control select');
+		const bookmarksFilterButton = document.querySelector('[data-bookmarks-filter]');
+
+		const renderMovies = (movies) => {
+			movies.forEach((movie) => {
+			const movieRow = document.createElement('div');
+			movieRow.className = 'movie-row';
+			movieRow.dataset.movieId = movie.id;
+			movieRow.dataset.genres = JSON.stringify(movie.genres);
+
+			const movieButton = document.createElement('button');
+			movieButton.type = 'button';
+			movieButton.className = 'movie-button';
+			movieButton.textContent = `${movie.id}. ${movie.title}`;
+			movieButton.dataset.movieId = movie.id;
+			movieButton.dataset.movieUrl = movie.movie_url;
+			movieButton.addEventListener('click', () => window.open(movie.movie_url, '_blank', 'noopener'));
+
+			const rating = document.createElement('span');
+			rating.className = 'movie-rating';
+			rating.innerHTML = `&#9733; ${movie.rating}`;
+			rating.setAttribute('aria-label', `Rating ${movie.rating} out of 10`);
+
+			const bookmarkButton = document.createElement('button');
+			bookmarkButton.type = 'button';
+			bookmarkButton.className = 'bookmark-button';
+			bookmarkButton.setAttribute('aria-pressed', 'false');
+			bookmarkButton.textContent = 'Bookmark';
+			bookmarkButton.addEventListener('click', () => {
+				const isBookmarked = bookmarkButton.getAttribute('aria-pressed') === 'true';
+				bookmarkButton.setAttribute('aria-pressed', String(!isBookmarked));
+				bookmarkButton.textContent = isBookmarked ? 'Bookmark' : 'Bookmarked';
+				filterMovies(searchBar.value);
+			});
+
+			movieRow.append(movieButton, rating, bookmarkButton);
+			mockDataBox.appendChild(movieRow);
+		});
+		};
+
+		let movieRows = [];
+
+		const sortMovies = (direction) => {
+			const sortedRows = [...movieRows].sort((firstRow, secondRow) => {
+				const firstNumber = Number(firstRow.dataset.movieId);
+				const secondNumber = Number(secondRow.dataset.movieId);
+				return direction === 'ascending' ? firstNumber - secondNumber : secondNumber - firstNumber;
+			});
+
+			sortedRows.forEach((movieRow) => mockDataBox.appendChild(movieRow));
+		};
+
+
+		fetch('output.json')
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error(`Unable to load movies: ${response.status}`);
+				}
+				return response.json();
+			})
+			.then((movies) => {
+				renderMovies(movies);
+				movieRows = [...mockDataBox.querySelectorAll('.movie-row')];
+			})
+			.catch((error) => {
+				mockDataBox.textContent = error.message;
+			});
+		const filterMovies = (searchTerm, selectedGenre = genreFilter.value) => {
+			const normalizedSearchTerm = searchTerm.trim().toLowerCase();
+			const bookmarksOnly = bookmarksFilterButton.getAttribute('aria-pressed') === 'true';
+
+			movieRows.forEach((movieRow) => {
+				const movieTitle = movieRow.querySelector('.movie-button').textContent.trim().toLowerCase();
+				const matchesSearch = movieTitle.includes(normalizedSearchTerm);
+				const matchesGenre = selectedGenre === 'all' || JSON.parse(movieRow.dataset.genres).includes(selectedGenre);
+				const isBookmarked = movieRow.querySelector('.bookmark-button').getAttribute('aria-pressed') === 'true';
+				movieRow.hidden = !matchesSearch || !matchesGenre || (bookmarksOnly && !isBookmarked);
+			});
+		};
+
+		searchBar.addEventListener('input', () => filterMovies(searchBar.value));
+		genreFilter.addEventListener('change', () => filterMovies(searchBar.value));
+
+		document.querySelectorAll('.main-actions button').forEach((button) => {
+			button.addEventListener('click', () => {
+				if (button.dataset.sortDirection) {
+					if (button.dataset.sortDirection === 'sort') {
+						button.dataset.sortDirection = 'ascending';
+						button.setAttribute('aria-pressed', 'true');
+						button.textContent = 'Ascending ↑';
+						sortMovies('ascending');
+						return;
+					}
+
+					const isAscending = button.dataset.sortDirection === 'ascending';
+					const nextDirection = isAscending ? 'descending' : 'ascending';
+					button.dataset.sortDirection = nextDirection;
+					button.textContent = isAscending ? 'Descending ↓' : 'Ascending ↑';
+					sortMovies(nextDirection);
+					return;
+				}
+
+				const isSelected = button.getAttribute('aria-pressed') === 'true';
+				button.setAttribute('aria-pressed', String(!isSelected));
+
+				if (button === bookmarksFilterButton) {
+					filterMovies(searchBar.value);
+				}
+			});
+		});
+	</script>
+</body>
+</html>
