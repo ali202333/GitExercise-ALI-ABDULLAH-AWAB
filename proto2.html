@@ -6,6 +6,7 @@
 	<title>S-CoreBox</title>
 	<style>
 		body {
+			position: relative;
 			margin: 0;
 			background: #ffffff;
 			color: #222;
@@ -14,27 +15,62 @@
 
 		.brand {
 			position: absolute;
-			top: 20px;
-			right: 24px;
+			top: calc(var(--frame-top) + 20px);
+			right: calc(var(--frame-right) + 24px);
 			font-size: 1.25rem;
 			font-weight: bold;
 		}
 
+		.logo-mark {
+			display: inline-block;
+			width: 72px;
+			height: 72px;
+			margin-left: 10px;
+			vertical-align: middle;
+			object-fit: contain;
+		}
+
+		.logo-dark { display: inline-block; mix-blend-mode: screen; }
+		.logo-light { display: none; mix-blend-mode: multiply; }
+		.random-movie-logo {
+			color: inherit;
+			text-decoration: none;
+		}
+		body[data-theme="light"] .logo-dark { display: none; }
+		body[data-theme="light"] .logo-light { display: inline-block; }
+
+		button,
+		.sign-in-button,
+		.sign-up-button {
+			min-height: 52px;
+			box-sizing: border-box;
+		}
 		.account-actions {
 			position: absolute;
-			top: 58px;
-			right: 24px;
+			z-index: 3;
+			top: calc(var(--frame-top) + 34px);
+			right: calc(var(--frame-right) + 20px);
+			display: flex;
+			flex-direction: column;
+			align-items: flex-end;
+			gap: 8px;
+			padding: 0 8px;
+		}
+
+		.account-row {
 			display: flex;
 			gap: 8px;
 		}
 
 		.sign-in-button,
 		.sign-up-button {
+			position: relative;
+			z-index: 3;
 			padding: 10px 18px;
-			border: 1px solid #cfcfcf;
+			border: 1px solid var(--auth-button-border, #000000);
 			border-radius: 6px;
-			background: #ffffff;
-			color: #222;
+			background: var(--auth-button-bg, #000000);
+			color: var(--auth-button-text, #ffffff);
 			font: inherit;
 			cursor: pointer;
 			transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
@@ -44,8 +80,8 @@
 		.sign-in-button:focus-visible,
 		.sign-up-button:hover,
 		.sign-up-button:focus-visible {
-			border-color: #222;
-			background: #dedede;
+			border-color: var(--auth-button-border-hover, #111111);
+			background: var(--auth-button-bg-hover, #111111);
 		}
 
 		header {
@@ -53,8 +89,13 @@
 			border-bottom: 1px solid #e5e5e5;
 		}
 
+		.content-layout {
+			display: block;
+		}
+
 		main {
-			width: 75%;
+			width: min(100%, 80%);
+			margin: 0 auto;
 			min-height: calc(100vh - 151px);
 			padding: 32px 24px;
 			box-sizing: border-box;
@@ -62,14 +103,16 @@
 
 		.main-actions {
 			display: grid;
-			grid-template-columns: repeat(3, minmax(0, 1fr));
+			grid-template-columns: repeat(5, minmax(0, 1fr));
 			gap: 12px;
 			margin-bottom: 32px;
+			align-items: stretch;
 		}
 
 		.filter-control {
 			display: block;
 			min-width: 0;
+			height: 52px;
 		}
 
 		.main-actions select,
@@ -79,13 +122,19 @@
 			min-width: 0;
 			padding: 12px 20px;
 			box-sizing: border-box;
-			border: 1px solid #cfcfcf;
-			border-radius: 6px;
-			background: #ffffff;
+			border: 0;
+			border-radius: 0;
+			background: transparent;
 			color: #222;
 			font: inherit;
 			cursor: pointer;
 			transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+		}
+
+		.main-actions select,
+		.main-actions > button {
+			height: 52px;
+			width: 100%;
 		}
 
 		.main-actions select {
@@ -119,8 +168,13 @@
 			border-color: #222;
 		}
 
+		.main-actions select:focus-visible,
+		.main-actions > button:focus-visible {
+			outline: none;
+		}
+
 		.main-actions select:hover {
-			background: #dedede;
+			background: #f1f1f1;
 		}
 
 		.main-actions button[aria-pressed="true"] {
@@ -129,26 +183,95 @@
 			color: #ffffff;
 		}
 
+		.theme-toggle {
+			padding: 9px 14px;
+			border: 1px solid rgba(255, 255, 255, 0.18);
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.04);
+			color: #f5f5f5;
+			font: inherit;
+			cursor: pointer;
+			transition: opacity 160ms ease, border-color 160ms ease, background-color 160ms ease;
+		}
+
+		.theme-toggle:hover,
+		.theme-toggle:focus-visible {
+			border-color: rgba(255, 255, 255, 0.28);
+			background: rgba(255, 255, 255, 0.09);
+		}
+
 		.mock-data-box {
-			max-height: 360px;
-			overflow-y: auto;
-			border: 1px solid #cfcfcf;
-			border-radius: 6px;
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+			gap: 18px;
+			max-height: none;
+			overflow: visible;
+			padding: 12px 0;
+			border: 0;
+			border-radius: 0;
 		}
 
 		.movie-row {
+			position: relative;
 			display: flex;
+			flex-direction: column;
 			align-items: stretch;
-			border-bottom: 1px solid #e5e5e5;
+			border: 1px solid rgba(255, 255, 255, 0.08);
+			border-radius: 14px;
+			overflow: visible;
+			background: rgba(255, 255, 255, 0.02);
+		}
+
+		.movie-review-preview {
+			position: absolute;
+			z-index: 2;
+			left: 20px;
+			top: calc(100% + 8px);
+			width: min(520px, calc(100% - 40px));
+			padding: 14px 16px;
+			border: 1px solid #cfcfcf;
+			background: #ffffff;
+			box-shadow: 0 8px 20px rgb(0 0 0 / 14%);
+			color: #333;
+			font-size: 0.9rem;
+			line-height: 1.5;
+			pointer-events: none;
+		}
+
+		.movie-poster {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			padding: 12px;
+			min-height: 230px;
+			background: linear-gradient(160deg, #2d2d2d, #0d0d0d 70%);
+			color: #ffffff;
+		}
+
+		.movie-poster-tag {
+			display: inline-flex;
+			align-self: flex-start;
+			padding: 4px 8px;
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.12);
+			font-size: 0.63rem;
+			letter-spacing: 0.08em;
+			text-transform: uppercase;
+		}
+
+		.movie-poster-title {
+			display: block;
+			font-size: 1.2rem;
+			font-weight: bold;
+			line-height: 1.2;
 		}
 
 		.movie-button {
 			display: block;
-			flex: 1;
-			padding: 16px 20px;
+			padding: 14px 14px 10px;
 			border: 0;
-			background: #ffffff;
-			color: #222;
+			background: transparent;
+			color: var(--text);
 			font: inherit;
 			font-weight: bold;
 			text-align: left;
@@ -157,12 +280,12 @@
 		}
 
 		.bookmark-button {
-			width: 110px;
-			padding: 12px;
+			width: 100%;
+			padding: 10px 12px 14px;
 			border: 0;
-			border-left: 1px solid #e5e5e5;
-			background: #ffffff;
-			color: #222;
+			border-top: 1px solid rgba(255, 255, 255, 0.06);
+			background: transparent;
+			color: var(--text);
 			font: inherit;
 			cursor: pointer;
 		}
@@ -289,24 +412,250 @@
 		.close-details-button:focus-visible {
 			background: #444;
 		}
+
+		@media (max-width: 760px) {
+			.main-actions {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+			}
+
+			.content-layout {
+				display: block;
+			}
+
+			.featured-films {
+				padding: 0 24px 32px;
+			}
+		}
+
+		:root {
+			color-scheme: dark;
+			--bg: #050505;
+			--bg-elevated: #111111;
+			--panel: #171717;
+			--panel-strong: #1f1f1f;
+			--text: #f5f5f5;
+			--muted: #c7c7c7;
+			--border: rgba(255, 255, 255, 0.12);
+			--button-bg: #ffffff;
+			--button-text: #111111;
+			--shadow: rgb(0 0 0 / 40%);
+			--auth-button-bg: #000000;
+			--auth-button-bg-hover: #111111;
+			--auth-button-text: #ffffff;
+			--auth-button-border: #000000;
+			--auth-button-border-hover: #111111;
+			--theme-frame-image: url("console.png");
+			--frame-top: 5vh;
+			--frame-right: 16vw;
+			--frame-bottom: 5vh;
+			--frame-left: 16vw;
+		}
+
+		body {
+			background: var(--bg);
+			color: var(--text);
+			box-sizing: border-box;
+			min-height: 100vh;
+			padding: var(--frame-top) var(--frame-right) var(--frame-bottom) var(--frame-left);
+		}
+
+		body[data-theme="light"] {
+			color-scheme: light;
+			--bg: #f5f5f5;
+			--bg-elevated: #ffffff;
+			--panel: #ffffff;
+			--panel-strong: #f0f0f0;
+			--text: #111111;
+			--muted: #555555;
+			--border: rgba(17, 17, 17, 0.38);
+			--button-bg: #111111;
+			--button-text: #ffffff;
+			--shadow: rgb(0 0 0 / 12%);
+			--auth-button-bg: #ffffff;
+			--auth-button-bg-hover: #f3f3f3;
+			--auth-button-text: #111111;
+			--auth-button-border: rgba(17, 17, 17, 0.38);
+			--auth-button-border-hover: rgba(17, 17, 17, 0.52);
+			--theme-frame-image: url("tbdf.png");
+			--frame-right: 16vw;
+			--frame-left: 16vw;
+		}
+
+		body::before {
+			position: fixed;
+			z-index: 2;
+			inset: 0;
+			background: var(--theme-frame-image) center / 100% 100% no-repeat;
+			content: "";
+			pointer-events: none;
+		}
+
+		body[data-theme="light"]::before {
+			z-index: 2;
+			opacity: 0.9;
+		}
+
+		body > * {
+			position: relative;
+			z-index: 1;
+		}
+
+		button,
+		select,
+		input,
+		a,
+		.movie-row {
+			pointer-events: auto;
+		}
+
+		body[data-theme="dark"] .sign-in-button,
+		body[data-theme="dark"] .sign-up-button,
+		body[data-theme="dark"] .theme-toggle,
+		body[data-theme="dark"] .main-actions > button,
+		body[data-theme="dark"] .main-actions select,
+		body[data-theme="dark"] .search-bar,
+		body[data-theme="dark"] .movie-button,
+		body[data-theme="dark"] .bookmark-button,
+		body[data-theme="dark"] .pagination-button,
+		body[data-theme="dark"] .close-details-button {
+			background: #000000;
+			color: #ffffff;
+			border-color: #000000;
+		}
+
+		body[data-theme="dark"] .sign-in-button:hover,
+		body[data-theme="dark"] .sign-in-button:focus-visible,
+		body[data-theme="dark"] .sign-up-button:hover,
+		body[data-theme="dark"] .sign-up-button:focus-visible,
+		body[data-theme="dark"] .theme-toggle:hover,
+		body[data-theme="dark"] .theme-toggle:focus-visible,
+		body[data-theme="dark"] .main-actions > button:hover,
+		body[data-theme="dark"] .main-actions > button:focus-visible,
+		body[data-theme="dark"] .main-actions select:hover,
+		body[data-theme="dark"] .main-actions select:focus-visible,
+		body[data-theme="dark"] .search-bar:hover,
+		body[data-theme="dark"] .search-bar:focus-visible,
+		body[data-theme="dark"] .movie-button:hover,
+		body[data-theme="dark"] .movie-button:focus-visible,
+		body[data-theme="dark"] .bookmark-button:hover,
+		body[data-theme="dark"] .bookmark-button:focus-visible,
+		body[data-theme="dark"] .pagination-button:hover:not(:disabled),
+		body[data-theme="dark"] .pagination-button:focus-visible:not(:disabled),
+		body[data-theme="dark"] .close-details-button:hover,
+		body[data-theme="dark"] .close-details-button:focus-visible {
+			background: #000000;
+			border-color: #000000;
+			color: #ffffff;
+		}
+
+		body[data-theme="light"] .sign-in-button,
+		body[data-theme="light"] .sign-up-button {
+			background: #ffffff;
+			color: #111111;
+			border-color: rgba(17, 17, 17, 0.38);
+		}
+
+		body[data-theme="light"] .sign-in-button:hover,
+		body[data-theme="light"] .sign-in-button:focus-visible,
+		body[data-theme="light"] .sign-up-button:hover,
+		body[data-theme="light"] .sign-up-button:focus-visible {
+			background: #f3f3f3;
+			border-color: rgba(17, 17, 17, 0.52);
+		}
+
+		body[data-theme="light"] .theme-toggle {
+			border-color: rgba(17, 17, 17, 0.38);
+			background: rgba(0, 0, 0, 0.03);
+			color: #111111;
+		}
+
+		body[data-theme="light"] .theme-toggle:hover,
+		body[data-theme="light"] .theme-toggle:focus-visible {
+			background: rgba(0, 0, 0, 0.06);
+		}
+
+		body[data-theme="light"] .main-actions select,
+		body[data-theme="light"] .main-actions > button,
+		body[data-theme="light"] .search-bar,
+		body[data-theme="light"] .movie-button,
+		body[data-theme="light"] .bookmark-button,
+		body[data-theme="light"] .movie-review-preview,
+		body[data-theme="light"] .pagination-button,
+		body[data-theme="light"] .featured-film,
+		body[data-theme="light"] .mock-data-box,
+		body[data-theme="light"] .movie-details-template {
+			background: var(--panel);
+			color: var(--text);
+			border-color: var(--border);
+		}
+
+		body[data-theme="light"] .movie-review-preview {
+			box-shadow: 0 8px 20px rgb(0 0 0 / 10%);
+		}
+
+		.main-actions select,
+		.main-actions > button,
+		.search-bar,
+		.movie-button,
+		.bookmark-button,
+		.movie-review-preview,
+		.pagination-button,
+		.featured-film,
+		.mock-data-box,
+		.movie-details-template {
+			background: var(--panel);
+			color: var(--text);
+			border-color: var(--border);
+		}
+
+		.loading-screen {
+			position: fixed;
+			z-index: 10;
+			inset: 0;
+			display: grid;
+			place-items: center;
+			background: #ffffff;
+			color: #111111;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 160ms ease;
+		}
+
+		.loading-screen[aria-hidden="false"] {
+			opacity: 1;
+			pointer-events: auto;
+		}
+
+		.loading-gif {
+			width: min(260px, 40vw);
+			height: auto;
+			object-fit: contain;
+		}
 	</style>
 </head>
 <body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading">
+		<img class="loading-gif" src="loading.gif" alt="">
+	</div>
 	<div class="brand"></div>
 	<nav class="account-actions" aria-label="Account actions">
-		<a class="sign-in-button" href="signin.html">Sign In</a>
-		<a class="sign-up-button" href="signup.html">Sign Up</a>
+		<div class="account-row">
+			<a class="sign-in-button" href="signin.html">Sign In</a>
+			<a class="sign-up-button" href="signup.html">Sign Up</a>
+		</div>
+		<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
 	</nav>
 
 	<header>
-		<h1>S-CoreBox</h1>
+		<h1><a class="random-movie-logo" href="proto2.html?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="randominvert.png" alt=""><img class="logo-mark logo-light" src="random.png" alt=""></a></h1>
 	</header>
 
+	<div class="content-layout">
 	<main>
 		<div class="main-actions" role="group" aria-label="Content controls">
 			<div class="filter-control">
 				<select aria-label="Filter by genre">
-					<option value="all">All genres</option>
+					<option value="all">Genres</option>
 					<option value="Action">Action</option>
 					<option value="Adult">Adult</option>
 					<option value="Adventure">Adventure</option>
@@ -337,6 +686,30 @@
 					<option value="Western">Western</option>
 				</select>
 			</div>
+			<div class="filter-control">
+				<select id="rating-category-filter" aria-label="Filter by rating category">
+					<option value="all">Ratings</option>
+					<option value="mise-en-scene">Mise-en-scène</option>
+					<option value="cinematography">Cinematography</option>
+					<option value="narrative">Narrative</option>
+					<option value="sound">Sound</option>
+					<option value="editing">Editing</option>
+				</select>
+			</div>
+			<div class="filter-control">
+				<select id="rating-grade-filter" aria-label="Filter by minimum rating grade">
+					<option value="all">Grades</option>
+					<option value="F">F or higher</option>
+					<option value="E">E or higher</option>
+					<option value="D">D or higher</option>
+					<option value="C">C or higher</option>
+					<option value="B">B or higher</option>
+					<option value="A">A or higher</option>
+					<option value="S">S or higher</option>
+					<option value="Z">Z or higher</option>
+					<option value="Z+">Z+ only</option>
+				</select>
+			</div>
 			<button type="button" aria-pressed="false" data-sort-direction="sort">Sort</button>
 			<button type="button" aria-pressed="false" data-bookmarks-filter>Watch Later</button>
 			<div class="search-wrapper">
@@ -350,6 +723,7 @@
 			<button id="next-page-button" class="pagination-button" type="button" aria-controls="mock-data-box">Next</button>
 		</div>
 	</main>
+	</div>
 
 	<div id="movie-details-backdrop" class="movie-details-backdrop" role="presentation" hidden>
 		<section class="movie-details-template" role="dialog" aria-modal="true" aria-labelledby="movie-details-title">
@@ -361,37 +735,172 @@
 	</div>
 
 	<script>
+		const loadingScreen = document.querySelector('.loading-screen');
+		const showLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'false');
+		const hideLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'true');
+		const transitionTo = (callback) => {
+			showLoadingScreen();
+			window.setTimeout(callback, 1300);
+		};
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link?.classList.contains('random-movie-logo') && movies.length) {
+				event.preventDefault();
+				const randomMovie = movies[Math.floor(Math.random() * movies.length)];
+				transitionTo(() => {
+					window.location.href = `movie.html?id=${encodeURIComponent(randomMovie.id)}`;
+				});
+				return;
+			}
+			if (link && link.origin === window.location.origin && !link.target) {
+				event.preventDefault();
+				transitionTo(() => { window.location.href = link.href; });
+			}
+		}, true);
+		document.addEventListener('submit', (event) => {
+			event.preventDefault();
+			transitionTo(() => { event.target.submit(); });
+		}, true);
+
+		const body = document.body;
+		const themeToggle = document.getElementById('theme-toggle');
+		const savedTheme = localStorage.getItem('s-corebox-theme') || 'dark';
+		body.dataset.theme = savedTheme;
+
+		const syncThemeVariables = () => {
+			const isLight = body.dataset.theme === 'light';
+			document.documentElement.style.setProperty('--auth-button-bg', isLight ? '#ffffff' : '#000000');
+			document.documentElement.style.setProperty('--auth-button-text', isLight ? '#111111' : '#ffffff');
+			document.documentElement.style.setProperty('--auth-button-border', isLight ? 'rgba(0, 0, 0, 0.12)' : '#000000');
+			document.documentElement.style.setProperty('--auth-button-bg-hover', isLight ? '#f3f3f3' : '#111111');
+			document.documentElement.style.setProperty('--auth-button-border-hover', isLight ? 'rgba(0, 0, 0, 0.2)' : '#111111');
+			body.style.setProperty('--auth-button-bg', isLight ? '#ffffff' : '#000000');
+			body.style.setProperty('--auth-button-text', isLight ? '#111111' : '#ffffff');
+			body.style.setProperty('--auth-button-border', isLight ? 'rgba(0, 0, 0, 0.12)' : '#000000');
+			body.style.setProperty('--auth-button-bg-hover', isLight ? '#f3f3f3' : '#111111');
+			body.style.setProperty('--auth-button-border-hover', isLight ? 'rgba(0, 0, 0, 0.2)' : '#111111');
+
+			document.querySelectorAll('.sign-in-button, .sign-up-button').forEach((button) => {
+				button.style.setProperty('background', isLight ? '#ffffff' : '#000000', 'important');
+				button.style.setProperty('color', isLight ? '#111111' : '#ffffff', 'important');
+				button.style.setProperty('border-color', isLight ? 'rgba(0, 0, 0, 0.12)' : '#000000', 'important');
+			});
+		};
+
+		const applyThemeLabel = () => {
+			const isLight = body.dataset.theme === 'light';
+			themeToggle.textContent = isLight ? 'Dark mode' : 'Light mode';
+			themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+			syncThemeVariables();
+		};
+
+		applyThemeLabel();
+		let themeTransitioning = false;
+		themeToggle.addEventListener('click', () => {
+			if (themeTransitioning) {
+				return;
+			}
+			themeTransitioning = true;
+			themeToggle.disabled = true;
+			const nextTheme = body.dataset.theme === 'light' ? 'dark' : 'light';
+			transitionTo(() => {
+				body.dataset.theme = nextTheme;
+				localStorage.setItem('s-corebox-theme', nextTheme);
+				document.querySelectorAll('.sign-in-button, .sign-up-button').forEach((button) => {
+					button.style.setProperty('background', nextTheme === 'light' ? '#ffffff' : '#000000', 'important');
+					button.style.setProperty('color', nextTheme === 'light' ? '#111111' : '#ffffff', 'important');
+					button.style.setProperty('border-color', nextTheme === 'light' ? 'rgba(0, 0, 0, 0.12)' : '#000000', 'important');
+				});
+				applyThemeLabel();
+				hideLoadingScreen();
+				themeToggle.disabled = false;
+				themeTransitioning = false;
+			});
+		});
+
 		const mockDataBox = document.getElementById('mock-data-box');
 		const searchBar = document.querySelector('.search-bar');
 		const genreFilter = document.querySelector('.filter-control select');
+		const ratingCategoryFilter = document.getElementById('rating-category-filter');
+		const ratingGradeFilter = document.getElementById('rating-grade-filter');
 		const bookmarksFilterButton = document.querySelector('[data-bookmarks-filter]');
 		const paginationControls = document.getElementById('pagination-controls');
 		const previousPageButton = document.getElementById('previous-page-button');
 		const nextPageButton = document.getElementById('next-page-button');
 		const pageSize = 50;
 		let currentPage = 0;
+		let movies = [];
+
+		const updateRatingFilterVisibility = () => {
+			const showRatingFilters = genreFilter.value === 'all';
+			ratingCategoryFilter.closest('.filter-control').hidden = !showRatingFilters;
+			ratingGradeFilter.closest('.filter-control').hidden = !showRatingFilters;
+			if (!showRatingFilters) {
+				ratingCategoryFilter.value = 'all';
+				ratingGradeFilter.value = 'all';
+			}
+		};
 
 		const renderMovies = (movies) => {
 			movies.forEach((movie) => {
 			const movieRow = document.createElement('div');
 			movieRow.className = 'movie-row';
+			movieRow.setAttribute('role', 'link');
+			movieRow.setAttribute('tabindex', '0');
+			movieRow.style.cursor = 'pointer';
 			movieRow.dataset.movieId = movie.id;
 			movieRow.dataset.genres = JSON.stringify(movie.genres);
+			movieRow.dataset.ratings = JSON.stringify(movie.reviews.ratings);
+
+			const poster = document.createElement('div');
+			poster.className = 'movie-poster';
+			poster.innerHTML = `
+				<span class="movie-poster-tag">${movie.genres[0] || 'Movie'}</span>
+				<span class="movie-poster-title">${movie.title}</span>
+			`;
 
 			const movieButton = document.createElement('button');
 			movieButton.type = 'button';
 			movieButton.className = 'movie-button';
-			movieButton.textContent = `${movie.id}. ${movie.title}`;
+			movieButton.textContent = `${movie.title} · ${movie.rating}`;
 			movieButton.dataset.movieId = movie.id;
 			movieButton.dataset.movieUrl = movie.movie_url;
-			movieButton.addEventListener('click', () => {
-				window.location.href = `movie.html?id=${encodeURIComponent(movie.id)}`;
+			const openMovie = () => {
+				transitionTo(() => {
+					window.location.href = `movie.html?id=${encodeURIComponent(movie.id)}`;
+				});
+			};
+			movieRow.addEventListener('click', (event) => {
+				if (event.target.closest('.bookmark-button')) {
+					return;
+				}
+				openMovie();
+			});
+			movieRow.addEventListener('keydown', (event) => {
+				if (event.key === 'Enter' || event.key === ' ') {
+					event.preventDefault();
+					openMovie();
+				}
+			});
+			let reviewPreviewTimer;
+			movieRow.addEventListener('mouseenter', () => {
+				reviewPreviewTimer = window.setTimeout(() => {
+					const reviewPreview = document.createElement('div');
+					reviewPreview.className = 'movie-review-preview';
+					reviewPreview.textContent = movie.reviews.final_review;
+					movieRow.appendChild(reviewPreview);
+				}, 500);
+			});
+			movieRow.addEventListener('mouseleave', () => {
+				window.clearTimeout(reviewPreviewTimer);
+				movieRow.querySelector('.movie-review-preview')?.remove();
 			});
 
 			const rating = document.createElement('span');
 			rating.className = 'movie-rating';
 			rating.innerHTML = `&#9733; ${movie.rating}`;
 			rating.setAttribute('aria-label', `Rating ${movie.rating} out of 10`);
+			rating.hidden = true;
 
 			const bookmarkButton = document.createElement('button');
 			bookmarkButton.type = 'button';
@@ -405,7 +914,7 @@
 				filterMovies(searchBar.value);
 			});
 
-			movieRow.append(movieButton, rating, bookmarkButton);
+			movieRow.append(poster, movieButton, bookmarkButton);
 			mockDataBox.appendChild(movieRow);
 		});
 		};
@@ -423,25 +932,45 @@
 		};
 
 
-		fetch('output.json')
+		fetch('output_updated_reviews_filled.json')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(`Unable to load movies: ${response.status}`);
 				}
 				return response.json();
 			})
-			.then((movies) => {
-				renderMovies(movies);
+			.then((movieCatalog) => {
+				movies = movieCatalog;
+				renderMovies(movieCatalog);
+				document.querySelectorAll('[data-featured-id]').forEach((featuredFilm) => {
+					const movie = movieCatalog.find((item) => String(item.id) === featuredFilm.dataset.featuredId);
+					if (!movie) {
+						return;
+					}
+					featuredFilm.querySelector('.featured-film-title').textContent = movie.title;
+					featuredFilm.querySelector('.featured-film-rating').textContent = `★ ${movie.rating}`;
+					featuredFilm.querySelector('img').alt = movie.title;
+				});
 				movieRows = [...mockDataBox.querySelectorAll('.movie-row')];
 				filterMovies(searchBar.value);
+				if (new URLSearchParams(window.location.search).get('random') === '1' && movies.length) {
+					const randomMovie = movies[Math.floor(Math.random() * movies.length)];
+					transitionTo(() => {
+						window.location.href = `movie.html?id=${encodeURIComponent(randomMovie.id)}`;
+					});
+				}
 			})
 			.catch((error) => {
 				mockDataBox.textContent = error.message;
 			});
+		const gradeRanks = { F: 0, E: 1, D: 2, C: 3, B: 4, A: 5, S: 6, Z: 7, 'Z+': 8 };
+
 		const filterMovies = (searchTerm, selectedGenre = genreFilter.value) => {
 			const normalizedSearchTerm = searchTerm.trim().toLowerCase();
 			const bookmarksOnly = bookmarksFilterButton.getAttribute('aria-pressed') === 'true';
-			const isPaginated	= !normalizedSearchTerm && selectedGenre === 'all' && !bookmarksOnly;
+			const selectedCategory = ratingCategoryFilter.value;
+			const selectedGrade = ratingGradeFilter.value;
+			const isPaginated = !normalizedSearchTerm && selectedGenre === 'all' && selectedCategory === 'all' && selectedGrade === 'all' && !bookmarksOnly;
 			const pageStart = currentPage * pageSize;
 			const pageEnd = pageStart + pageSize;
 
@@ -449,18 +978,27 @@
 				const movieTitle = movieRow.querySelector('.movie-button').textContent.trim().toLowerCase();
 				const matchesSearch = movieTitle.includes(normalizedSearchTerm);
 				const matchesGenre = selectedGenre === 'all' || JSON.parse(movieRow.dataset.genres).includes(selectedGenre);
+				const ratings = JSON.parse(movieRow.dataset.ratings);
+				const ratingValues = selectedCategory === 'all' ? Object.values(ratings) : [ratings[selectedCategory]];
+				const matchesRating = selectedGrade === 'all' || ratingValues.some((rating) => gradeRanks[rating] >= gradeRanks[selectedGrade]);
 				const isBookmarked = movieRow.querySelector('.bookmark-button').getAttribute('aria-pressed') === 'true';
-				const isOutsidePage = isPaginatedView && (index < pageStart || index >= pageEnd);
-				movieRow.hidden = !matchesSearch || !matchesGenre || (bookmarksOnly && !isBookmarked) || isOutsidePage;
+				const isOutsidePage = isPaginated && (index < pageStart || index >= pageEnd);
+				movieRow.hidden = !matchesSearch || !matchesGenre || !matchesRating || (bookmarksOnly && !isBookmarked) || isOutsidePage;
 			});
 
-			paginationControls.hidden = !isPaginatedView;
+			paginationControls.hidden = !isPaginated;
 			previousPageButton.disabled = currentPage === 0;
-			nextPageButton.disabled = !isPaginatedView || pageEnd >= movieRows.length;
+			nextPageButton.disabled = !isPaginated || pageEnd >= movieRows.length;
 		};
 
 		searchBar.addEventListener('input', () => filterMovies(searchBar.value));
-		genreFilter.addEventListener('change', () => filterMovies(searchBar.value));
+		genreFilter.addEventListener('change', () => {
+			updateRatingFilterVisibility();
+			filterMovies(searchBar.value);
+		});
+		ratingCategoryFilter.addEventListener('change', () => filterMovies(searchBar.value));
+		ratingGradeFilter.addEventListener('change', () => filterMovies(searchBar.value));
+		updateRatingFilterVisibility();
 		previousPageButton.addEventListener('click', () => {
 			if (currentPage === 0) {
 				return;
@@ -504,6 +1042,7 @@
 				}
 			});
 		});
+
 	</script>
 </body>
 </html>

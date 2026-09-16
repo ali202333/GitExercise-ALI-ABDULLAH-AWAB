@@ -1,0 +1,604 @@
+[
+    {
+        "movie_id": 1,
+        "movie_title": "Woman in the Dunes",
+        "movie_url": "https://www.imdb.com/title/tt0058625/",
+        "review_count": 25,
+        "final_review": "A visually and psychologically rigorous existential drama. The reviews consistently praise its tactile black-and-white imagery, oppressive sound design, and performances, while the main reservation is that its deliberate pace and allegorical thinness can feel overextended.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "S",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 2,
+        "movie_title": "Saving Private Ryan",
+        "movie_url": "https://www.imdb.com/title/tt0120815/",
+        "review_count": 25,
+        "final_review": "A technically commanding and emotionally direct war film whose immersive combat sequences are balanced by a clear moral purpose. Its sentimentality and conventional heroism occasionally simplify the historical material, but the ensemble, sound, editing, and production scale remain formidable.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "S",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 3,
+        "movie_title": "Baasha",
+        "movie_url": "https://www.imdb.com/title/tt0139876/",
+        "review_count": 25,
+        "final_review": "A highly entertaining star vehicle built around Rajinikanth's charisma, memorable music, and a strong transformation arc. The reviews celebrate its mass appeal and action staging, while noting melodramatic plotting, uneven tonal shifts, and formulaic supporting characters.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 4,
+        "movie_title": "Visaaranai",
+        "movie_url": "https://www.imdb.com/title/tt4991384/",
+        "review_count": 25,
+        "final_review": "A severe, intimate indictment of custodial violence that gains power from its plainspoken realism and escalating structure. Its performances and moral clarity are widely compelling, though the bleakness, compressed characterization, and intentionally harsh visual style leave little relief.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 5,
+        "movie_title": "Dead Poets Society",
+        "movie_url": "https://www.imdb.com/title/tt0097165/",
+        "review_count": 25,
+        "final_review": "A warmly performed coming-of-age drama that makes its case for intellectual freedom through persuasive classroom chemistry and emotional timing. Its inspirational arc is effective but openly sentimental, and some students receive less development than the central teacher and the film's famous rhetoric.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 6,
+        "movie_title": "The Apartment",
+        "movie_url": "https://www.imdb.com/title/tt0053604/",
+        "review_count": 25,
+        "final_review": "A finely calibrated romantic comedy-drama that turns office routine, loneliness, and compromised ethics into humane comedy. Wilder's tonal control, ensemble work, and efficient visual storytelling are exceptional, although a few plot turns and gender dynamics reflect their era.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "S",
+            "editing": "S",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 7,
+        "movie_title": "Modern Times",
+        "movie_url": "https://www.imdb.com/title/tt0027977/",
+        "review_count": 25,
+        "final_review": "A landmark physical comedy whose visual invention and social critique remain unusually durable. Chaplin's performance, rhythmic editing, and industrial mise-en-scene are superb; the episodic structure and broad symbolism can feel schematic, but they rarely blunt the film's precision.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "S",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 8,
+        "movie_title": "Klaus",
+        "movie_url": "https://www.imdb.com/title/tt4729430/",
+        "review_count": 25,
+        "final_review": "A polished stop-motion Christmas fable with appealing character design, expressive animation, and a generous emotional core. Its musical presentation and visual warmth carry a familiar origin story, though the exposition and villain material are simpler than the film's best passages.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 9,
+        "movie_title": "Anbe Sivam",
+        "movie_url": "https://www.imdb.com/title/tt0367495/",
+        "review_count": 25,
+        "final_review": "A humane road movie whose philosophical conversations are grounded by an affectionate friendship and strong performances. It earns its emotional conclusions through cultural and moral debate, though its episodic dialogue can become didactic and its tonal balance is occasionally uneven.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 10,
+        "movie_title": "Nights of Cabiria",
+        "movie_url": "https://www.imdb.com/title/tt0050783/",
+        "review_count": 25,
+        "final_review": "A compassionate and formally assured portrait of resilience, centered on Giulietta Masina's expressive performance. Fellini's episodic storytelling and dreamlike atmosphere create lasting tenderness, though the narrative sometimes repeats its emotional pattern and risks sentimentality.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 11,
+        "movie_title": "Vikram",
+        "movie_url": "https://www.imdb.com/title/tt9179430/",
+        "review_count": 25,
+        "final_review": "A stylish, high-energy action thriller that builds a persuasive vigilante mythology around Kamal Haasan's controlled performance. The reviews value its set pieces, music, and political undercurrent, while recurring criticisms target excess, tonal inconsistency, and a plot that prioritizes spectacle over plausibility.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 12,
+        "movie_title": "On the Waterfront",
+        "movie_url": "https://www.imdb.com/title/tt0047296/",
+        "review_count": 25,
+        "final_review": "A tightly observed tragedy of ambition, betrayal, and moral compromise, carried by Brando's layered performance and Kazan's social realism. Its dockside atmosphere and character work are exceptional, though the pacing and didactic moments are less subtle than the film's strongest confrontations.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "S",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 13,
+        "movie_title": "Shershaah",
+        "movie_url": "https://www.imdb.com/title/tt10295212/",
+        "review_count": 25,
+        "final_review": "A sincere and technically competent war biopic that gives its subject a clear emotional arc and strong patriotic momentum. The reviews appreciate the performances and accessible action, but the idealization, familiar structure, and uneven historical complexity limit its dramatic depth.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 14,
+        "movie_title": "Andhadhun",
+        "movie_url": "https://www.imdb.com/title/tt8108198/",
+        "review_count": 25,
+        "final_review": "A clever, tightly constructed thriller whose unreliable perspective, comic tension, and late reversals reward attention. Its sound and performances are particularly effective; the elaborate plotting occasionally strains credibility, and the final explanatory turns are less elegant than the setup.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 15,
+        "movie_title": "There Will Be Blood",
+        "movie_url": "https://www.imdb.com/title/tt0469494/",
+        "review_count": 25,
+        "final_review": "A monumental character study of greed and self-invention, anchored by Daniel Day-Lewis's ferocious control. The austere imagery, sound, and measured editing create formidable pressure, though the deliberately narrow emotional range and extended repetitions can make the film feel remote.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 16,
+        "movie_title": "V for Vendetta",
+        "movie_url": "https://www.imdb.com/title/tt0434409/",
+        "review_count": 25,
+        "final_review": "A forceful political revenge thriller with striking production design, a memorable central performance, and unusually committed visual world-building. Its rhetoric and action remain potent, but the plotting is schematic, the romance underdeveloped, and the moral argument can become blunt.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 17,
+        "movie_title": "Star Wars: Episode V - The Empire Strikes Back",
+        "movie_url": "https://www.imdb.com/title/tt0080684/",
+        "review_count": 25,
+        "final_review": "A near-definitive space opera sequel that improves its predecessor's emotional stakes, character dynamics, and visual coherence. The reviews consistently admire its production design, effects, score, editing, and pacing; its mythic simplicity is a feature for many viewers but a limitation for those seeking complexity.",
+        "ratings": {
+            "cinematography": "S",
+            "sound": "S",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 18,
+        "movie_title": "Mr. Smith Goes to Washington",
+        "movie_url": "https://www.imdb.com/title/tt0031679/",
+        "review_count": 25,
+        "final_review": "A brisk political drama whose idealistic performance and procedural momentum make its defense of civic courage unusually engaging. Capra's direction and editing sustain the filibuster's tension, although the dialogue and institutional politics are openly romanticized.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 19,
+        "movie_title": "The Prestige",
+        "movie_url": "https://www.imdb.com/title/tt0482571/",
+        "review_count": 25,
+        "final_review": "A meticulously engineered period thriller about obsession, rivalry, and the cost of performance. Its parallel structure, production design, and sound create elegant misdirection, though the exposition-heavy mechanics and repeated reversals can make the emotional relationships feel secondary.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 20,
+        "movie_title": "The Heiress",
+        "movie_url": "https://www.imdb.com/title/tt0041452/",
+        "review_count": 25,
+        "final_review": "A restrained psychological drama whose power comes from repression, social judgment, and the precise performances of its central women. The period interiors and silences are persuasive, but its controlled pace and limited external action can feel austere rather than richly developed.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 21,
+        "movie_title": "Attack on Titan: The Last Attack",
+        "movie_url": "https://www.imdb.com/title/tt33175825/",
+        "review_count": 25,
+        "final_review": "A visually ambitious animated war drama that delivers scale, grief, and a strong sense of apocalyptic consequence. Its action design and score are effective, but compressed exposition, uneven character focus, and dependence on prior knowledge weaken the narrative as a standalone work.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 22,
+        "movie_title": "Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb",
+        "movie_url": "https://www.imdb.com/title/tt0057012/",
+        "review_count": 25,
+        "final_review": "A brilliantly controlled black comedy that converts nuclear anxiety and bureaucratic language into absurdist political terror. The ensemble, cutting, production design, and sonic motifs are exceptional; its episodic structure and intentionally exaggerated characters trade psychological depth for satirical force.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "S",
+            "narrative": "S",
+            "editing": "S",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 23,
+        "movie_title": "Seven Samurai",
+        "movie_url": "https://www.imdb.com/title/tt0047478/",
+        "review_count": 25,
+        "final_review": "A monumental ensemble epic that combines tactile action, moral ambiguity, and unusually patient character observation. Kurosawa's staging, editing, weather, and production design are masterful, while the long duration and broad tonal shifts are the main barriers to its otherwise powerful narrative.",
+        "ratings": {
+            "cinematography": "S",
+            "sound": "A",
+            "narrative": "S",
+            "editing": "S",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 24,
+        "movie_title": "The Legend of Maula Jatt",
+        "movie_url": "https://www.imdb.com/title/tt4139928/",
+        "review_count": 25,
+        "final_review": "A muscular historical action drama whose performances, production design, and confrontational set pieces create immediate impact. Its emotional directness and mythic scale appeal strongly to the reviews, but the plotting is broad, the violence can overwhelm nuance, and tonal consistency is limited.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 25,
+        "movie_title": "Pink Floyd: Live at Pompeii",
+        "movie_url": "https://www.imdb.com/title/tt0069090/",
+        "review_count": 25,
+        "final_review": "A visually immersive concert film that treats Pink Floyd's performance as both music and carefully composed image. The editing and atmosphere are effective, but the limited narrative, uneven live energy, and occasional repetition make it more compelling as a document than as a complete film.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "S",
+            "narrative": "C",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 26,
+        "movie_title": "Requiem for a Dream",
+        "movie_url": "https://www.imdb.com/title/tt0180093/",
+        "review_count": 25,
+        "final_review": "A punishing formal study of addiction and self-destruction whose fractured editing, color, sound, and performance style deliberately overwhelm the viewer. Its parallel structure and sensory intensity are formidable, though the relentless bleakness, repetitive escalation, and thin characterization can feel manipulative.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "S",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 27,
+        "movie_title": "WALL·E",
+        "movie_url": "https://www.imdb.com/title/tt0910970/",
+        "review_count": 25,
+        "final_review": "A remarkably efficient animated science-fiction romance that builds emotional weight through image, gesture, and sound with minimal dialogue. Its environmental premise and first act are outstanding; the later action adventure is more conventional and its corporate satire is comparatively simple.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 28,
+        "movie_title": "The Secret in Their Eyes",
+        "movie_url": "https://www.imdb.com/title/tt1305806/",
+        "review_count": 25,
+        "final_review": "A carefully plotted crime romance that uses memory, guilt, and institutional failure to give its mystery lasting emotional stakes. The performances, restrained visual grammar, and final reversal are strong, though the time shifts demand patience and some coincidences feel engineered.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 29,
+        "movie_title": "The Look of Silence",
+        "movie_url": "https://www.imdb.com/title/tt3521134/",
+        "review_count": 25,
+        "final_review": "A rigorously composed documentary about memory, complicity, and the limits of testimony. Its quiet observation and ethical restraint produce profound force, though the deliberate pace, emotional distance, and refusal of conventional catharsis will test viewers expecting a more explanatory account.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 30,
+        "movie_title": "Shahid",
+        "movie_url": "https://www.imdb.com/title/tt2181831/",
+        "review_count": 25,
+        "final_review": "A sober political biopic that treats Shahid Azmi's legal work and convictions with seriousness rather than easy hero worship. Rajkummar Rao's performance and the procedural detail are persuasive, while the functional visual style and compressed chronology limit its formal distinctiveness.",
+        "ratings": {
+            "cinematography": "C",
+            "sound": "C",
+            "narrative": "A",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 31,
+        "movie_title": "Samsara",
+        "movie_url": "https://www.imdb.com/title/tt0770802/",
+        "review_count": 25,
+        "final_review": "A meditative visual essay whose global landscapes, bodies, rituals, and music create a sustained sense of wonder. Its imagery and sound are exceptional, but the non-narrative structure, generalized spirituality, and occasional aesthetic distance make its ideas less specific than its surfaces.",
+        "ratings": {
+            "cinematography": "S",
+            "sound": "S",
+            "narrative": "C",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 32,
+        "movie_title": "Satya",
+        "movie_url": "https://www.imdb.com/title/tt0195231/",
+        "review_count": 25,
+        "final_review": "A gritty crime drama with a vivid sense of place, sharp ensemble interplay, and escalating moral pressure. Its dialogue, music, and street-level texture are compelling, though the sprawling middle, episodic plotting, and uneven tonal shifts keep it from complete control.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 33,
+        "movie_title": "Free Solo",
+        "movie_url": "https://www.imdb.com/title/tt7775622/",
+        "review_count": 25,
+        "final_review": "A gripping documentary that turns a dangerous ascent into a study of discipline, risk, and isolation. The climbing footage and editing create genuine physical tension, but the intimate character material is comparatively conventional and the film sometimes lets spectacle carry the argument.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 34,
+        "movie_title": "Barry Lyndon",
+        "movie_url": "https://www.imdb.com/title/tt0072684/",
+        "review_count": 25,
+        "final_review": "A formally exacting historical drama whose natural light, composed interiors, and measured movement create an unmistakable world. Its visual and editorial control are extraordinary, but the cool distance, episodic middle, and deliberately passive protagonist make the narrative emotionally austere.",
+        "ratings": {
+            "cinematography": "S",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "A",
+            "mise-en-scene": "S"
+        }
+    },
+    {
+        "movie_id": 35,
+        "movie_title": "Mr. Muhsin",
+        "movie_url": "https://www.imdb.com/title/tt0184756/",
+        "review_count": 10,
+        "final_review": "A small-scale character drama whose restrained performances and everyday observation give its central conflict credibility. The limited review sample supports a modestly positive assessment, but the film appears visually and structurally conventional, with insufficient evidence for a higher craft grade.",
+        "ratings": {
+            "cinematography": "C",
+            "sound": "C",
+            "narrative": "B",
+            "editing": "C",
+            "mise-en-scene": "C"
+        }
+    },
+    {
+        "movie_id": 36,
+        "movie_title": "To Kill a Mockingbird",
+        "movie_url": "https://www.imdb.com/title/tt0056592/",
+        "review_count": 25,
+        "final_review": "A lucid courtroom and coming-of-age drama that makes racial injustice legible through a child's perspective and Gregory Peck's restrained performance. Its moral clarity, setting, and measured pacing are durable, though the point of view can simplify Black interiority and the courtroom resolution is overtly idealized.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 37,
+        "movie_title": "Shoah",
+        "movie_url": "https://www.imdb.com/title/tt0090015/",
+        "review_count": 25,
+        "final_review": "A monumental documentary record whose ethical seriousness and patient accumulation of testimony make it historically indispensable. Its disciplined interviews and refusal of archival shortcuts are powerful, but the extreme duration, limited visual variety, and emotional austerity are demanding by design.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "B",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 38,
+        "movie_title": "Gentlemen of Fortune",
+        "movie_url": "https://www.imdb.com/title/tt0068519/",
+        "review_count": 11,
+        "final_review": "A warm, fast-moving comedy built on eccentric characters, comic timing, and the friction between ordinary life and sudden criminality. The limited review sample points to strong entertainment value, but conventional plotting and uneven tonal polish argue against elite grades.",
+        "ratings": {
+            "cinematography": "C",
+            "sound": "B",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 39,
+        "movie_title": "Dhurandhar: The Revenge",
+        "movie_url": "https://www.imdb.com/title/tt39139925/",
+        "review_count": 25,
+        "final_review": "A large-scale action thriller with committed performances, forceful sound, and polished set pieces. The reviews value its momentum and contemporary spectacle, while the revenge structure, tonal excess, exposition, and limited character nuance keep the narrative and editing below the top tier.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "B"
+        }
+    },
+    {
+        "movie_id": 40,
+        "movie_title": "Pather Panchali",
+        "movie_url": "https://www.imdb.com/title/tt0048473/",
+        "review_count": 25,
+        "final_review": "A quietly observant humanist drama whose rural setting, nonprofessional performances, and attention to small routines create extraordinary emotional credibility. Its imagery, sound, and episodic progression are deeply integrated, though the unhurried pace and sparse plot demand patience.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 41,
+        "movie_title": "Rangasthalam",
+        "movie_url": "https://www.imdb.com/title/tt7392212/",
+        "review_count": 25,
+        "final_review": "A vivid rural revenge drama whose color, music, production design, and ensemble energy create a distinctive social world. Its first half is especially assured, but the broad humor, tonal whiplash, and overextended revenge mechanics reduce narrative precision.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "B",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 42,
+        "movie_title": "Chainsaw Man - The Movie: Reze Arc",
+        "movie_url": "https://www.imdb.com/title/tt30472557/",
+        "review_count": 25,
+        "final_review": "A kinetic animated adaptation with striking action choreography, expressive character animation, and an unusually melancholy romantic core. Its strongest sequences are emotionally and visually potent, but the compressed story, tonal pivots, and dependence on the wider series limit its standalone narrative force.",
+        "ratings": {
+            "cinematography": "A",
+            "sound": "A",
+            "narrative": "B",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    },
+    {
+        "movie_id": 43,
+        "movie_title": "The Lives of Others",
+        "movie_url": "https://www.imdb.com/title/tt0405094/",
+        "review_count": 25,
+        "final_review": "A controlled surveillance drama that turns political repression into an intimate story of trust, compromise, and moral awakening. The performances, restrained mise-en-scene, sound, and gradual pacing are consistently strong, though some character turns and the final resolution lean toward melodrama.",
+        "ratings": {
+            "cinematography": "B",
+            "sound": "A",
+            "narrative": "A",
+            "editing": "A",
+            "mise-en-scene": "A"
+        }
+    }
+]
