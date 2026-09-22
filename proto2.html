@@ -451,8 +451,105 @@
 		}
 
 		@media (max-width: 760px) {
+			body {
+				padding: 24px 12px;
+			}
+
+			body::before {
+				background-size: cover;
+				opacity: 0.45;
+			}
+
+			.account-actions {
+				position: relative;
+				top: auto;
+				right: auto;
+				align-items: stretch;
+				margin-bottom: 20px;
+				padding: 0;
+			}
+
+			.account-row {
+				width: 100%;
+			}
+
+			.sign-in-button,
+			.sign-up-button,
+			.theme-toggle {
+				flex: 1;
+				text-align: center;
+			}
+
+			header {
+				padding: 24px 0;
+			}
+
+			header h1 {
+				margin: 0;
+				font-size: clamp(2rem, 11vw, 3rem);
+			}
+
+			.logo-mark {
+				width: 52px;
+				height: 52px;
+			}
+
+			main {
+				width: 100%;
+				padding: 20px 0;
+			}
+
 			.main-actions {
 				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 8px;
+				margin-bottom: 20px;
+			}
+
+			.main-actions select,
+			.main-actions > button,
+			.search-bar {
+				min-height: 48px;
+				padding: 10px 8px;
+				font-size: 0.9rem;
+			}
+
+			.mock-data-box {
+				grid-template-columns: repeat(2, minmax(0, 1fr));
+				gap: 10px;
+				padding-top: 4px;
+			}
+
+			.movie-poster,
+			.movie-poster-image {
+				min-height: 220px;
+			}
+
+			.movie-poster-title {
+				font-size: 0.95rem;
+			}
+
+			.movie-poster-tag,
+			.movie-poster-id {
+				top: 8px;
+				font-size: 0.6rem;
+			}
+
+			.movie-poster-tag {
+				left: 8px;
+			}
+
+			.movie-poster-id {
+				right: 8px;
+			}
+
+			.movie-button {
+				padding: 10px 8px 8px;
+				font-size: 0.9rem;
+			}
+
+			.bookmark-button {
+				padding: 9px 6px 11px;
+				font-size: 0.8rem;
 			}
 
 			.content-layout {
@@ -461,6 +558,29 @@
 
 			.featured-films {
 				padding: 0 24px 32px;
+			}
+		}
+
+		@media (max-width: 420px) {
+			body {
+				padding-inline: 8px;
+			}
+
+			.main-actions {
+				grid-template-columns: 1fr;
+			}
+
+			.search-wrapper {
+				grid-column: auto;
+			}
+
+			.mock-data-box {
+				gap: 8px;
+			}
+
+			.movie-poster,
+			.movie-poster-image {
+				min-height: 190px;
 			}
 		}
 
