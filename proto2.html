@@ -239,16 +239,37 @@
 		}
 
 		.movie-poster {
+			position: relative;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
-			padding: 12px;
-			min-height: 230px;
+			min-height: 300px;
+			padding: 0;
 			background: linear-gradient(160deg, #2d2d2d, #0d0d0d 70%);
 			color: #ffffff;
+			overflow: hidden;
+		}
+
+		.movie-poster-image {
+			width: 100%;
+			height: 100%;
+			min-height: 300px;
+			object-fit: cover;
+		}
+
+		.movie-poster::after {
+			position: absolute;
+			inset: 45% 0 0;
+			background: linear-gradient(transparent, rgb(0 0 0 / 85%));
+			content: "";
+			pointer-events: none;
 		}
 
 		.movie-poster-tag {
+			position: absolute;
+			z-index: 1;
+			top: 12px;
+			left: 12px;
 			display: inline-flex;
 			align-self: flex-start;
 			padding: 4px 8px;
@@ -260,10 +281,26 @@
 		}
 
 		.movie-poster-title {
+			position: absolute;
+			z-index: 1;
+			bottom: 12px;
+			left: 12px;
+			right: 12px;
 			display: block;
 			font-size: 1.2rem;
 			font-weight: bold;
 			line-height: 1.2;
+		}
+
+		.movie-poster-id {
+			position: absolute;
+			z-index: 1;
+			top: 12px;
+			right: 12px;
+			padding: 4px 8px;
+			border-radius: 999px;
+			background: rgb(0 0 0 / 65%);
+			font-size: 0.75rem;
 		}
 
 		.movie-button {
@@ -851,13 +888,19 @@
 			movieRow.dataset.movieId = movie.id;
 			movieRow.dataset.genres = JSON.stringify(movie.genres);
 			movieRow.dataset.ratings = JSON.stringify(movie.reviews.ratings);
+			const imdbId = movie.movie_url.match(/\/title\/(tt\d+)/i)?.[1];
 
 			const poster = document.createElement('div');
 			poster.className = 'movie-poster';
 			poster.innerHTML = `
+				<img class="movie-poster-image" src="https://images.metahub.space/poster/medium/${imdbId || ''}/img" alt="Poster for ${movie.title}" loading="lazy">
 				<span class="movie-poster-tag">${movie.genres[0] || 'Movie'}</span>
+				<span class="movie-poster-id">ID: ${movie.id}</span>
 				<span class="movie-poster-title">${movie.title}</span>
 			`;
+			poster.querySelector('.movie-poster-image').addEventListener('error', (event) => {
+				event.target.hidden = true;
+			});
 
 			const movieButton = document.createElement('button');
 			movieButton.type = 'button';
