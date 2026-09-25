@@ -6,17 +6,58 @@
 	<title>Sign Up | S-CoreBox</title>
 	<style>
 		:root {
-			color-scheme: light;
+			color-scheme: dark;
 			font-family: Arial, sans-serif;
+			--bg: #050505;
+			--panel: #121212;
+			--text: #f5f5f5;
+			--muted: #cfcfcf;
+			--border: rgba(255, 255, 255, 0.12);
+			--theme-frame-image: url("console.png");
+			--frame-top: 5vh;
+			--frame-right: 16vw;
+			--frame-bottom: 5vh;
+			--frame-left: 16vw;
 		}
 
 		body {
 			box-sizing: border-box;
 			min-height: 100vh;
 			margin: 0;
-			padding: 24px;
-			background: #f5f5f5;
-			color: #222;
+			padding: var(--frame-top) var(--frame-right) var(--frame-bottom) var(--frame-left);
+			background: var(--bg);
+			color: var(--text);
+		}
+
+		body[data-theme="light"] {
+			color-scheme: light;
+			--bg: #f5f5f5;
+			--panel: #ffffff;
+			--text: #111111;
+			--muted: #555555;
+			--border: rgba(17, 17, 17, 0.38);
+			--theme-frame-image: url("tbdf.png");
+			--frame-right: 16vw;
+			--frame-left: 16vw;
+		}
+
+		body::before {
+			position: fixed;
+			z-index: 2;
+			inset: 0;
+			background: var(--theme-frame-image) center / 100% 100% no-repeat;
+			content: "";
+			pointer-events: none;
+		}
+
+		body[data-theme="light"]::before {
+			z-index: 2;
+			opacity: 0.9;
+		}
+
+		body > * {
+			position: relative;
+			z-index: 1;
 		}
 
 		.sign-up-page {
@@ -26,14 +67,46 @@
 			justify-content: center;
 		}
 
+		.theme-toggle {
+			margin-bottom: 18px;
+			padding: 9px 14px;
+			border: 1px solid var(--border);
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.04);
+			color: var(--text);
+			font: inherit;
+			cursor: pointer;
+		}
+
 		.sign-up-panel {
 			width: min(100%, 420px);
 			box-sizing: border-box;
 			padding: 36px;
-			border: 1px solid #d7d7d7;
+			border: 1px solid var(--border);
 			border-radius: 8px;
-			background: #ffffff;
+			background: var(--panel);
 			box-shadow: 0 12px 30px rgb(0 0 0 / 8%);
+		}
+
+		.loading-screen {
+			position: fixed;
+			z-index: 10;
+			inset: 0;
+			display: grid;
+			place-items: center;
+			background: #ffffff;
+			color: #111111;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 160ms ease;
+		}
+
+		.loading-screen[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+
+		.loading-gif {
+			width: min(260px, 40vw);
+			height: auto;
+			object-fit: contain;
 		}
 
 		.brand {
@@ -41,6 +114,24 @@
 			font-size: 1.25rem;
 			font-weight: bold;
 		}
+
+		.logo-mark {
+			display: inline-block;
+			width: 72px;
+			height: 72px;
+			margin-left: 10px;
+			vertical-align: middle;
+			object-fit: contain;
+		}
+
+		.logo-dark { display: inline-block; mix-blend-mode: screen; }
+		.logo-light { display: none; mix-blend-mode: multiply; }
+		.random-movie-logo {
+			color: inherit;
+			text-decoration: none;
+		}
+		body[data-theme="light"] .logo-dark { display: none; }
+		body[data-theme="light"] .logo-light { display: inline-block; }
 
 		h1 {
 			margin: 0 0 8px;
@@ -54,7 +145,6 @@
 
 		.form-field {
 			display: block;
-			margin-bottom: 18px;
 			font-weight: bold;
 		}
 
@@ -62,9 +152,8 @@
 			display: block;
 			width: 100%;
 			box-sizing: border-box;
-			margin-top: 8px;
 			padding: 12px 14px;
-			border: 1px solid #cfcfcf;
+			border: 1px solid var(--border);
 			border-radius: 6px;
 			font: inherit;
 		}
@@ -78,9 +167,9 @@
 			width: 100%;
 			margin-top: 6px;
 			padding: 12px 20px;
-			border: 1px solid #222;
+			border: 1px solid #000000;
 			border-radius: 6px;
-			background: #222;
+			background: #000000;
 			color: #ffffff;
 			font: inherit;
 			font-weight: bold;
@@ -89,7 +178,7 @@
 
 		.submit-button:hover,
 		.submit-button:focus-visible {
-			background: #444;
+			background: #111111;
 		}
 
 		.back-link {
@@ -99,13 +188,18 @@
 			text-align: center;
 		}
 
+		button {
+			min-height: 52px;
+			box-sizing: border-box;
+		}
+
 		@media (max-width: 480px) {
 			body {
-				padding: 16px;
+				padding: var(--frame-top) var(--frame-right) var(--frame-bottom) var(--frame-left);
 			}
 
 			.sign-up-page {
-				min-height: calc(100vh - 32px);
+				min-height: calc(100vh - var(--frame-top) - var(--frame-bottom));
 			}
 
 			.sign-up-panel {
@@ -115,13 +209,17 @@
 	</style>
 </head>
 <body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading">
+		<img class="loading-gif" src="loading.gif" alt="">
+	</div>
 	<main class="sign-up-page">
 		<section class="sign-up-panel" aria-labelledby="sign-up-heading">
+			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
 			<p class="brand"></p>
-			<h1 id="sign-up-heading">S-CoreBox</h1>
+			<h1 id="sign-up-heading"><a class="random-movie-logo" href="proto2.html?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="randominvert.png" alt=""><img class="logo-mark logo-light" src="random.png" alt=""></a></h1>
 			<p class="subtitle">Start understanding... <em>or not</em>.</p>
 
-			<form action="#" method="post">
+			<form action="proto2.html" method="get">
 				<label class="form-field" for="name">
 					Name
 					<input id="name" name="name" type="text" autocomplete="name" required>
@@ -139,8 +237,58 @@
 
 				<button class="submit-button" type="submit">Sign Up</button>
 			</form>
-			<a class="back-link" href="proto1.html">Back to S-CoreBox</a>
+			<a class="back-link" href="proto2.html">Back to S-CoreBox</a>
 		</section>
 	</main>
+	<script>
+		const loadingScreen = document.querySelector('.loading-screen');
+		const showLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'false');
+		const hideLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'true');
+		const transitionTo = (callback) => {
+			showLoadingScreen();
+			window.setTimeout(callback, 1300);
+		};
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link && link.origin === window.location.origin && !link.target) {
+				event.preventDefault();
+				transitionTo(() => { window.location.href = link.href; });
+			}
+		}, true);
+		document.addEventListener('submit', (event) => {
+			event.preventDefault();
+			transitionTo(() => { event.target.submit(); });
+		}, true);
+
+		const body = document.body;
+		const themeToggle = document.getElementById('theme-toggle');
+		const savedTheme = localStorage.getItem('s-corebox-theme') || 'dark';
+		body.dataset.theme = savedTheme;
+
+		const applyThemeLabel = () => {
+			const isLight = body.dataset.theme === 'light';
+			themeToggle.textContent = isLight ? 'Dark mode' : 'Light mode';
+			themeToggle.setAttribute('aria-label', isLight ? 'Switch to dark mode' : 'Switch to light mode');
+		};
+
+		applyThemeLabel();
+		let themeTransitioning = false;
+		themeToggle.addEventListener('click', () => {
+			if (themeTransitioning) {
+				return;
+			}
+			themeTransitioning = true;
+			themeToggle.disabled = true;
+			const nextTheme = body.dataset.theme === 'light' ? 'dark' : 'light';
+			transitionTo(() => {
+				body.dataset.theme = nextTheme;
+				localStorage.setItem('s-corebox-theme', nextTheme);
+				applyThemeLabel();
+				hideLoadingScreen();
+				themeToggle.disabled = false;
+				themeTransitioning = false;
+			});
+		});
+	</script>
 </body>
 </html>

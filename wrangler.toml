@@ -1,0 +1,12 @@
+name = "scorebox-live"
+main = "worker.js"
+compatibility_date = "2026-09-25"
+
+[assets]
+directory = "."
+binding = "ASSETS"
+
+[[d1_databases]]
+binding = "scorebox_live"
+database_name = "scorebox-live"
+database_id = "b87ffeee-0c4d-4d63-94ea-f07077dd8cea"

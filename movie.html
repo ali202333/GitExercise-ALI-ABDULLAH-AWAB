@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Movie | S-CoreBox</title>
+	<style>
+		:root {
+			color-scheme: light;
+			font-family: Arial, sans-serif;
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		:root {
+			color-scheme: dark;
+			--bg: #050505;
+			--panel: #121212;
+			--panel-strong: #191919;
+			--text: #f5f5f5;
+			--muted: #d2d2d2;
+			--border: rgba(255, 255, 255, 0.12);
+			--button-bg: #ffffff;
+			--button-text: #111111;
+			--theme-frame-image: url("console.png");
+			--frame-top: 5vh;
+			--frame-right: 16vw;
+			--frame-bottom: 5vh;
+			--frame-left: 16vw;
+		}
+
+		body {
+			min-height: 100vh;
+			margin: 0;
+			padding: var(--frame-top) var(--frame-right) var(--frame-bottom) var(--frame-left);
+			background: var(--bg);
+			color: var(--text);
+			overflow-x: hidden;
+		}
+
+		body[data-theme="light"] {
+			color-scheme: light;
+			--bg: #f5f5f5;
+			--panel: #ffffff;
+			--panel-strong: #f8f8f8;
+			--text: #111111;
+			--muted: #555555;
+			--border: rgba(17, 17, 17, 0.38);
+			--button-bg: #111111;
+			--button-text: #ffffff;
+			--theme-frame-image: url("tbdf.png");
+			--frame-right: 16vw;
+			--frame-left: 16vw;
+		}
+
+		body::before {
+			position: fixed;
+			z-index: 2;
+			inset: 0;
+			background: var(--theme-frame-image) center / 100% 100% no-repeat;
+			content: "";
+			pointer-events: none;
+		}
+
+		body[data-theme="light"]::before {
+			z-index: 2;
+			opacity: 0.9;
+		}
+
+		body > * {
+			position: relative;
+			z-index: 1;
+		}
+
+		.movie-page {
+			width: min(100%, 680px);
+			margin: 0 auto;
+			box-sizing: border-box;
+		}
+
+		.brand {
+			margin: 0 0 28px;
+			font-size: 1.1rem;
+			font-weight: bold;
+		}
+
+		.theme-toggle {
+			margin-bottom: 18px;
+			padding: 9px 14px;
+			border: 1px solid var(--border);
+			border-radius: 999px;
+			background: rgba(255, 255, 255, 0.04);
+			color: var(--text);
+			font: inherit;
+			cursor: pointer;
+		}
+
+		.movie-panel {
+			width: 100%;
+			box-sizing: border-box;
+			overflow-wrap: anywhere;
+			padding: 42px;
+			background: var(--panel);
+			border: 1px solid var(--border);
+			border-radius: 12px;
+		}
+
+		.loading-screen {
+			position: fixed;
+			z-index: 10;
+			inset: 0;
+			display: grid;
+			place-items: center;
+			background: #ffffff;
+			color: #111111;
+			opacity: 0;
+			pointer-events: none;
+			transition: opacity 160ms ease;
+		}
+
+		.loading-screen[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+
+		.loading-gif {
+			width: min(260px, 40vw);
+			height: auto;
+			object-fit: contain;
+		}
+
+		.movie-label {
+			margin: 0 0 12px;
+			color: #666;
+			font-size: 0.75rem;
+			font-weight: bold;
+			letter-spacing: 0.12em;
+			text-transform: uppercase;
+		}
+
+		h1 {
+			margin: 0 0 28px;
+			font-size: clamp(2rem, 5vw, 3.5rem);
+			line-height: 1.1;
+		}
+
+		.movie-rating {
+			margin: 0 0 28px;
+		button {
+			min-height: 52px;
+			box-sizing: border-box;
+		}
+			font-size: 1.15rem;
+			font-weight: bold;
+		}
+
+		.movie-rating span {
+			color: #d48b22;
+		}
+
+		.movie-section {
+			padding-top: 22px;
+			border-top: 1px solid rgba(17, 17, 17, 0.18);
+		}
+
+		body[data-theme="light"] .movie-section {
+			border-top-color: rgba(17, 17, 17, 0.18);
+		}
+
+		.movie-section h2 {
+			margin: 0 0 10px;
+			font-size: 1rem;
+		}
+
+		.movie-genres {
+			margin: 0;
+			color: #555;
+			line-height: 1.7;
+		}
+
+		.movie-review {
+			line-height: 1.7;
+		}
+
+		.movie-review p {
+			margin: 0 0 18px;
+		}
+
+		.movie-rankings {
+			display: block;
+			margin: 0;
+		}
+
+		.movie-ranking {
+			display: flex;
+			justify-content: space-between;
+			gap: 16px;
+			padding: 6px 0;
+			opacity: 0;
+		}
+
+		.movie-ranking.grade-reveal {
+			animation: grade-fade-in 420ms ease forwards;
+		}
+
+		@keyframes grade-fade-in {
+			from {
+				opacity: 0;
+				transform: translateY(8px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+
+		.movie-ranking dt {
+			color: #555;
+		}
+
+		.movie-ranking dd {
+			margin: 0;
+			font-weight: bold;
+		}
+
+		.grade-badge {
+			width: 42px;
+			height: 42px;
+			object-fit: contain;
+			vertical-align: middle;
+		}
+
+		.imdb-link {
+			display: inline-block;
+			margin-top: 22px;
+			color: #222;
+			word-break: break-all;
+		}
+
+		.back-link {
+			display: inline-block;
+			margin-top: 28px;
+			padding: 11px 18px;
+			border: 1px solid #000000;
+			border-radius: 6px;
+			background: #000000;
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		.back-link:hover,
+		.back-link:focus-visible {
+			background: #444;
+		}
+
+		#error-message[hidden],
+		#movie-content[hidden] {
+			display: none;
+		}
+
+		@media (max-width: 520px) {
+			body {
+				padding: var(--frame-top) var(--frame-right) var(--frame-bottom) var(--frame-left);
+			}
+
+			.movie-page {
+				margin-top: 0;
+			}
+
+			.movie-panel {
+				padding: 28px 22px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading">
+		<img class="loading-gif" src="loading.gif" alt="">
+	</div>
+	<main class="movie-page">
+		<section id="movie-content" class="movie-panel" aria-labelledby="movie-title" hidden>
+			<h1 id="movie-title"></h1>
+			<p class="movie-rating"><span>★</span> <span id="movie-rating"></span> / 10</p>
+
+			<div class="movie-section">
+				<h2>Genres</h2>
+				<p id="movie-genres" class="movie-genres"></p>
+				<a id="imdb-link" class="imdb-link" target="_blank" rel="noopener noreferrer">View on IMDb</a>
+			</div>
+
+			<div class="movie-section movie-review">
+				<dl id="movie-rankings" class="movie-rankings"></dl>
+				<h2>Final review</h2>
+				<p id="movie-final-review"></p>
+			</div>
+
+			<a class="back-link" href="proto2.html">Back to S-CoreBox</a>
+		</section>
+		<p id="error-message" role="alert" hidden></p>
+	</main>
+
+	<script>
+		const loadingScreen = document.querySelector('.loading-screen');
+		const showLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'false');
+		const transitionTo = (callback) => {
+			showLoadingScreen();
+			window.setTimeout(callback, 1300);
+		};
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link && link.origin === window.location.origin && !link.target) {
+				event.preventDefault();
+				transitionTo(() => { window.location.href = link.href; });
+			}
+		}, true);
+		document.addEventListener('submit', (event) => {
+			event.preventDefault();
+			transitionTo(() => { event.target.submit(); });
+		}, true);
+
+		const body = document.body;
+		const savedTheme = localStorage.getItem('s-corebox-theme') || 'dark';
+		body.dataset.theme = savedTheme;
+
+		const movieContent = document.getElementById('movie-content');
+		const errorMessage = document.getElementById('error-message');
+		const movieId = new URLSearchParams(window.location.search).get('id');
+
+		fetch('output_updated_reviews_filled.json')
+			.then((response) => {
+				if (!response.ok) {
+					throw new Error('Unable to load the movie catalog.');
+				}
+				return response.json();
+			})
+			.then((movies) => {
+				const movie = movies.find((item) => String(item.id) === movieId);
+				if (!movie) {
+					throw new Error('Movie not found.');
+				}
+
+				document.title = `${movie.title} | S-CoreBox`;
+				document.getElementById('movie-title').textContent = movie.title;
+				document.getElementById('movie-rating').textContent = movie.rating;
+				document.getElementById('movie-genres').textContent = movie.genres.join(', ');
+				document.getElementById('imdb-link').href = movie.movie_url;
+				document.getElementById('movie-final-review').textContent = movie.reviews.final_review;
+
+				const rankings = document.getElementById('movie-rankings');
+				Object.entries(movie.reviews.ratings).forEach(([category, rating]) => {
+					const ranking = document.createElement('div');
+					ranking.className = 'movie-ranking';
+					const label = document.createElement('dt');
+					label.textContent = category === 'mise-en-scene' ? 'Mise-en-scene' : category.charAt(0).toUpperCase() + category.slice(1);
+					const value = document.createElement('dd');
+					const gradeImage = document.createElement('img');
+					gradeImage.className = 'grade-badge';
+					gradeImage.src = rating === 'Z+' ? 'Zplus.png' : `${rating}.png`;
+					gradeImage.alt = rating;
+					gradeImage.onerror = () => {
+						value.textContent = rating;
+					};
+					value.appendChild(gradeImage);
+					ranking.append(label, value);
+					rankings.appendChild(ranking);
+				});
+
+				movieContent.hidden = false;
+				requestAnimationFrame(() => {
+					const gradeSound = {
+						'Z+': new Audio('BA_homerun.ogg'),
+						F: new Audio('BA_miss.ogg')
+					};
+					const blockedSounds = new Set();
+					const playGradeSound = (rating) => {
+						const sound = gradeSound[rating];
+						if (!sound) {
+							return;
+						}
+						sound.currentTime = 0;
+						sound.play().then(() => blockedSounds.delete(rating)).catch(() => {
+							blockedSounds.add(rating);
+						});
+					};
+					const retryBlockedSounds = () => {
+						[...blockedSounds].forEach(playGradeSound);
+					};
+					document.addEventListener('pointerdown', retryBlockedSounds);
+					document.addEventListener('keydown', retryBlockedSounds);
+					[...rankings.children].forEach((ranking, index) => {
+						const rating = movie.reviews.ratings[Object.keys(movie.reviews.ratings)[index]];
+						const delay = index * 180;
+						ranking.style.animationDelay = `${delay}ms`;
+						ranking.classList.add('grade-reveal');
+						if (gradeSound[rating]) {
+							window.setTimeout(() => playGradeSound(rating), delay);
+						}
+					});
+				});
+			})
+			.catch((error) => {
+				errorMessage.textContent = error.message;
+				errorMessage.hidden = false;
+			});
+	</script>
+</body>
+</html>
