@@ -17,7 +17,7 @@ export default {
 
 const SESSION_COOKIE = "scorebox_session";
 const SESSION_LIFETIME = 60 * 60 * 24 * 30;
-const PASSWORD_ITERATIONS = 120000;
+const PASSWORD_ITERATIONS = 100000;
 
 class DatabaseClient {
 	constructor(database) {
@@ -92,16 +92,7 @@ async function handleAuthRequest(request, client, url) {
 		);
 		if (existing) return authRedirect(url, "/signup.html?error=exists");
 
-		let passwordHash;
-		try {
-			passwordHash = await hashPassword(password);
-		} catch (error) {
-			console.error("Signup password hashing failed", error);
-			if (username === "__worker_probe_20260928__") {
-				return Response.json({ name: error?.name, message: error?.message }, { status: 500 });
-			}
-			throw error;
-		}
+		const passwordHash = await hashPassword(password);
 		const insert = await client.query(
 			"INSERT OR IGNORE INTO scorebox_users (username, email, password_hash) VALUES (?, ?, ?)",
 			[username, email, passwordHash],
