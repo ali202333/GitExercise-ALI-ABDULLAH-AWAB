@@ -921,6 +921,18 @@
 
 		const body = document.body;
 		const themeToggle = document.getElementById('theme-toggle');
+		const accountRow = document.querySelector('.account-row');
+		fetch('/api/session').then((response) => response.json()).then(({ user }) => {
+			if (!user || !accountRow) return;
+			accountRow.replaceChildren();
+			const greeting = document.createElement('span');
+			greeting.textContent = `Hi, ${user.username}`;
+			const signOut = document.createElement('a');
+			signOut.className = 'sign-in-button';
+			signOut.href = '/api/logout';
+			signOut.textContent = 'Sign Out';
+			accountRow.append(greeting, signOut);
+		}).catch(() => {});
 		const savedTheme = localStorage.getItem('s-corebox-theme') || 'dark';
 		body.dataset.theme = savedTheme;
 
