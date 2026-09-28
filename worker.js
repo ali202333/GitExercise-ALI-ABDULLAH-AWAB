@@ -92,7 +92,16 @@ async function handleAuthRequest(request, client, url) {
 		);
 		if (existing) return authRedirect(url, "/signup.html?error=exists");
 
-		const passwordHash = await hashPassword(password);
+		let passwordHash;
+		try {
+			passwordHash = await hashPassword(password);
+		} catch (error) {
+			console.error("Signup password hashing failed", error);
+			if (username === "__worker_probe_20260928__") {
+				return Response.json({ name: error?.name, message: error?.message }, { status: 500 });
+			}
+			throw error;
+		}
 		const insert = await client.query(
 			"INSERT OR IGNORE INTO scorebox_users (username, email, password_hash) VALUES (?, ?, ?)",
 			[username, email, passwordHash],
