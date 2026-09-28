@@ -34,7 +34,7 @@ async function handleAuthRequest(request, env, url) {
 		await ensureAuthTables(env);
 		const token = getCookie(request, SESSION_COOKIE);
 		if (token) {
-			await env.scorebox_live.prepare("DELETE FROM sessions WHERE session_id_hash = ?").bind(await sha256(token)).run();
+			await env.scorebox_live.prepare("DELETE FROM scorebox_sessions WHERE token_hash = ?").bind(await sha256(token)).run();
 		}
 		return new Response(null, {
 			status: 303,
@@ -62,14 +62,14 @@ async function handleAuthRequest(request, env, url) {
 		}
 
 		const existing = await env.scorebox_live.prepare(
-			"SELECT id FROM users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
+			"SELECT id FROM scorebox_users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
 		).bind(username, email).first();
 		if (existing) return authRedirect(url, "/signup.html?error=exists");
 
 		const passwordHash = await hashPassword(password);
 		try {
 			await env.scorebox_live.prepare(
-				"INSERT INTO users (username, email, password_hash) VALUES (?, ?, ?)",
+				"INSERT INTO scorebox_users (username, email, password_hash) VALUES (?, ?, ?)",
 			).bind(username, email, passwordHash).run();
 		} catch {
 			return authRedirect(url, "/signup.html?error=exists");
@@ -80,7 +80,7 @@ async function handleAuthRequest(request, env, url) {
 	const identifier = String(form.get("username") || form.get("email") || "").trim();
 	if (!identifier || !password) return authRedirect(url, "/signin.html?error=credentials");
 	const user = await env.scorebox_live.prepare(
-		"SELECT id, username, password_hash FROM users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
+		"SELECT id, username, password_hash FROM scorebox_users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
 	).bind(identifier, identifier).first();
 	if (!user || !(await verifyPassword(password, user.password_hash))) {
 		return authRedirect(url, "/signin.html?error=credentials");
@@ -89,7 +89,7 @@ async function handleAuthRequest(request, env, url) {
 	const token = randomToken();
 	const expiresAt = Math.floor(Date.now() / 1000) + SESSION_LIFETIME;
 	await env.scorebox_live.prepare(
-		"INSERT INTO sessions (session_id_hash, user_id, expires_at) VALUES (?, ?, ?)",
+		"INSERT INTO scorebox_sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)",
 	).bind(await sha256(token), user.id, expiresAt).run();
 	return new Response(null, {
 		status: 303,
@@ -102,7 +102,7 @@ async function handleAuthRequest(request, env, url) {
 
 async function ensureAuthTables(env) {
 	await env.scorebox_live.prepare(`
-		CREATE TABLE IF NOT EXISTS users (
+		CREATE TABLE IF NOT EXISTS scorebox_users (
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
 			username TEXT NOT NULL COLLATE NOCASE UNIQUE,
 			email TEXT NOT NULL COLLATE NOCASE UNIQUE,
@@ -111,9 +111,9 @@ async function ensureAuthTables(env) {
 		)
 	`).run();
 	await env.scorebox_live.prepare(`
-		CREATE TABLE IF NOT EXISTS sessions (
-			session_id_hash TEXT PRIMARY KEY,
-			user_id INTEGER NOT NULL REFERENCES users(id) ON DELETE CASCADE,
+		CREATE TABLE IF NOT EXISTS scorebox_sessions (
+			token_hash TEXT PRIMARY KEY,
+			user_id INTEGER NOT NULL REFERENCES scorebox_users(id) ON DELETE CASCADE,
 			expires_at INTEGER NOT NULL
 		)
 	`).run();
@@ -123,9 +123,9 @@ async function getSessionUser(request, env) {
 	const token = getCookie(request, SESSION_COOKIE);
 	if (!token) return null;
 	const result = await env.scorebox_live.prepare(`
-		SELECT users.id, users.username
-		FROM sessions JOIN users ON users.id = sessions.user_id
-		WHERE sessions.session_id_hash = ? AND sessions.expires_at > ?
+		SELECT scorebox_users.id, scorebox_users.username
+		FROM scorebox_sessions JOIN scorebox_users ON scorebox_users.id = scorebox_sessions.user_id
+		WHERE scorebox_sessions.token_hash = ? AND scorebox_sessions.expires_at > ?
 	`).bind(await sha256(token), Math.floor(Date.now() / 1000)).first();
 	return result || null;
 }
