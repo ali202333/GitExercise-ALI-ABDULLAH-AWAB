@@ -3,7 +3,8 @@ export default {
 		const url = new URL(request.url);
 
 		if (url.pathname.startsWith("/api/")) {
-			return handleAuthRequest(request, env, url);
+			const client = new DatabaseClient(env.scorebox_live);
+			return handleAuthRequest(request, client, url);
 		}
 
 		if (url.pathname === "/" || url.pathname === "/proto2") {
@@ -18,23 +19,46 @@ const SESSION_COOKIE = "scorebox_session";
 const SESSION_LIFETIME = 60 * 60 * 24 * 30;
 const PASSWORD_ITERATIONS = 120000;
 
-async function handleAuthRequest(request, env, url) {
+class DatabaseClient {
+	constructor(database) {
+		this.database = database;
+	}
+
+	async query(sql, values = [], resultType = "run") {
+		for (let attempt = 0; ; attempt++) {
+			try {
+				const statement = this.database.prepare(sql);
+				const query = values.length ? statement.bind(...values) : statement;
+				return resultType === "first" ? await query.first() : await query.run();
+			} catch (error) {
+				if (attempt > 0 || !isTransientD1Error(error)) throw error;
+				await new Promise((resolve) => setTimeout(resolve, 100));
+			}
+		}
+	}
+}
+
+function isTransientD1Error(error) {
+	return /timeout|timed out|temporar|busy|locked|connection|network|fetch failed/i.test(String(error?.message || error));
+}
+
+async function handleAuthRequest(request, client, url) {
 	const { pathname } = url;
 	if (!["/api/signin", "/api/signup", "/api/session", "/api/logout"].includes(pathname)) {
 		return new Response("Not found", { status: 404 });
 	}
 
 	if (pathname === "/api/session" && request.method === "GET") {
-		await ensureAuthTables(env);
-		const user = await getSessionUser(request, env);
+		await ensureAuthTables(client);
+		const user = await getSessionUser(request, client);
 		return Response.json({ user: user ? { username: user.username } : null });
 	}
 
 	if (pathname === "/api/logout" && (request.method === "POST" || request.method === "GET")) {
-		await ensureAuthTables(env);
+		await ensureAuthTables(client);
 		const token = getCookie(request, SESSION_COOKIE);
 		if (token) {
-			await env.scorebox_live.prepare("DELETE FROM scorebox_sessions WHERE token_hash = ?").bind(await sha256(token)).run();
+			await client.query("DELETE FROM scorebox_sessions WHERE token_hash = ?", [await sha256(token)]);
 		}
 		return new Response(null, {
 			status: 303,
@@ -46,7 +70,7 @@ async function handleAuthRequest(request, env, url) {
 		return new Response("Method not allowed", { status: 405 });
 	}
 
-	await ensureAuthTables(env);
+	await ensureAuthTables(client);
 	const form = await request.formData();
 	const password = String(form.get("password") || "");
 	if (pathname === "/api/signup") {
@@ -61,36 +85,39 @@ async function handleAuthRequest(request, env, url) {
 			return authRedirect(url, `/signup.html?error=${password.length < 8 ? "password" : "mismatch"}`);
 		}
 
-		const existing = await env.scorebox_live.prepare(
+		const existing = await client.query(
 			"SELECT id FROM scorebox_users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
-		).bind(username, email).first();
+			[username, email],
+			"first",
+		);
 		if (existing) return authRedirect(url, "/signup.html?error=exists");
 
 		const passwordHash = await hashPassword(password);
-		try {
-			await env.scorebox_live.prepare(
-				"INSERT INTO scorebox_users (username, email, password_hash) VALUES (?, ?, ?)",
-			).bind(username, email, passwordHash).run();
-		} catch {
-			return authRedirect(url, "/signup.html?error=exists");
-		}
+		const insert = await client.query(
+			"INSERT OR IGNORE INTO scorebox_users (username, email, password_hash) VALUES (?, ?, ?)",
+			[username, email, passwordHash],
+		);
+		if (!insert.meta.changes) return authRedirect(url, "/signup.html?error=exists");
 		return authRedirect(url, "/signin.html?registered=1");
 	}
 
 	const identifier = String(form.get("username") || form.get("email") || "").trim();
 	if (!identifier || !password) return authRedirect(url, "/signin.html?error=credentials");
-	const user = await env.scorebox_live.prepare(
+	const user = await client.query(
 		"SELECT id, username, password_hash FROM scorebox_users WHERE username = ? COLLATE NOCASE OR email = ? COLLATE NOCASE",
-	).bind(identifier, identifier).first();
+		[identifier, identifier],
+		"first",
+	);
 	if (!user || !(await verifyPassword(password, user.password_hash))) {
 		return authRedirect(url, "/signin.html?error=credentials");
 	}
 
 	const token = randomToken();
 	const expiresAt = Math.floor(Date.now() / 1000) + SESSION_LIFETIME;
-	await env.scorebox_live.prepare(
-		"INSERT INTO scorebox_sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)",
-	).bind(await sha256(token), user.id, expiresAt).run();
+	await client.query(
+		"INSERT OR IGNORE INTO scorebox_sessions (token_hash, user_id, expires_at) VALUES (?, ?, ?)",
+		[await sha256(token), user.id, expiresAt],
+	);
 	return new Response(null, {
 		status: 303,
 		headers: {
@@ -100,8 +127,8 @@ async function handleAuthRequest(request, env, url) {
 	});
 }
 
-async function ensureAuthTables(env) {
-	await env.scorebox_live.prepare(`
+async function ensureAuthTables(client) {
+	await client.query(`
 		CREATE TABLE IF NOT EXISTS scorebox_users (
 			id INTEGER PRIMARY KEY AUTOINCREMENT,
 			username TEXT NOT NULL COLLATE NOCASE UNIQUE,
@@ -109,24 +136,24 @@ async function ensureAuthTables(env) {
 			password_hash TEXT NOT NULL,
 			created_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
 		)
-	`).run();
-	await env.scorebox_live.prepare(`
+	`);
+	await client.query(`
 		CREATE TABLE IF NOT EXISTS scorebox_sessions (
 			token_hash TEXT PRIMARY KEY,
 			user_id INTEGER NOT NULL REFERENCES scorebox_users(id) ON DELETE CASCADE,
 			expires_at INTEGER NOT NULL
 		)
-	`).run();
+	`);
 }
 
-async function getSessionUser(request, env) {
+async function getSessionUser(request, client) {
 	const token = getCookie(request, SESSION_COOKIE);
 	if (!token) return null;
-	const result = await env.scorebox_live.prepare(`
+	const result = await client.query(`
 		SELECT scorebox_users.id, scorebox_users.username
 		FROM scorebox_sessions JOIN scorebox_users ON scorebox_users.id = scorebox_sessions.user_id
 		WHERE scorebox_sessions.token_hash = ? AND scorebox_sessions.expires_at > ?
-	`).bind(await sha256(token), Math.floor(Date.now() / 1000)).first();
+	`, [await sha256(token), Math.floor(Date.now() / 1000)], "first");
 	return result || null;
 }
 
