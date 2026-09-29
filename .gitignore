@@ -1,0 +1,12 @@
+# Python cache
+__pycache__/
+*.pyc
+
+# Local SQLite databases
+*.db
+*.sqlite3
+instance/
+
+# Virtual environment & local settings
+venv/
+.env
