@@ -71,14 +71,14 @@ class CriticLink(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     title_id = db.Column(db.Integer, db.ForeignKey('titles.id', ondelete='CASCADE'), nullable=False)
     source_name = db.Column(db.String(100), nullable=False)
-    url = db.Column(db.String(500), nullable=False)
+    url = db.Column(db.String(500), nullable=True)
     excerpt = db.Column(db.Text, nullable=True)
+    review_count = db.Column(db.Integer, nullable=True)
     created_at = db.Column(db.DateTime, default=datetime.utcnow)
 
     def __repr__(self):
         return f'<CriticLink {self.source_name} -> Title:{self.title_id}>'
-
-
+    
 # Ratings Table
 class Rating(db.Model):
     __tablename__ = 'ratings'
@@ -90,7 +90,8 @@ class Rating(db.Model):
     mise_en_scene = db.Column(db.Float, default=0.0)
     cinematography = db.Column(db.Float, default=0.0)
     sound_design = db.Column(db.Float, default=0.0)
-    narrative_editing = db.Column(db.Float, default=0.0)
+    narrative = db.Column(db.Float, default=0.0)
+    editing = db.Column(db.Float, default=0.0)
 
     final_grade = db.Column(db.String(5), nullable=True)
 
@@ -103,7 +104,6 @@ class Rating(db.Model):
 
     def __repr__(self):
         return f'<Rating User:{self.user_id} Title:{self.title_id} Grade:{self.final_grade}>'
-
 
 # Reviews Table
 class Review(db.Model):

@@ -74,3 +74,20 @@ def logout():
 
 if __name__ == '__main__':
     app.run(debug=True)
+
+# API ROUTE
+@app.route('/api/movies')
+def api_movies():
+    titles = Title.query.all()
+    result = []
+    for t in titles:
+        latest_rating = t.ratings[0] if t.ratings else None
+        result.append({
+            'id': t.id,
+            'title': t.name,
+            'genres': t.genres.split(', ') if t.genres else [],
+            'imdb_rating': t.imdb_rating,
+            'movie_url': t.imdb_url,
+            'final_grade': latest_rating.final_grade if latest_rating else None
+        })
+    return {'movies': result}

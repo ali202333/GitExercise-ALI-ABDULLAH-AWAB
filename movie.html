@@ -325,7 +325,7 @@
 		const errorMessage = document.getElementById('error-message');
 		const movieId = new URLSearchParams(window.location.search).get('id');
 
-		fetch('output_updated_reviews_filled.json')
+		fetch('/api/movies')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error('Unable to load the movie catalog.');
