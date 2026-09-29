@@ -221,10 +221,11 @@
 			<h1 id="sign-in-heading"><a class="random-movie-logo" href="proto2.html?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="randominvert.png" alt=""><img class="logo-mark logo-light" src="random.png" alt=""></a></h1>
 			<p class="subtitle">Find resources, or not. It's your <em>choice</em>.</p>
 
-			<form action="proto2.html" method="get">
+			<p id="auth-message" role="status" aria-live="polite"></p>
+			<form action="/api/signin" method="post">
 				<label class="form-field" for="email">
-					Email
-					<input id="email" name="email" type="email" autocomplete="email" required>
+					Username or email
+					<input id="email" name="username" type="text" autocomplete="username" required>
 				</label>
 
 				<label class="form-field" for="password">
@@ -238,6 +239,17 @@
 		</section>
 	</main>
 	<script>
+		const authMessage = document.getElementById('auth-message');
+		const signInMessages = {
+			credentials: 'Incorrect username/email or password.',
+		};
+		const signInParams = new URLSearchParams(window.location.search);
+		if (signInParams.has('registered')) {
+			authMessage.textContent = 'Account created. You can sign in now.';
+		} else if (signInMessages[signInParams.get('error')]) {
+			authMessage.textContent = signInMessages[signInParams.get('error')];
+		}
+
 		const loadingScreen = document.querySelector('.loading-screen');
 		const showLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'false');
 		const hideLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'true');

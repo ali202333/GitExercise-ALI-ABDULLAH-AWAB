@@ -219,7 +219,8 @@
 			<h1 id="sign-up-heading"><a class="random-movie-logo" href="proto2.html?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="randominvert.png" alt=""><img class="logo-mark logo-light" src="random.png" alt=""></a></h1>
 			<p class="subtitle">Start understanding... <em>or not</em>.</p>
 
-			<form action="proto2.html" method="get">
+			<p id="auth-message" role="status" aria-live="polite"></p>
+			<form action="/api/signup" method="post">
 				<label class="form-field" for="name">
 					Name
 					<input id="name" name="name" type="text" autocomplete="name" required>
@@ -234,6 +235,10 @@
 					Password
 					<input id="password" name="password" type="password" autocomplete="new-password" required>
 				</label>
+				<label class="form-field" for="confirm-password">
+					Confirm password
+					<input id="confirm-password" name="confirm_password" type="password" autocomplete="new-password" required>
+				</label>
 
 				<button class="submit-button" type="submit">Sign Up</button>
 			</form>
@@ -241,6 +246,16 @@
 		</section>
 	</main>
 	<script>
+		const authMessage = document.getElementById('auth-message');
+		const signUpMessages = {
+			invalid: 'Enter a valid name and email address.',
+			password: 'Password must be at least 8 characters.',
+			mismatch: 'Passwords do not match.',
+			exists: 'That username or email is already registered.',
+		};
+		const signUpError = new URLSearchParams(window.location.search).get('error');
+		if (signUpMessages[signUpError]) authMessage.textContent = signUpMessages[signUpError];
+
 		const loadingScreen = document.querySelector('.loading-screen');
 		const showLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'false');
 		const hideLoadingScreen = () => loadingScreen.setAttribute('aria-hidden', 'true');
