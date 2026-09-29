@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -601,7 +601,7 @@
 			--auth-button-text: #ffffff;
 			--auth-button-border: #000000;
 			--auth-button-border-hover: #111111;
-			--theme-frame-image: url("console.png");
+			--theme-frame-image: url("/assets/console.png");
 			--frame-top: 5vh;
 			--frame-right: 16vw;
 			--frame-bottom: 5vh;
@@ -633,7 +633,7 @@
 			--auth-button-text: #111111;
 			--auth-button-border: rgba(17, 17, 17, 0.38);
 			--auth-button-border-hover: rgba(17, 17, 17, 0.52);
-			--theme-frame-image: url("tbdf.png");
+			--theme-frame-image: url("/assets/tbdf.png");
 			--frame-right: 16vw;
 			--frame-left: 16vw;
 		}
@@ -792,19 +792,19 @@
 </head>
 <body>
 	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading">
-		<img class="loading-gif" src="loading.gif" alt="">
+		<img class="loading-gif" src="/assets/loading.gif" alt="">
 	</div>
 	<div class="brand"></div>
 	<nav class="account-actions" aria-label="Account actions">
 		<div class="account-row">
-			<a class="sign-in-button" href="signin.html">Sign In</a>
-			<a class="sign-up-button" href="signup.html">Sign Up</a>
+			<a class="sign-in-button" href="/login">Sign In</a>
+			<a class="sign-up-button" href="/signup">Sign Up</a>
 		</div>
 		<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
 	</nav>
 
 	<header>
-		<h1><a class="random-movie-logo" href="proto2.html?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="randominvert.png" alt=""><img class="logo-mark logo-light" src="random.png" alt=""></a></h1>
+		<h1><a class="random-movie-logo" href="/?random=1" aria-label="Open a random movie">S-CoreBox<img class="logo-mark logo-dark" src="/assets/randominvert.png" alt=""><img class="logo-mark logo-light" src="/assets/random.png" alt=""></a></h1>
 	</header>
 
 	<div class="content-layout">
@@ -846,7 +846,7 @@
 			<div class="filter-control">
 				<select id="rating-category-filter" aria-label="Filter by rating category">
 					<option value="all">Ratings</option>
-					<option value="mise-en-scene">Mise-en-scène</option>
+					<option value="mise-en-scene">Mise-en-scÃ¨ne</option>
 					<option value="cinematography">Cinematography</option>
 					<option value="narrative">Narrative</option>
 					<option value="sound">Sound</option>
@@ -905,7 +905,7 @@
 				event.preventDefault();
 				const randomMovie = movies[Math.floor(Math.random() * movies.length)];
 				transitionTo(() => {
-					window.location.href = `movie.html?id=${encodeURIComponent(randomMovie.id)}`;
+					window.location.href = `/movie?id=${encodeURIComponent(randomMovie.id)}`;
 				});
 				return;
 			}
@@ -929,7 +929,7 @@
 			greeting.textContent = `Hi, ${user.username}`;
 			const signOut = document.createElement('a');
 			signOut.className = 'sign-in-button';
-			signOut.href = '/api/logout';
+			signOut.href = '/logout';
 			signOut.textContent = 'Sign Out';
 			accountRow.append(greeting, signOut);
 		}).catch(() => {});
@@ -1037,12 +1037,12 @@
 			const movieButton = document.createElement('button');
 			movieButton.type = 'button';
 			movieButton.className = 'movie-button';
-			movieButton.textContent = `${movie.title} · ${movie.rating}`;
+			movieButton.textContent = `${movie.title} Â· ${movie.rating}`;
 			movieButton.dataset.movieId = movie.id;
 			movieButton.dataset.movieUrl = movie.movie_url;
 			const openMovie = () => {
 				transitionTo(() => {
-					window.location.href = `movie.html?id=${encodeURIComponent(movie.id)}`;
+					window.location.href = `/movie?id=${encodeURIComponent(movie.id)}`;
 				});
 			};
 			movieRow.addEventListener('click', (event) => {
@@ -1107,7 +1107,7 @@
 		};
 
 
-		fetch('output_updated_reviews_filled.json')
+		fetch('/api/catalog')
 			.then((response) => {
 				if (!response.ok) {
 					throw new Error(`Unable to load movies: ${response.status}`);
@@ -1123,7 +1123,7 @@
 						return;
 					}
 					featuredFilm.querySelector('.featured-film-title').textContent = movie.title;
-					featuredFilm.querySelector('.featured-film-rating').textContent = `★ ${movie.rating}`;
+					featuredFilm.querySelector('.featured-film-rating').textContent = `â˜… ${movie.rating}`;
 					featuredFilm.querySelector('img').alt = movie.title;
 				});
 				movieRows = [...mockDataBox.querySelectorAll('.movie-row')];
@@ -1131,7 +1131,7 @@
 				if (new URLSearchParams(window.location.search).get('random') === '1' && movies.length) {
 					const randomMovie = movies[Math.floor(Math.random() * movies.length)];
 					transitionTo(() => {
-						window.location.href = `movie.html?id=${encodeURIComponent(randomMovie.id)}`;
+						window.location.href = `/movie?id=${encodeURIComponent(randomMovie.id)}`;
 					});
 				}
 			})
@@ -1196,7 +1196,7 @@
 					if (button.dataset.sortDirection === 'sort') {
 						button.dataset.sortDirection = 'ascending';
 						button.setAttribute('aria-pressed', 'true');
-						button.textContent = 'Ascending ↑';
+						button.textContent = 'Ascending â†‘';
 						sortMovies('ascending');
 						return;
 					}
@@ -1204,7 +1204,7 @@
 					const isAscending = button.dataset.sortDirection === 'ascending';
 					const nextDirection = isAscending ? 'descending' : 'ascending';
 					button.dataset.sortDirection = nextDirection;
-					button.textContent = isAscending ? 'Descending ↓' : 'Ascending ↑';
+					button.textContent = isAscending ? 'Descending â†“' : 'Ascending â†‘';
 					sortMovies(nextDirection);
 					return;
 				}
