@@ -100,6 +100,26 @@ def movie():
     return render_template('movie.html')
 
 
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
+
+
+@app.route('/data-attribution')
+def data_attribution():
+    return render_template('data_attribution.html')
+
+
+@app.route('/cookies')
+def cookies():
+    return render_template('cookies.html')
+
+
 @app.route('/api/session')
 def api_session():
     if 'user_id' not in session:
