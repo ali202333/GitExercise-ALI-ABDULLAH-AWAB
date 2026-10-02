@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#050505">
+	<title>Data Attribution &amp; Disclaimer | S-CoreBox</title>
+	<style>
+		:root { color-scheme: dark; font-family: Arial, sans-serif; --bg: #050505; --panel: #121212; --text: #f5f5f5; --muted: #d2d2d2; --border: rgba(255,255,255,.12); --frame: url("/assets/console.png"); --button-bg: #fff; --button-text: #111; }
+		* { box-sizing: border-box; }
+		body { min-height: 100vh; margin: 0; padding: 5vh 16vw; background: var(--bg); color: var(--text); overflow-x: hidden; }
+		body[data-theme="light"] { color-scheme: light; --bg: #f5f5f5; --panel: #fff; --text: #111; --muted: #555; --border: rgba(17,17,17,.2); --frame: url("/assets/tbdf.png"); --button-bg: #111; --button-text: #fff; }
+		body::before { position: fixed; z-index: 2; inset: 0; background: var(--frame) center / 100% 100% no-repeat; content: ""; pointer-events: none; }
+		body[data-theme="light"]::before { opacity: .9; }
+		body > * { position: relative; z-index: 1; }
+		.attribution-page { width: min(100%, 760px); margin: 0 auto; }
+		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+		.brand { color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+		.theme-toggle { padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font: inherit; cursor: pointer; transition: background-color 160ms ease; }
+		.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--panel); }
+		.attribution { padding: clamp(24px, 5vw, 44px); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; line-height: 1.7; animation: attribution-enter 420ms ease both; }
+		h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; }
+		.updated { margin: 0 0 24px; color: var(--muted); }
+		.attribution h2 { margin: 28px 0 8px; font-size: 1.2rem; }
+		.attribution p { margin: 0 0 14px; }
+		.attribution ul { margin: 8px 0 0; padding-left: 24px; }
+		.attribution li { margin: 8px 0; }
+		.attribution a { color: inherit; text-underline-offset: 3px; }
+		.back-link { display: inline-block; margin-top: 20px; padding: 10px 15px; border-radius: 6px; background: var(--button-bg); color: var(--button-text); text-decoration: none; transition: opacity 160ms ease; }
+		.back-link:hover, .back-link:focus-visible { opacity: .8; }
+		.loading-screen { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; background: #fff; opacity: 0; pointer-events: none; transition: opacity 160ms ease; }
+		.loading-screen[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+		.loading-screen img { width: min(260px, 40vw); height: auto; }
+		@keyframes attribution-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+		@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+		@media (max-width: 700px) { body { padding: 5vh 9vw; } }
+		@media (max-width: 480px) { body { padding: 24px 7vw; } .topbar { align-items: flex-start; } .attribution { padding: 24px 20px; } }
+	</style>
+</head>
+<body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading"><img src="/assets/loading.gif" alt=""></div>
+	<main class="attribution-page">
+		<div class="topbar">
+			<a class="brand" href="/">S-CoreBox</a>
+			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
+		</div>
+		<article class="attribution">
+			<h1>Data Attribution &amp; Disclaimer</h1>
+			<p class="updated"><strong>Last updated:</strong> October 3, 2026</p>
+			<h2>Movie &amp; Show Data</h2>
+			<p>Title information, genres, and audience ratings displayed on S-CoreBox are sourced from publicly available data on <a href="https://www.imdb.com/" target="_blank" rel="noopener noreferrer">IMDb (imdb.com)</a>. This data is used strictly for educational, non-commercial purposes as part of our project.</p>
+			<ul>
+				<li>IMDb ratings (shown as "IMDb Rating") reflect IMDb's own audience scoring and are entirely separate from S-CoreBox's own grading system.</li>
+				<li>S-CoreBox's Z+ to F grades reflect our own team's independent assessment of each title's core film concepts (mise-en-scène, cinematography, sound design, narrative, editing) and are not affiliated with, endorsed by, or representative of IMDb.</li>
+				<li>Critic consensus summaries displayed on this site are aggregated/paraphrased reference material compiled for educational purposes and are not original critical writing produced by S-CoreBox.</li>
+			</ul>
+			<h2>No Affiliation</h2>
+			<p>S-CoreBox is not affiliated with, sponsored by, or endorsed by IMDb or Amazon. All trademarks, movie titles, and associated media belong to their respective owners.</p>
+			<h2>Accuracy</h2>
+			<p>While we aim for accuracy, scraped data may be incomplete or outdated. S-CoreBox makes no guarantee regarding the accuracy, completeness, or currency of any third-party data displayed.</p>
+		</article>
+		<a class="back-link" href="/">Back to S-CoreBox</a>
+	</main>
+	<script>
+		const body = document.body;
+		const themeToggle = document.getElementById('theme-toggle');
+		const setTheme = (theme) => {
+			body.dataset.theme = theme;
+			themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+			themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+		};
+		setTheme(localStorage.getItem('s-corebox-theme') || 'dark');
+		themeToggle.addEventListener('click', () => {
+			const theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+			localStorage.setItem('s-corebox-theme', theme);
+			setTheme(theme);
+		});
+		const loadingScreen = document.querySelector('.loading-screen');
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link && link.origin === location.origin && !link.target) {
+				event.preventDefault();
+				loadingScreen.setAttribute('aria-hidden', 'false');
+				window.setTimeout(() => { location.href = link.href; }, 1300);
+			}
+		});
+	</script>
+</body>
+</html>

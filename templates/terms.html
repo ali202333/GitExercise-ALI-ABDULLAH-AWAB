@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#050505">
+	<title>Terms of Service | S-CoreBox</title>
+	<style>
+		:root { color-scheme: dark; font-family: Arial, sans-serif; --bg: #050505; --panel: #121212; --text: #f5f5f5; --muted: #d2d2d2; --border: rgba(255,255,255,.12); --frame: url("/assets/console.png"); --button-bg: #fff; --button-text: #111; }
+		* { box-sizing: border-box; }
+		body { min-height: 100vh; margin: 0; padding: 5vh 16vw; background: var(--bg); color: var(--text); overflow-x: hidden; }
+		body[data-theme="light"] { color-scheme: light; --bg: #f5f5f5; --panel: #fff; --text: #111; --muted: #555; --border: rgba(17,17,17,.2); --frame: url("/assets/tbdf.png"); --button-bg: #111; --button-text: #fff; }
+		body::before { position: fixed; z-index: 2; inset: 0; background: var(--frame) center / 100% 100% no-repeat; content: ""; pointer-events: none; }
+		body[data-theme="light"]::before { opacity: .9; }
+		body > * { position: relative; z-index: 1; }
+		.terms-page { width: min(100%, 760px); margin: 0 auto; }
+		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+		.brand { color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+		.theme-toggle { padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font: inherit; cursor: pointer; transition: background-color 160ms ease; }
+		.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--panel); }
+		.terms { padding: clamp(24px, 5vw, 44px); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; line-height: 1.7; animation: terms-enter 420ms ease both; }
+		h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; }
+		.updated { margin: 0 0 24px; color: var(--muted); }
+		.terms h2 { margin: 28px 0 8px; font-size: 1.2rem; }
+		.terms p { margin: 0 0 14px; }
+		.terms ul { margin: 8px 0 0; padding-left: 24px; }
+		.terms li { margin: 8px 0; }
+		.back-link { display: inline-block; margin-top: 20px; padding: 10px 15px; border-radius: 6px; background: var(--button-bg); color: var(--button-text); text-decoration: none; transition: opacity 160ms ease; }
+		.back-link:hover, .back-link:focus-visible { opacity: .8; }
+		.loading-screen { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; background: #fff; opacity: 0; pointer-events: none; transition: opacity 160ms ease; }
+		.loading-screen[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+		.loading-screen img { width: min(260px, 40vw); height: auto; }
+		@keyframes terms-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+		@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+		@media (max-width: 700px) { body { padding: 5vh 9vw; } }
+		@media (max-width: 480px) { body { padding: 24px 7vw; } .topbar { align-items: flex-start; } .terms { padding: 24px 20px; } }
+	</style>
+</head>
+<body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading"><img src="/assets/loading.gif" alt=""></div>
+	<main class="terms-page">
+		<div class="topbar">
+			<a class="brand" href="/">S-CoreBox</a>
+			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
+		</div>
+		<article class="terms">
+			<h1>Terms of Service</h1>
+			<p class="updated"><strong>Last updated:</strong> October 3, 2026</p>
+			<p>By creating an account or using S-CoreBox, you agree to the following terms.</p>
+			<h2>1. About This Site</h2>
+			<p>S-CoreBox is a non-commercial, educational project created by a student team. It is not a commercial product and is not operated for profit.</p>
+			<h2>2. Account Responsibilities</h2>
+			<ul>
+				<li>You are responsible for maintaining the confidentiality of your login credentials.</li>
+				<li>You agree to provide accurate information when creating an account.</li>
+				<li>You are responsible for any activity that occurs under your account.</li>
+			</ul>
+			<h2>3. Acceptable Use</h2>
+			<p>When using S-CoreBox, you agree not to:</p>
+			<ul>
+				<li>Attempt to gain unauthorized access to other accounts or the underlying system</li>
+				<li>Use automated tools to scrape or extract data from this site without permission</li>
+			</ul>
+			<h2>4. Content</h2>
+			<ul>
+				<li>Movie/show data (titles, genres, IMDb ratings/links) is sourced from publicly available third-party data and is used here for educational, non-commercial purposes. See our <a href="/data-attribution">Data Attribution</a> page for details.</li>
+				<li>S-CoreBox's own concept grades (mise-en-scène, cinematography, sound design, narrative, editing) are produced independently by our team and do not represent the views of IMDb or any critic source referenced.</li>
+				<li>User-submitted ratings and reviews reflect the opinions of individual users, not S-CoreBox.</li>
+			</ul>
+			<h2>5. Limitation of Liability</h2>
+			<p>S-CoreBox and its creators are not liable for any damages arising from use of this site, to the extent permitted by applicable law.</p>
+			<h2>6. Changes</h2>
+			<p>These terms may be updated as the project evolves. Continued use of the site after changes constitutes acceptance.</p>
+			<h2>7. Contact</h2>
+			<p>Questions about these terms can be directed to us.</p>
+		</article>
+		<a class="back-link" href="/">Back to S-CoreBox</a>
+	</main>
+	<script>
+		const body = document.body;
+		const themeToggle = document.getElementById('theme-toggle');
+		const setTheme = (theme) => {
+			body.dataset.theme = theme;
+			themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+			themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+		};
+		setTheme(localStorage.getItem('s-corebox-theme') || 'dark');
+		themeToggle.addEventListener('click', () => {
+			const theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+			localStorage.setItem('s-corebox-theme', theme);
+			setTheme(theme);
+		});
+		const loadingScreen = document.querySelector('.loading-screen');
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link && link.origin === location.origin && !link.target) {
+				event.preventDefault();
+				loadingScreen.setAttribute('aria-hidden', 'false');
+				window.setTimeout(() => { location.href = link.href; }, 1300);
+			}
+		});
+	</script>
+</body>
+</html>

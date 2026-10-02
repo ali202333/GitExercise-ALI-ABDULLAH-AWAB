@@ -1,4 +1,6 @@
-from flask import Flask, render_template, request, redirect, url_for, session
+from pathlib import Path
+
+from flask import Flask, jsonify, render_template, request, redirect, url_for, session, send_from_directory
 from werkzeug.security import generate_password_hash, check_password_hash
 from models import db, User, Title, Bookmark, CriticLink, Rating, Review
 
@@ -27,13 +29,16 @@ def signup():
         password = request.form.get('password')
 
         if not name or not email or not password:
-            return render_template('signup.html', error='All fields are required.')
+            return redirect(url_for('signup', error='required'))
+
+        if password != request.form.get('confirm_password'):
+            return redirect(url_for('signup', error='mismatch'))
 
         existing = User.query.filter(
             (User.username == name) | (User.email == email)
         ).first()
         if existing:
-            return render_template('signup.html', error='Username or email already taken.')
+            return redirect(url_for('signup', error='exists'))
 
         new_user = User(
             username=name,
@@ -43,7 +48,7 @@ def signup():
         db.session.add(new_user)
         db.session.commit()
 
-        return redirect(url_for('login'))
+        return redirect(url_for('login', registered=1))
 
     return render_template('signup.html')
 
@@ -57,7 +62,7 @@ def login():
         user = User.query.filter_by(email=email).first()
 
         if not user or not check_password_hash(user.password_hash, password):
-            return render_template('signin.html', error='Invalid email or password.')
+            return redirect(url_for('login', error='credentials'))
 
         session['user_id'] = user.id
         session['username'] = user.username
@@ -71,9 +76,6 @@ def logout():
     session.clear()
     return redirect(url_for('login'))
 
-
-if __name__ == '__main__':
-    app.run(debug=True)
 
 # API ROUTE
 @app.route('/api/movies')
@@ -91,3 +93,51 @@ def api_movies():
             'final_grade': latest_rating.final_grade if latest_rating else None
         })
     return {'movies': result}
+
+
+@app.route('/movie')
+def movie():
+    return render_template('movie.html')
+
+
+@app.route('/privacy')
+def privacy():
+    return render_template('privacy.html')
+
+
+@app.route('/terms')
+def terms():
+    return render_template('terms.html')
+
+
+@app.route('/data-attribution')
+def data_attribution():
+    return render_template('data_attribution.html')
+
+
+@app.route('/cookies')
+def cookies():
+    return render_template('cookies.html')
+
+
+@app.route('/api/session')
+def api_session():
+    if 'user_id' not in session:
+        return jsonify(user=None)
+    return jsonify(user={'id': session['user_id'], 'username': session['username']})
+
+
+@app.route('/api/catalog')
+def api_catalog():
+    return send_from_directory(app.root_path, 'output_updated_reviews_filled.json')
+
+
+@app.route('/assets/<path:filename>')
+def assets(filename):
+    if Path(filename).suffix.lower() not in {'.png', '.jpg', '.jpeg', '.gif', '.ogg'}:
+        return '', 404
+    return send_from_directory(app.root_path, filename)
+
+
+if __name__ == '__main__':
+    app.run(debug=True)
