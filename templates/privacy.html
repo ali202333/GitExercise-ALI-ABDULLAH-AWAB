@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="theme-color" content="#050505">
+	<title>Privacy Policy | S-CoreBox</title>
+	<style>
+		:root { color-scheme: dark; font-family: Arial, sans-serif; --bg: #050505; --panel: #121212; --text: #f5f5f5; --muted: #d2d2d2; --border: rgba(255,255,255,.12); --frame: url("/assets/console.png"); --button-bg: #fff; --button-text: #111; }
+		* { box-sizing: border-box; }
+		body { min-height: 100vh; margin: 0; padding: 5vh 16vw; background: var(--bg); color: var(--text); overflow-x: hidden; }
+		body[data-theme="light"] { color-scheme: light; --bg: #f5f5f5; --panel: #fff; --text: #111; --muted: #555; --border: rgba(17,17,17,.2); --frame: url("/assets/tbdf.png"); --button-bg: #111; --button-text: #fff; }
+		body::before { position: fixed; z-index: 2; inset: 0; background: var(--frame) center / 100% 100% no-repeat; content: ""; pointer-events: none; }
+		body[data-theme="light"]::before { opacity: .9; }
+		body > * { position: relative; z-index: 1; }
+		.privacy-page { width: min(100%, 760px); margin: 0 auto; }
+		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
+		.brand { color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+		.theme-toggle { padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font: inherit; cursor: pointer; transition: background-color 160ms ease; }
+		.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--panel); }
+		.policy { padding: clamp(24px, 5vw, 44px); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; line-height: 1.7; animation: policy-enter 420ms ease both; }
+		h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; }
+		.updated { margin: 0 0 24px; color: var(--muted); }
+		.policy h2 { margin: 28px 0 8px; font-size: 1.2rem; }
+		.policy p { margin: 0 0 14px; }
+		.policy ul { margin: 8px 0 0; padding-left: 24px; }
+		.policy li { margin: 8px 0; }
+		.back-link { display: inline-block; margin-top: 20px; padding: 10px 15px; border-radius: 6px; background: var(--button-bg); color: var(--button-text); text-decoration: none; transition: opacity 160ms ease; }
+		.back-link:hover, .back-link:focus-visible { opacity: .8; }
+		.loading-screen { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; background: #fff; opacity: 0; pointer-events: none; transition: opacity 160ms ease; }
+		.loading-screen[aria-hidden="false"] { opacity: 1; pointer-events: auto; }
+		.loading-screen img { width: min(260px, 40vw); height: auto; }
+		@keyframes policy-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+		@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+		@media (max-width: 700px) { body { padding: 5vh 9vw; } }
+		@media (max-width: 480px) { body { padding: 24px 7vw; } .topbar { align-items: flex-start; } .policy { padding: 24px 20px; } }
+	</style>
+</head>
+<body>
+	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading"><img src="/assets/loading.gif" alt=""></div>
+	<main class="privacy-page">
+		<div class="topbar">
+			<a class="brand" href="/">S-CoreBox</a>
+			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
+		</div>
+		<article class="policy">
+			<h1>Privacy Policy</h1>
+			<p class="updated"><strong>Last updated:</strong> October 3, 2026</p>
+			<p>S-CoreBox is made by the people. For the people.</p>
+			<h2>Information We Collect</h2>
+			<ul>
+				<li>When you sign up, we collect your username, email address, and a securely hashed version of your password. We never store your password in plain text.</li>
+				<li>Movies/shows you bookmark, and any ratings or reviews you submit while using an account.</li>
+				<li>Basic session information (used to keep you logged in) and a local theme preference (light/dark mode) stored in your browser.</li>
+			</ul>
+			<h2>How We Use This Information</h2>
+			<ul>
+				<li>To create and manage your account</li>
+				<li>To let you bookmark titles and save your ratings/reviews</li>
+				<li>To keep you logged in during your session</li>
+			</ul>
+			<h2>What We Don't Do</h2>
+			<ul>
+				<li>We do not sell, rent, or share your personal information with third parties.</li>
+				<li>We do not use your data for advertising or marketing.</li>
+				<li>We do not knowingly collect information from anyone under the age required by applicable law in their region.</li>
+			</ul>
+			<h2>Data Storage</h2>
+			<p>Your data is stored in a database associated with this project. 
+				S-CoreBox does not guarantee the same security standards as a commercial product, though reasonable measures (password hashing, standard web practices) are used.</p>
+			<h2>Your Choices</h2>
+			<p>You may request that your account and associated data be deleted by contacting us.</p>
+			<h2>Changes to This Policy</h2>
+			<p>This policy may be updated as the project develops. Continued use of the site after changes means you accept the updated policy.</p>
+		</article>
+		<a class="back-link" href="/">Back to S-CoreBox</a>
+	</main>
+	<script>
+		const body = document.body;
+		const themeToggle = document.getElementById('theme-toggle');
+		const setTheme = (theme) => {
+			body.dataset.theme = theme;
+			themeToggle.textContent = theme === 'dark' ? 'Light mode' : 'Dark mode';
+			themeToggle.setAttribute('aria-label', `Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`);
+		};
+		setTheme(localStorage.getItem('s-corebox-theme') || 'dark');
+		themeToggle.addEventListener('click', () => {
+			const theme = body.dataset.theme === 'dark' ? 'light' : 'dark';
+			localStorage.setItem('s-corebox-theme', theme);
+			setTheme(theme);
+		});
+		const loadingScreen = document.querySelector('.loading-screen');
+		document.addEventListener('click', (event) => {
+			const link = event.target.closest('a[href]');
+			if (link && link.origin === location.origin && !link.target) {
+				event.preventDefault();
+				loadingScreen.setAttribute('aria-hidden', 'false');
+				window.setTimeout(() => { location.href = link.href; }, 1300);
+			}
+		});
+	</script>
+</body>
+</html>
