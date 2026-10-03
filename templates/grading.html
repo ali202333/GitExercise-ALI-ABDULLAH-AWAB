@@ -4,16 +4,16 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="theme-color" content="#050505">
-	<title>Privacy Policy | S-CoreBox</title>
+	<title>How S-CoreBox Grading Works</title>
 	<style>
-		:root { color-scheme: dark; font-family: Arial, sans-serif; --bg: #050505; --panel: #121212; --text: #f5f5f5; --muted: #d2d2d2; --border: rgba(255,255,255,.12); --frame: url("/assets/console.png"); --button-bg: #fff; --button-text: #111; }
+		:root { color-scheme: dark; font-family: Arial, sans-serif; --bg: #050505; --panel: #121212; --panel-strong: #191919; --text: #f5f5f5; --muted: #d2d2d2; --border: rgba(255,255,255,.12); --frame: url("/assets/console.png"); --button-bg: #fff; --button-text: #111; }
 		* { box-sizing: border-box; }
 		body { min-height: 100vh; margin: 0; padding: 5vh 16vw; background: var(--bg); color: var(--text); overflow-x: hidden; }
-		body[data-theme="light"] { color-scheme: light; --bg: #f5f5f5; --panel: #fff; --text: #111; --muted: #555; --border: rgba(17,17,17,.2); --frame: url("/assets/tbdf.png"); --button-bg: #111; --button-text: #fff; }
+		body[data-theme="light"] { color-scheme: light; --bg: #f5f5f5; --panel: #fff; --panel-strong: #f8f8f8; --text: #111; --muted: #555; --border: rgba(17,17,17,.2); --frame: url("/assets/tbdf.png"); --button-bg: #111; --button-text: #fff; }
 		body::before { position: fixed; z-index: 2; inset: 0; background: var(--frame) center / 100% 100% no-repeat; content: ""; pointer-events: none; }
 		body[data-theme="light"]::before { opacity: .9; }
 		body > * { position: relative; z-index: 1; }
-		.privacy-page { width: min(100%, 760px); margin: 0 auto; }
+		.grading-page { width: min(100%, 760px); margin: 0 auto; }
 		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
 		.brand { display: inline-flex; align-items: center; color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
 		.logo-mark { display: inline-block; width: 48px; height: 48px; margin-left: 10px; vertical-align: middle; object-fit: contain; }
@@ -24,12 +24,46 @@
 		.theme-toggle { padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font: inherit; cursor: pointer; transition: background-color 160ms ease; }
 		.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--panel); }
 		.policy { padding: clamp(24px, 5vw, 44px); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; line-height: 1.7; animation: policy-enter 420ms ease both; }
-		h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.4rem); line-height: 1.2; }
-		.updated { margin: 0 0 24px; color: var(--muted); }
-		.policy h2 { margin: 28px 0 8px; font-size: 1.2rem; }
-		.policy p { margin: 0 0 14px; }
-		.policy ul { margin: 8px 0 0; padding-left: 24px; }
-		.policy li { margin: 8px 0; }
+		h1, h2 { line-height: 1.2; }
+		h1 { margin: 0 0 8px; font-size: clamp(1.8rem, 4vw, 2.4rem); }
+		h2 { margin: 28px 0 8px; font-size: 1.2rem; }
+		p { margin: 0 0 14px; color: var(--muted); }
+		.intro { margin: 0; font-size: 1.08rem; }
+
+		.tier-scale {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(92px, 1fr));
+			gap: 12px;
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		.tier-scale li {
+			display: grid;
+			min-height: 104px;
+			place-items: center;
+			gap: 4px;
+			padding: 12px;
+			border: 1px solid var(--border);
+			border-radius: 8px;
+			background: var(--panel-strong);
+			font-weight: bold;
+		}
+
+		.tier-icon { width: 56px; height: 56px; object-fit: contain; }
+		.tier-fallback {
+			display: grid;
+			width: 56px;
+			height: 56px;
+			place-items: center;
+			border: 2px solid currentColor;
+			border-radius: 8px;
+			font-size: 1.8rem;
+		}
+
+		.concept-list { color: var(--muted); }
+		.concept-list li { margin: 8px 0; }
 		.back-link { display: inline-block; margin-top: 20px; padding: 10px 15px; border-radius: 6px; background: var(--button-bg); color: var(--button-text); text-decoration: none; transition: opacity 160ms ease; }
 		.back-link:hover, .back-link:focus-visible { opacity: .8; }
 		.loading-screen { position: fixed; z-index: 10; inset: 0; display: grid; place-items: center; background: #fff; opacity: 0; pointer-events: none; transition: opacity 160ms ease; }
@@ -37,46 +71,60 @@
 		.loading-screen img { width: min(260px, 40vw); height: auto; }
 		@keyframes policy-enter { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 		@media (prefers-reduced-motion: reduce) { *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; } }
+
 		@media (max-width: 700px) { body { padding: 5vh 9vw; } }
 		@media (max-width: 480px) { body { padding: 24px 7vw; } .topbar { align-items: flex-start; } .policy { padding: 24px 20px; } }
 	</style>
 </head>
 <body>
 	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading"><img src="/assets/loading.gif" alt=""></div>
-	<main class="privacy-page">
+	<main class="grading-page">
 		<div class="topbar">
 			<a class="brand" href="/" aria-label="S-CoreBox home">S-CoreBox<img class="logo-mark logo-dark" src="/assets/randominvert.png" alt=""><img class="logo-mark logo-light" src="/assets/random.png" alt=""></a>
 			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
 		</div>
 		<article class="policy">
-			<h1>Privacy Policy</h1>
-			<p class="updated"><strong>Last updated:</strong> October 3, 2026</p>
-			<p>S-CoreBox is made by the people. For the people.</p>
-			<h2>Information We Collect</h2>
-			<ul>
-				<li>When you sign up, we collect your username, email address, and a securely hashed version of your password. We never store your password in plain text.</li>
-				<li>Movies/shows you bookmark, and any ratings or reviews you submit while using an account.</li>
-				<li>Basic session information (used to keep you logged in) and a local theme preference (light/dark mode) stored in your browser.</li>
+		<h1>How S-CoreBox Grading Works</h1>
+		<p class="intro">Every grade you see on this site is built from aggregated critic and audience reviews, analyzed across multiple genres of filmmaking, then translated into a single, easy-to-read tier.</p>
+
+		<section aria-labelledby="tier-heading">
+			<h2 id="tier-heading">The Tier Scale</h2>
+			<p>Every title and individual concept category receives a grade on this scale, from best to worst:</p>
+			<ul class="tier-scale" aria-label="Grades from best to worst">
+				<li><img class="tier-icon" src="/assets/Zplus.png" alt="">Z+</li>
+				<li><img class="tier-icon" src="/assets/Z.png" alt="">Z</li>
+				<li><img class="tier-icon" src="/assets/S.png" alt="">S</li>
+				<li><img class="tier-icon" src="/assets/A.png" alt="">A</li>
+				<li><img class="tier-icon" src="/assets/B.png" alt="">B</li>
+				<li><img class="tier-icon" src="/assets/C.png" alt="">C</li>
+				<li><img class="tier-icon" src="/assets/D.png" alt="">D</li>
+				<li><span class="tier-fallback" aria-hidden="true">E</span>E</li>
+				<li><img class="tier-icon" src="/assets/F.png" alt="">F</li>
 			</ul>
-			<h2>How We Use This Information</h2>
-			<ul>
-				<li>To create and manage your account</li>
-				<li>To let you bookmark titles and save your ratings/reviews</li>
-				<li>To keep you logged in during your session</li>
+		</section>
+
+		<section aria-labelledby="graded-heading">
+			<h2 id="graded-heading">What Gets Graded</h2>
+			<p>Every title on S-CoreBox receives an overall grade and a breakdown across five core film concepts:</p>
+			<ul class="concept-list">
+				<li>Mise-en-scène</li>
+				<li>Cinematography</li>
+				<li>Sound</li>
+				<li>Narrative</li>
+				<li>Editing</li>
 			</ul>
-			<h2>What We Don't Do</h2>
-			<ul>
-				<li>We do not sell, rent, or share your personal information with third parties.</li>
-				<li>We do not use your data for advertising or marketing.</li>
-				<li>We do not knowingly collect information from anyone under the age required by applicable law in their region.</li>
-			</ul>
-			<h2>Data Storage</h2>
-			<p>Your data is stored in a database associated with this project. 
-				S-CoreBox does not guarantee the same security standards as a commercial product, though reasonable measures (password hashing, standard web practices) are used.</p>
-			<h2>Your Choices</h2>
-			<p>You may request that your account and associated data be deleted by contacting us.</p>
-			<h2>Changes to This Policy</h2>
-			<p>This policy may be updated as the project develops. Continued use of the site after changes means you accept the updated policy.</p>
+		</section>
+
+		<section aria-labelledby="data-heading">
+			<h2 id="data-heading">Where the Data Comes From</h2>
+			<p>S-CoreBox grades are built from aggregated reviews by critics covering our current library of the most reviewed films. Rather than relying on one critic's opinion, each category score reflects a consensus across the reviews available for that title. It works similarly to a Metascore-style system: more positive reviews contribute to a better grade.</p>
+		</section>
+
+		<section aria-labelledby="imdb-heading">
+			<h2 id="imdb-heading">A Note on IMDb Ratings</h2>
+			<p>You'll also see an <strong>IMDb Rating</strong> alongside S-CoreBox's grade on each title. They are separate systems: IMDb's rating reflects audience scoring on a 10-point scale, while the S-CoreBox Z+ to F grade draws on the aggregated reviews described above.</p>
+		</section>
+
 		</article>
 		<a class="back-link" href="/">Back to S-CoreBox</a>
 	</main>

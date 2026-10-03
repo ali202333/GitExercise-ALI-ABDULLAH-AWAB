@@ -15,7 +15,12 @@
 		body > * { position: relative; z-index: 1; }
 		.terms-page { width: min(100%, 760px); margin: 0 auto; }
 		.topbar { display: flex; align-items: center; justify-content: space-between; gap: 16px; margin-bottom: 20px; }
-		.brand { color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+		.brand { display: inline-flex; align-items: center; color: var(--text); font-size: 1.1rem; font-weight: bold; text-decoration: none; }
+		.logo-mark { display: inline-block; width: 48px; height: 48px; margin-left: 10px; vertical-align: middle; object-fit: contain; }
+		.logo-dark { display: inline-block; mix-blend-mode: screen; }
+		.logo-light { display: none; mix-blend-mode: multiply; }
+		body[data-theme="light"] .logo-dark { display: none; }
+		body[data-theme="light"] .logo-light { display: inline-block; }
 		.theme-toggle { padding: 9px 14px; border: 1px solid var(--border); border-radius: 999px; background: transparent; color: var(--text); font: inherit; cursor: pointer; transition: background-color 160ms ease; }
 		.theme-toggle:hover, .theme-toggle:focus-visible { background: var(--panel); }
 		.terms { padding: clamp(24px, 5vw, 44px); background: var(--panel); border: 1px solid var(--border); border-radius: 12px; line-height: 1.7; animation: terms-enter 420ms ease both; }
@@ -40,7 +45,7 @@
 	<div class="loading-screen" aria-hidden="true" role="status" aria-label="Loading"><img src="/assets/loading.gif" alt=""></div>
 	<main class="terms-page">
 		<div class="topbar">
-			<a class="brand" href="/">S-CoreBox</a>
+			<a class="brand" href="/" aria-label="S-CoreBox home">S-CoreBox<img class="logo-mark logo-dark" src="/assets/randominvert.png" alt=""><img class="logo-mark logo-light" src="/assets/random.png" alt=""></a>
 			<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Switch to light mode">Light mode</button>
 		</div>
 		<article class="terms">
