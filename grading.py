@@ -1,30 +1,31 @@
 TIER_TO_SCORE = {
-    'S': 100,
-    'A+': 92,
-    'A': 85,
-    'B+': 78,
-    'B': 70,
-    'C': 60,
-    'D': 50,
-    'F': 30,
+    'Z+': 10.0,
+    'Z': 9.2,
+    'S': 8.5,
+    'A': 7.8,
+    'B': 7.0,
+    'C': 6.0,
+    'D': 5.0,
+    'E': 4.0,
+    'F': 3.0
 }
 
 def score_to_grade(score):
-    if score >= 97:
+    if score >= 9.7:
         return 'Z+'
     elif score >= 90:
         return 'Z'
-    elif score >= 85:
-        return 'A+'
-    elif score >= 80:
+    elif score >= 8.5:
+        return 'S'
+    elif score >= 8.0:
         return 'A'
-    elif score >= 75:
-        return 'B+'
-    elif score >= 70:
+    elif score >= 7.5:
         return 'B'
-    elif score >= 60:
+    elif score >= 7.0:
         return 'C'
-    elif score >= 50:
+    elif score >= 6.0:
         return 'D'
+    elif score >= 50:
+        return 'E'
     else:
         return 'F'

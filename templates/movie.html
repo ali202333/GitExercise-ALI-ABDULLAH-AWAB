@@ -81,9 +81,27 @@
 		}
 
 		.brand {
-			margin: 0 0 28px;
+			display: inline-flex;
+			align-items: center;
+			margin: 0 0 20px;
+			color: var(--text);
 			font-size: 1.1rem;
 			font-weight: bold;
+			text-decoration: none;
+		}
+
+		.logo-mark {
+			display: inline-block;
+			width: 48px;
+			height: 48px;
+			margin-left: 10px;
+			object-fit: contain;
+		}
+
+		.logo-dark { mix-blend-mode: screen; }
+		.logo-light { display: none; mix-blend-mode: multiply; }
+		body[data-theme="light"] .logo-dark { display: none; }
+		body[data-theme="light"] .logo-light { display: inline-block; }
 		}
 
 		.theme-toggle {
@@ -236,9 +254,16 @@
 			word-break: break-all;
 		}
 
-		.back-link {
-			display: inline-block;
+		.movie-page-actions {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 12px;
 			margin-top: 28px;
+		}
+
+		.back-link,
+		.grading-link {
+			display: inline-block;
 			padding: 11px 18px;
 			border: 1px solid #000000;
 			border-radius: 6px;
@@ -247,8 +272,16 @@
 			text-decoration: none;
 		}
 
+		.grading-link {
+			border-color: var(--border);
+			background: var(--panel-strong);
+			color: var(--text);
+		}
+
 		.back-link:hover,
-		.back-link:focus-visible {
+		.back-link:focus-visible,
+		.grading-link:hover,
+		.grading-link:focus-visible {
 			background: #444;
 		}
 
@@ -277,6 +310,7 @@
 		<img class="loading-gif" src="/assets/loading.gif" alt="">
 	</div>
 	<main class="movie-page">
+		<a class="brand" href="/" aria-label="S-CoreBox home">S-CoreBox<img class="logo-mark logo-dark" src="/assets/randominvert.png" alt=""><img class="logo-mark logo-light" src="/assets/random.png" alt=""></a>
 		<section id="movie-content" class="movie-panel" aria-labelledby="movie-title" hidden>
 			<h1 id="movie-title"></h1>
 			<p class="movie-rating"><span>â˜…</span> <span id="movie-rating"></span> / 10</p>
@@ -293,7 +327,10 @@
 				<p id="movie-final-review"></p>
 			</div>
 
-			<a class="back-link" href="/">Back to S-CoreBox</a>
+			<nav class="movie-page-actions" aria-label="Page navigation">
+				<a class="back-link" href="/">Back to S-CoreBox</a>
+				<a class="grading-link" href="/grading">How Grading Works</a>
+			</nav>
 		</section>
 		<p id="error-message" role="alert" hidden></p>
 	</main>

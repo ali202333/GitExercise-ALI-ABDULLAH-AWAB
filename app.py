@@ -100,6 +100,11 @@ def movie():
     return render_template('movie.html')
 
 
+@app.route('/grading')
+def grading():
+    return render_template('grading.html')
+
+
 @app.route('/privacy')
 def privacy():
     return render_template('privacy.html')
